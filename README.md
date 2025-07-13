@@ -13,7 +13,7 @@ A comprehensive web application for managing Quality Care Measures (QCM) in medi
 
 ## 🚀 Live Demo
 
-Visit the live application: [Your GitHub Pages URL will be here]
+Visit the live application: https://jenniferlopezpy.github.io/clinical-knowledge-base
 
 ## 📁 Project Structure
 

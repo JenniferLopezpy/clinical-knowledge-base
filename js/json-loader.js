@@ -5,7 +5,7 @@
 const INSURER_JSON_FILES = {
     'healthfirst': 'QCM Measures/Healthfirst.json',
     'fidelis': 'QCM Measures/Fideliscare.json',
-    'uhc': 'QCM Measures/UnitedHealthcare.json',
+    'uhc': 'QCM Measures/UnitedHealthCare.json',
     'molina': 'QCM Measures/Molina.json'
 };
 
