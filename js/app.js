@@ -502,7 +502,25 @@ function showMeasureImages() {
     content.innerHTML = `
         <div class="mb-6">
             <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">How does the measure looks?</h2>
-            <p class="text-gray-600">Measure screenshots from Common/Img folder. Press F5 to refresh when adding new images.</p>
+            <p class="text-gray-600">Measure screenshots from Common/Img folder. Use the scan button to detect new images.</p>
+        </div>
+        
+        <div class="mb-4 flex gap-4">
+            <button onclick="autoDetectAllImages()" class="btn btn-secondary">
+                <i class="fas fa-search"></i> Auto-Detect All Images
+            </button>
+            <button onclick="scanForNewImages()" class="btn btn-secondary">
+                <i class="fas fa-search"></i> Scan for New Images
+            </button>
+            <button onclick="forceRefreshImages()" class="btn btn-primary">
+                <i class="fas fa-sync-alt"></i> Force Refresh
+            </button>
+            <button onclick="showDebugInfo()" class="btn btn-warning">
+                <i class="fas fa-bug"></i> Debug Info
+            </button>
+            <button onclick="showJSONManagement()" class="btn btn-info">
+                <i class="fas fa-cog"></i> JSON Management
+            </button>
         </div>
         
         <div class="mb-6">
@@ -531,6 +549,7 @@ function showMeasureImages() {
     loadMeasureImages();
 }
 
+// Function to load measure images from Common/Img folder
 async function loadMeasureImages() {
     const container = document.getElementById('measureImagesContainer');
     
@@ -543,29 +562,70 @@ async function loadMeasureImages() {
     `;
     
     try {
-        // Get only existing images from the folder
-        const imageFiles = await getExistingImages();
+        console.log('Starting image detection...');
+        
+        // Get all images from the folder using the environment-aware function
+        const imageFiles = await getImagesForEnvironment();
+        
+        console.log('Detected images:', imageFiles);
+        console.log('Total images found:', imageFiles.length);
+        
+        // Try to get images with metadata first
+        let imagesWithMetadata = [];
+        try {
+            imagesWithMetadata = await getImagesWithMetadata();
+            console.log('Images with metadata:', imagesWithMetadata);
+        } catch (error) {
+            console.log('Could not load metadata, using basic detection');
+        }
         
         // Group images by title (before the underscore)
         const groupedImages = {};
         
-        imageFiles.forEach(filename => {
-            const parts = filename.replace('.png', '').split('_');
-            if (parts.length >= 2) {
-                const title = parts[0];
-                const imageNumber = parts[1];
+        if (imagesWithMetadata.length > 0) {
+            // Use metadata from JSON
+            imagesWithMetadata.forEach(img => {
+                const title = img.title;
+                const imageNumber = img.number;
                 
                 if (!groupedImages[title]) {
                     groupedImages[title] = [];
                 }
                 
                 groupedImages[title].push({
-                    filename: filename,
+                    filename: img.filename,
                     number: imageNumber,
-                    path: `Common/Img/${filename}`
+                    path: `Common/Img/${img.filename}`,
+                    category: img.category
                 });
-            }
-        });
+                
+                console.log(`Grouped ${img.filename} under title: ${title}`);
+            });
+        } else {
+            // Fallback to basic detection
+            imageFiles.forEach(filename => {
+                console.log(`Processing image: ${filename}`);
+                const parts = filename.replace('.png', '').split('_');
+                if (parts.length >= 2) {
+                    const title = parts[0];
+                    const imageNumber = parts[1];
+                    
+                    if (!groupedImages[title]) {
+                        groupedImages[title] = [];
+                    }
+                    
+                    groupedImages[title].push({
+                        filename: filename,
+                        number: imageNumber,
+                        path: `Common/Img/${filename}`
+                    });
+                    
+                    console.log(`Grouped ${filename} under title: ${title}`);
+                } else {
+                    console.warn(`Image ${filename} doesn't follow the expected naming pattern (Title_Number.png)`);
+                }
+            });
+        }
         
         // Sort images within each group by number
         Object.keys(groupedImages).forEach(title => {
@@ -576,6 +636,8 @@ async function loadMeasureImages() {
             });
         });
         
+        console.log('Grouped images:', groupedImages);
+        
         // Generate HTML for grouped images
         if (Object.keys(groupedImages).length === 0) {
             container.innerHTML = `
@@ -583,6 +645,14 @@ async function loadMeasureImages() {
                     <i class="fas fa-image"></i>
                     <p>No measure images found in Common/Img folder</p>
                     <p class="text-sm text-gray-500 mt-2">Add images to Common/Img folder with format: "Title_Number.png"</p>
+                    <div class="mt-4 space-y-2">
+                        <button onclick="forceRefreshImages()" class="btn btn-primary">
+                            <i class="fas fa-sync-alt"></i> Force Refresh
+                        </button>
+                        <button onclick="getCompleteImageList()" class="btn btn-secondary ml-2">
+                            <i class="fas fa-list"></i> Debug: Show All Images
+                        </button>
+                    </div>
                 </div>
             `;
             return;
@@ -610,7 +680,21 @@ async function loadMeasureImages() {
         container.innerHTML = html;
         
         // Log found images for debugging
-        console.log('Found images:', imageFiles);
+        console.log('Successfully loaded images:', imageFiles);
+        console.log('Grouped images:', groupedImages);
+        console.log('Total groups:', Object.keys(groupedImages).length);
+        
+        // Add a debug button to the page
+        const debugButton = document.createElement('button');
+        debugButton.className = 'btn btn-secondary mt-4';
+        debugButton.innerHTML = '<i class="fas fa-bug"></i> Debug: Show Image List';
+        debugButton.onclick = () => {
+            console.log('=== DEBUG INFO ===');
+            console.log('All detected images:', imageFiles);
+            console.log('Grouped images:', groupedImages);
+            alert(`Found ${imageFiles.length} images in ${Object.keys(groupedImages).length} groups. Check console for details.`);
+        };
+        container.appendChild(debugButton);
         
     } catch (error) {
         console.error('Error loading images:', error);
@@ -619,6 +703,14 @@ async function loadMeasureImages() {
                 <i class="fas fa-exclamation-triangle"></i>
                 <p>Error loading measure images</p>
                 <p class="text-sm text-gray-500 mt-2">${error.message}</p>
+                <div class="mt-4 space-y-2">
+                    <button onclick="forceRefreshImages()" class="btn btn-primary">
+                        <i class="fas fa-sync-alt"></i> Force Refresh
+                    </button>
+                    <button onclick="getCompleteImageList()" class="btn btn-secondary ml-2">
+                        <i class="fas fa-list"></i> Debug: Show All Images
+                    </button>
+                </div>
             </div>
         `;
     }
@@ -626,7 +718,7 @@ async function loadMeasureImages() {
 
 // Function to add a new possible image and refresh the display
 function addNewPossibleImage(filename) {
-    addPossibleImage(filename);
+    addCommonImagePattern(filename);
     loadMeasureImages(); // Refresh the display
     console.log(`Possible image "${filename}" added and display refreshed!`);
 }

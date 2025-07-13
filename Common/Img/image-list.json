@@ -1,0 +1,84 @@
+{
+  "images": [
+    {
+      "filename": "Breast Cancer Screeening REFERRAL_01.png",
+      "title": "Breast Cancer Screeening REFERRAL",
+      "number": "01",
+      "category": "Breast Cancer Screening"
+    },
+    {
+      "filename": "Breast Cancer Screening RESULT_01.png",
+      "title": "Breast Cancer Screening RESULT",
+      "number": "01",
+      "category": "Breast Cancer Screening"
+    },
+    {
+      "filename": "Chlamydia Screening_01.png",
+      "title": "Chlamydia Screening",
+      "number": "01",
+      "category": "Chlamydia Screening"
+    },
+    {
+      "filename": "Colorectal Cancer Screening REFERRAL_01.png",
+      "title": "Colorectal Cancer Screening REFERRAL",
+      "number": "01",
+      "category": "Colorectal Cancer Screening"
+    },
+    {
+      "filename": "Colorectal Cancer Screening RESULT_01.png",
+      "title": "Colorectal Cancer Screening RESULT",
+      "number": "01",
+      "category": "Colorectal Cancer Screening"
+    },
+    {
+      "filename": "Controlling High Blood Pressure (BP Measures)_01.png",
+      "title": "Controlling High Blood Pressure (BP Measures)",
+      "number": "01",
+      "category": "Blood Pressure"
+    },
+    {
+      "filename": "Kidney Health Evaluation (KED measures)_01.png",
+      "title": "Kidney Health Evaluation (KED measures)",
+      "number": "01",
+      "category": "Kidney Health"
+    },
+    {
+      "filename": "Functional Assessment (COA measure)_01.png",
+      "title": "Functional Assessment (COA measure)",
+      "number": "01",
+      "category": "Functional Assessment"
+    },
+    {
+      "filename": "Nutritional Counseling_01.png",
+      "title": "Nutritional Counseling",
+      "number": "01",
+      "category": "Nutritional Counseling"
+    },
+    {
+      "filename": "Social Screening_01.png",
+      "title": "Social Screening",
+      "number": "01",
+      "category": "Social Screening"
+    },
+    {
+      "filename": "Eye Exam for Patients with Diabeted (EED Measures)_01.png",
+      "title": "Eye Exam for Patients with Diabeted (EED Measures)",
+      "number": "01",
+      "category": "Eye Exam"
+    },
+    {
+      "filename": "Glycemic Status Assessment (A1C Measures)_01.png",
+      "title": "Glycemic Status Assessment (A1C Measures)",
+      "number": "01",
+      "category": "Glycemic Assessment"
+    },
+    {
+      "filename": "Depression Screening_01.png",
+      "title": "Depression Screening",
+      "number": "01",
+      "category": "Depression Screening"
+    }
+  ],
+  "lastUpdated": "2024-01-01",
+  "totalImages": 13
+} 
