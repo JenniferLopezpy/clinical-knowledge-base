@@ -4,14 +4,16 @@ const POSSIBLE_IMAGES = [
     'Breast Cancer Screeening REFERRAL_01.png',
     'Breast Cancer Screening RESULT_01.png',
     'Chlamydia Screening_01.png',
-    'Chlamydia Screening_02.png',
     'Colorectal Cancer Screening REFERRAL_01.png',
+    'Colorectal Cancer Screening RESULT_01.png',
     'Controlling High Blood Pressure (BP Measures)_01.png',
     'Kidney Health Evaluation (KED measures)_01.png',
     'Functional Assessment (COA measure)_01.png',
     'Nutritional Counseling_01.png',
     'Social Screening_01.png',
-    'Eye Exam for Patients with Diabeted (EED Measures)_01.png'
+    'Eye Exam for Patients with Diabeted (EED Measures)_01.png',
+    'Glycemic Status Assessment (A1C Measures)_01.png',
+    'Depression Screening_01.png'
 ];
 
 // Function to check if an image exists
