@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "date": "2025-07-15",
+        "title": "QCM Reporting Deadline",
+        "description": "All QCM measures for Q2 2025 must be submitted by end of day. Ensure all patient data is up to date in eCW.",
+        "priority": "high",
+        "category": "deadline",
+        "reminder": "Submit Q2 QCM measures"
+    },
+    {
+        "id": 2,
+        "date": "2025-07-20",
+        "title": "New Insurance Provider Training",
+        "description": "Mandatory training session for new Molina Healthcare protocols. All call center staff must attend the 2-hour session.",
+        "priority": "medium",
+        "category": "training",
+        "reminder": "Attend Molina training session"
+    },
+    {
+        "id": 3,
+        "date": "2025-07-25",
+        "title": "System Maintenance Window",
+        "description": "eCW system will be down for maintenance from 2:00 AM to 4:00 AM. Plan patient calls accordingly.",
+        "priority": "low",
+        "category": "maintenance",
+        "reminder": "eCW maintenance scheduled"
+    }
+] 

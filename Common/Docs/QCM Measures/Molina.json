@@ -1,0 +1,138 @@
+[
+  {
+    "MEASURE NAME": "Adult Immunization Status (AIS-E)",
+    "DESCRIPTION": "The percentage of members 19 years of age and older who are up to date on recommended routine vaccines for influenza, tetanus, and diphtheria (Td), or tetanus, diphtheria, and acellular pertussis (Tdap), zoster and pneumococcal.",
+    "WHERE IS IT?": "IMMUNIZATION RECORD IN PT DOCS",
+    "COMPLIANT PERIOD": "Influenza\n• Members who received an influenza vaccine on or between July 1 of the year prior to the measurement period and June 30 of the measurement period, or\n• Members with anaphylaxis due to the influenza vaccine any time before or during the measurement period.\nTd/Tdap\n• Members who received at least one Td vaccine or one Tdap vaccine between 9 years prior to the start of the measurement period and the end of the measurement period, or\n• Members with a history of at least one of the following contraindications any time before or during the measurement period:\no Anaphylaxis due to the diphtheria, tetanus, or pertussis vaccine.\no Encephalitis due to the diphtheria, tetanus, or pertussis vaccine.\nZoster\n• Members who received at least one dose of the herpes zoster live vaccine or two doses of the herpes zoster recombinant vaccine at least 28 days apart, any time on or after the member’s 50th birthday and before or\nduring the measurement period, or\n• Members with anaphylaxis due to the herpes zoster vaccine any time before or during the measurement period.\nPneumococcal\n• Members who were administered at least one dose of an adult pneumococcal vaccine on or after the member’s 19th birthday and before or during the measurement period, or\n• Members with anaphylaxis due to the pneumococcal vaccine any time before or during the measurement period",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Asthma Medication Rati o (AMR)",
+    "DESCRIPTION": "The percentage of members 5-64 years of age who were identified as having persistent asthma and had a ratio of controller medications to total asthma medications of 0.50 or greater during the measurement year",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Metabolic Monitoring for Children and Adolescents on Antipsy chotics (APM-E)",
+    "DESCRIPTION": "The percentage of children or adolescents 1-17 years of age who had two or more antipsychotic prescriptions and had metabolic testing. Three rates are reported: \n1. The percentage of children and adolescents on antipsychotics who received blood glucose testing.\n2. The percentage of children and adolescents on antipsychotics who received cholesterol testing.\n3. The percentage of children and adolescents on antipsychotics who received blood glucose and cholesterol testing",
+    "WHERE IS IT?": "ePrescription logs and lab",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Breast Cancer Screening (BCS-E)",
+    "DESCRIPTION": "The percentage of members 50–74 years of age who were recommended for a routine breast cancer screening and had a mammogram to screen for breast cancer",
+    "WHERE IS IT?": "PT DOCS",
+    "COMPLIANT PERIOD": "October 1 two years prior to the measurement period through the end of the measurement period",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Controlling Blood Pressure (CBP)",
+    "DESCRIPTION": "The percentage of members 18–85 years of age who had a diagnosis of hypertension (HTN) and whose blood pressure was adequately controlled (<140/90 mm Hg) during the measurement year",
+    "WHERE IS IT?": "PROGRESS NOTE",
+    "COMPLIANT PERIOD": "The most recent BP reading during the measurement year on or after the second diagnosis of hypertension",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+  },
+  {
+    "MEASURE NAME": "Cervical Cancer Screening (CCS)",
+    "DESCRIPTION": "The percentage of members 21-64 years of age who were recommended for routine cervical cancer screening and were screened for cervical cancer",
+    "WHERE IS IT?": "LAB",
+    "COMPLIANT PERIOD": "Members 21-64 years of age who were recommended for routine cervical cancer screening and had cervical cytology performed within the last 3 years.\n• Members 30-64 years of age who were recommended for routine cervical cancer screening and had cervical high-risk human papillomavirus (hrHPV) testing performed within the last 5 years.\n• Members 30-64 years of age who were recommended for routine cervical cancer screening and had cervical cytology/high-risk human papillomavirus (hrHPV) cotesting performed within the last 5 years",
+    "CODING": "G0101, Q0091, 3015F",
+    "SCHEDULE AS/ADD TO APPT": "PAP"
+  },
+  {
+    "MEASURE NAME": "Childhood Immunization Status (CIS)",
+    "DESCRIPTION": "The percentage of children 2 years of age who had the following vaccines by their second birthday: • At least four diphtheria, tetanus, and acellular pertussis (DTaP) vaccinations with different dates of service. At least three polio (IPV) vaccinations with different dates of service. \u00a0 At least one measles, mumps, and rubella (MMR) on or between the child’s first and second birthdays, or all of the following any time on or before the child’s second birthday (on the same or different date of service): history of measles, mumps, or rubella illness.\n At least three hemophilus influenza type B (HiB) vaccinations with different dates of service.  At least three hepatitis B (HepB) vaccinations with different dates of service. (One of the three vaccinations can be a newborn HepB during the eight-day period that begins on the date of birth and ends seven days after the date of birth.)  At least one chicken pox (VZV) vaccination with a date of service on or between the child’s first and second birthdays. (Or history of chicken pox (VZV) on or before the child’s second birthdays.)  At least four pneumococcal conjugate (PCV) vaccinations with a date of service on or between the child’s first and second birthdays.",
+    "WHERE IS IT?": "IMMUNIZATION RECORD IN PT DOCS",
+    "COMPLIANT PERIOD": "By their second birthday (Do not count a vaccination administered prior to 42 days after birth.)",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Colorectal Cancer Screening (COL-E)",
+    "DESCRIPTION": "The percentage of members 45-75 years of age who had one of the screenings for colorectal cancer",
+    "WHERE IS IT?": "PT DOCS",
+    "COMPLIANT PERIOD": "• Fecal Occult Blood Test: gFOBT or iFOBT during the measurement year.\n• Flexible sigmoidoscopy during the measurement year or the four years prior to the measurement year.\n• Colonoscopy during the measurement year or the nine years prior to the measurement year.\n• CT colonography during the measurement year or the four years prior to the measurement year.\n• Stool DNA (sDNA) with FIT test during the measurement year or the two years prior to the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Depression Screening and Follow-Up for Adolescents and Adults (DSF-E)",
+    "DESCRIPTION": "The percentage of members 12 years of age and older who were screened for clinical depression using a standardized instrument and, if screened positive, received follow-up care. ",
+    "WHERE IS IT?": "PROGRESS NOTE",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Eye Exam for Patients With Diabetes (EED)",
+    "DESCRIPTION": "The percentage of members 18–75 years of age with diabetes (types 1 and 2) who had an eye exam (retinal) performed during the measurement year. ",
+    "WHERE IS IT?": "PT DOCS",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "2023F, 92227",
+    "SCHEDULE AS/ADD TO APPT": "NATALIA (OPT) OR ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Glycemic Status Assessment for Patients With Diabetes (GSD)",
+    "DESCRIPTION": "The percentage of members 18–75 years of age with diabetes (types 1 and 2) whose most recent glycemic status (hemoglobin A1c [HbA1c] or glucose management indicator [GMI]) was at the following levels during the measurement year: • Glycemic Status <8.0%. The member is compliant if the most recent glycemic status assessment has a result of <8.0%. Note: A higher rate indicates better performance (compliance) for this indicator.\n• Glycemic Status >9.0%. The member is compliant if the most recent glycemic status assessment has a result of >9.0% or is missing a result, or if a glycemic status assessment was not done during the measurement year.\nNote: A lower rate indicates better performance for this indicator (i.e., low rates of Glycemic Status >9% indicate\nbetter care).",
+    "WHERE IS IT?": "LAB",
+    "COMPLIANT PERIOD": "Most recent glycemic status (hemoglobin A1c [HbA1c] or glucose management indicator [GMI]) during the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALI, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Immunizations for Adolescents (IMA)",
+    "DESCRIPTION": "The percentage of adolescents 13 years of age who had one dose of meningococcal vaccine, one tetanus, diphtheria toxoids and acellular pertussis (Tdap) vaccine, and have completed the human papillomavirus (HPV) vaccine series by their 13th birthday.",
+    "WHERE IS IT?": "IMMUNIZATION RECORD IN PT DOCS",
+    "COMPLIANT PERIOD": "• Meningococcal: At least one meningococcal serogroups A, C, W, Y vaccine with a date of service on or between the member’s 11th and 13th birthdays, OR anaphylaxis due to the meningococcal vaccine any time on or before the member’s 13th birthday.\n• Tdap: At least one tetanus, diphtheria toxoids and acellular pertussis (Tdap) vaccine with a date of service on or between the member’s 10th and 13th birthdays, OR anaphylaxis due to the tetanus, diphtheria, or pertussis vaccine any time on or before the member’s 13th birthday, OR encephalitis due to the tetanus, diphtheria or pertussis vaccine any time on or before the member’s 13th birthday.\n• HPV: At least two HPV vaccines on or between the member’s 9th and 13th birthdays and with dates of service at least 146 days apart, OR at least three HPV vaccines with different dates of service on or between the member’s 9th and 13th birthdays, OR Anaphylaxis due to the HPV vaccine any time on or before the member’s 13th\nbirthday.\n• Combination 1 (Meningococcal, Tdap): Adolescents who are numerator compliant for both the meningococcal and Tdap indicators.\n• Combination 2 (Meningococcal, Tdap, HPV): Adolescents who are numerator compliant for all three indicators (meningococcal, Tdap, HPV).",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Kidney Health Evaluation for Patients With Diabetes (KED)",
+    "DESCRIPTION": "The percentage of members 18-85 years of age with diabetes (type 1 and type 2) who received kidney health evaluation, defined by an estimated glomerular filtration rate (eGFR) and a urine albumincreatinine ratio (uACR), during the measurement year",
+    "WHERE IS IT?": "LAB",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALI, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Social Need Screening and Intervention (SNS-E)",
+    "DESCRIPTION": "The percentage of members who were screened, using prespecified instruments, at least once during the measurement period (January 1 – December 31) for unmet food, housing and transportation needs, and received a corresponding intervention if they screened positive",
+    "WHERE IS IT?": "PT DOCS and PROGRESS NOTE",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Diabetes Screening for People with Schizophrenia or Bipolar Disorder Who Are Using Antipsychotic Medications (SSD)",
+    "DESCRIPTION": "The percentage of members 18-64 years of age with schizophrenia, schizoaffective disorder or bipolar disorder, who were dispensed an antipsychotic medication and had a diabetes screening test (glucose test or HbA1c test) during the measurement year.",
+    "WHERE IS IT?": "ePrescription logs and lab",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Child and Adolescent Well-Care Visits (WCV)",
+    "DESCRIPTION": "The percentage of members 3-21 years of age who had at least one comprehensive well-care visit with a PCP or an OB/GYN practitioner during the measurement year. ",
+    "WHERE IS IT?": "ANN VISIT",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANN VISIT"
+  },
+  {
+    "MEASURE NAME": "Developmental Screening in the First Three Years of Life (DEV-N)",
+    "DESCRIPTION": "The percentage of children age 1, 2, or 3 between January 1 and December 31 of the measurement year who were screened for risk of developmental, behavioral, and social delays using a standardized screening tool in the 12 months preceding or on their first, second, or third birthday.",
+    "WHERE IS IT?": "ANN VISIT",
+    "COMPLIANT PERIOD": "In the 12 months preceding or on their first, second, or third birthday.",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANN VISIT"
+  }
+]

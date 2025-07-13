@@ -1,0 +1,370 @@
+[
+  {
+    "MEASURE NAME": "Breast Cancer Screening (BCS‑E)",
+    "DESCRIPTION": "Members 50–74 years old should have a mammogram every two years.",
+    "WHERE IS IT?": "Results in PT DOCS (You'll find the referral in REFERRAL or DI)",
+    "COMPLIANT PERIOD": "October 1 two years prior to the measurement year and December 31 of the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Cervical Cancer Screening (CCS)",
+    "DESCRIPTION": "Members 21–64 years of age should have a Pap test every one to three years; alternatively, members 30–64 years of age should have a Pap test with high‑risk human papillomavirus (hrHPV) co‑testing every one to five years",
+    "WHERE IS IT?": "Results in LAB and PAP appointment in eCW",
+    "COMPLIANT PERIOD": "Pap Smear: measurement year and 2 years prior\nHrHPV: measurement year and 4 years prior ",
+    "CODING": "G0101, Q0091, 3015F\n\n ",
+    "SCHEDULE AS/ADD TO APPT": "PAP"
+  },
+  {
+    "MEASURE NAME": "Colorectal Cancer Screening (COL-E)",
+    "DESCRIPTION": "Adults 45–75 years of age should be screened for colorectal cancer",
+    "WHERE IS IT?": "Results in PT DOCS (You'll find the referral in REFERRAL/LAB)",
+    "COMPLIANT PERIOD": "Colonoscopy in the measurement year or nine years prior\nCT colonography or flexible sigmoidoscopy in the measurement year or four years prior\nFIT‑DNA (Cologuard®) in the measurement year or two years prior\nFecal occult blood test (FOBT, gFOBT, iFOBT, or FIT) in the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Glycemic Status Assessment for Patients with Diabetes (GSD)",
+    "DESCRIPTION": "The percentage of members 18–75 years of age with diabetes (types 1 and 2) whose most recent glycemic status (hemoglobin A1c [HbA1c] or glucose management indicator [GMI]) has a controlled blood sugar result < 8.0%. For this year’s HQIP, a glycemic status ≤ 9.0% meets criteria.",
+    "WHERE IS IT?": "Results in LAB (LESS THAN 9.0)",
+    "COMPLIANT PERIOD": "Most recent glycemic status assessment (HbA1c or Glucose management indicator (GMI)) during the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Controlling High Blood Pressure (CBP)",
+    "DESCRIPTION": "Adults 18–85 years of age with hypertension should have their blood pressure (BP) adequately controlled (<140/90).",
+    "WHERE IS IT?": "Result in PROGRESS NOTE (LESS THAN 140/90)",
+    "COMPLIANT PERIOD": "Most recent BP (both systolic and diastolic) during the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+  },
+  {
+    "MEASURE NAME": "Kidney Health Evaluation for Patients with Diabetes (KED)",
+    "DESCRIPTION": "Members 18–85 years of age with diabetes (type 1 and type 2) who received a kidney health evaluation, defined by an estimated glomerular filtration rate (eGFR) and a urine albumin‑creatinine ratio (uACR), during the measurement year",
+    "WHERE IS IT?": "Result in LAB / PROGRESS NOTE",
+    "COMPLIANT PERIOD": "During the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Eye Exam for Patients with Diabetes (EED)",
+    "DESCRIPTION": "Adults 18–75 years of age diagnosed with diabetes (types 1 and 2) should have a retinal or dilated eye exam by an eye care professional annually (or can be every two years when negative for retinopathy)",
+    "WHERE IS IT?": "Result in PT DOCS (You'll find the order in DI)",
+    "COMPLIANT PERIOD": "Retinal or dilated eye exam read by an optometrist, ophthalmologist, or a system that provides an artificial intelligence (AI) interpretation in the measurement year\nNegative retinal or dilated eye exam (negative for retinopathy) read by an optometrist, ophthalmologist, or a system that provides an artificial intelligence (AI) interpretation in the year prior to the measurement year\nBilateral eye enucleation anytime during the member’s history through December 31 of the measurement year",
+    "CODING": "2023F, 92227",
+    "SCHEDULE AS/ADD TO APPT": "NATALIA (OPT) OR ANY APPT BUT SCPECIALTY (SUDO, SONO, EMG, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Adult Immunization Status (AIS‑E)",
+    "DESCRIPTION": "Members 19 years of age and older who are up to date on recommended routine vaccines for influenza, tetanus, and diphtheria (Td) or tetanus, diphtheria, and acellular pertussis (Tdap), zoster, and pneumococcal",
+    "WHERE IS IT?": "Immunization Record in PT DOCS",
+    "COMPLIANT PERIOD": "Members who turned 19 years of age during the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Care for Older Adults (COA) Measures",
+    "DESCRIPTION": "Adults 66 years of age and older should have each of the following documented annually:\n• Medication Review by a prescribing practitioner or clinical pharmacist (MR)\n• Functional Status Assessment (FSA)",
+    "WHERE IS IT?": "General Health/Pain Assessment; Med List and Med review in PROGRESS NOTE",
+    "COMPLIANT PERIOD": "During the measurement year for each",
+    "CODING": "Medication Review – 90863, 99438, 99605, 1160F AND 1159F, G8427/ OR 99495, 99496. \nFunctional Status Assessment – 99483, 1170F, G0438, G0439",
+    "SCHEDULE AS/ADD TO APPT": "AWV"
+  },
+  {
+    "MEASURE NAME": "Chlamydia Screening in Women (CHL)",
+    "DESCRIPTION": "Women 16–24 years of age who are sexually active should be screened annually for chlamydia",
+    "WHERE IS IT?": "Result in LAB",
+    "COMPLIANT PERIOD": "During the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Diabetes Monitoring for People with Diabetes and Schizophrenia (SMD)",
+    "DESCRIPTION": "The percentage of members 18–64 years of age with schizophrenia or schizoaffective disorder and diabetes who had both an LDL-C (for cholesterol) test and an HbA1c test during the measurement year",
+    "WHERE IS IT?": "Result in LAB / PROGRESS NOTE. Both tests must be done",
+    "COMPLIANT PERIOD": "During the measurement year (on the same or different dates of service).\n",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Statin Therapy for Patients with Diabetes (SPD)",
+    "DESCRIPTION": "The percentage of members 40–75 years of age during the measurement year with diabetes who do not have clinical atherosclerotic cardiovascular disease (ASCVD) who met the following criteria. Two rates are reported:\n• Received Statin Therapy. Members who were dispensed at least one statin medication of any intensity during the measurement year.\n• Statin Adherence 80%. Members who remained on a statin medication of any intensity for at least 80% of the treatment period",
+    "WHERE IS IT?": "ePrescription Log",
+    "COMPLIANT PERIOD": "During the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Social Needs Screening and Intervention (SNS‑E)",
+    "DESCRIPTION": "The percentage of members who were screened, using prespecified instruments, at least once during the measurement period for unmet food, housing, and transportation needs, and received a corresponding intervention within 30 days if they screened positive.",
+    "WHERE IS IT?": "PRAPARE questionaire in PROGRESS NOTE/PT DOCS",
+    "COMPLIANT PERIOD": "Screening: January 1 and December 1 of the measurement period  \nIntervention: on or up to 30 days after the date of the first positive transportation screen (31 days total)  ",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Child and Adolescent Well‑Care Visits (WCV)",
+    "DESCRIPTION": "Members 3–21 years of age who had at least one comprehensive well‑care visit with a PCP or an Ob/Gyn practitioner during the measurement year",
+    "WHERE IS IT?": "AV/WCV appointment in eCW",
+    "COMPLIANT PERIOD": "During the measurement year ",
+    "CODING": "99381, 99382, 99383, 99384, 99385, 99386, 99387, 99391, 99392,  99393, 99394, 99395, 99396, 99397",
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT"
+  },
+  {
+    "MEASURE NAME": "Childhood Immunization Status (CIS-E)",
+    "DESCRIPTION": "Children should have complete immunizations on or before their second birthday.\nThese can occur in combination or single doses. The vaccines include: \nDTaP = 4, IPV = 3, HepA = 1, RV = 2 or 3, Flu = 2, HepB = 3, Hib = 3, PCV = 4, VZV = 1, MMR = 1",
+    "WHERE IS IT?": "Immunization Record in PT DOCS",
+    "COMPLIANT PERIOD": "By their second birthday",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Developmental Screening in the First Three Years of Life (DEV‑N)",
+    "DESCRIPTION": "Children 1–3 years of age screened for risk of developmental, behavioral, and social delays using a validated standardized screening tool in the 12 months preceding or on their first, second, or third birthday",
+    "WHERE IS IT?": "PROGRESS NOTE",
+    "COMPLIANT PERIOD": "During the measurement year",
+    "CODING": "96110, Z13.42",
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT"
+  },
+  {
+    "MEASURE NAME": "Immunizations for Adolescents (IMA)",
+    "DESCRIPTION": "Adolescents 13 years of age who had one dose of meningococcal, one tetanus, diphtheria toxoids and acellular pertussis (Tdap) vaccine, and have completed the human papillomavirus (HPV) vaccine series by their 13th birthday",
+    "WHERE IS IT?": "Immunization Record in PT DOCS",
+    "COMPLIANT PERIOD": "By their 13th birthday",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Prenatal Immunization Status (PRS‑E)",
+    "DESCRIPTION": "Pregnant members should receive influenza and tetanus, diphtheria toxoids and acellular pertussis (Tdap) vaccinations",
+    "WHERE IS IT?": "Immunization Record in PT DOCS",
+    "COMPLIANT PERIOD": "On or between July 1 of the year prior to the measurement period and the delivery date",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Well‑Child Visits – 30 Months (W30)",
+    "DESCRIPTION": "Members should have the following number of well‑child visits with a PCP (two rates are reported):\n• Well‑Child Visits in the First 15 Months: Children should have six or more well‑child visits from birth through 15 months of age. Children who turn 15 months old during the measurement year (15‑month span = first birthday plus 90 days).\n• Well‑Child Visits for Age 15 Months–30 Months: Children should have two or more well‑child visits from 15 months plus one day through 30 months of age. Children who turn 30 months old during the measurement year (30‑month span = second birthday plus 180 days)",
+    "WHERE IS IT?": "AV/WCV appointment in eCW",
+    "COMPLIANT PERIOD": "Six or more well‑child visits from birth through 15 months of age (visits must be 14 days apart)  \nTwo or more well‑child visits from 15 months and one day through 30 months of age (visits must be at least 14 days apart)",
+    "CODING": "99381, 99382, 99383, 99384, 99385, 99391, 99392, 99393, 99394, 99395, 99461",
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT"
+  },
+  {
+    "MEASURE NAME": "Weight Assessment and Counseling for Nutrition (WCC)",
+    "DESCRIPTION": "Members 3–17 years of age who had an outpatient visit with a PCP or Ob/Gyn and who had services for the following annually:\n• Body Mass Index (BMI) percentile documentation\n• Counseling for nutrition\n• Counseling for physical activity",
+    "WHERE IS IT?": "PROGRESS NOTE",
+    "COMPLIANT PERIOD": "As of December 31 of the measurement year",
+    "CODING": "Counseling for nutrition – 97802. \nCounseling for physical activity – Z71.82 ",
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT OR ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Timeliness of Prenatal and Postpartum Care (PPC)\n",
+    "DESCRIPTION": "Pregnant members should have an initial prenatal visit within the first trimester, on or before the enrollment start date, or within 42 days of enrollment with the health plan and should have a postpartum care visit between seven and 84 days after delivery",
+    "WHERE IS IT?": "ANN VISIT + PAP",
+    "COMPLIANT PERIOD": "Timeliness of Prenatal Care: initial prenatal visit must be within first trimester or within 42 days of enrollment with health plan\nPostpartum Care visit must occur between seven and 84 days after delivery",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT + PAP (DIFFERENT DATES)"
+  },
+  {
+    "MEASURE NAME": "Asthma Medication Ratio (AMR)",
+    "DESCRIPTION": "Children and adults 5–64 years of age diagnosed with persistent asthma should have a ratio of controller medications to total asthma medications of 0.50 or greater",
+    "WHERE IS IT?": "ePrescription Log",
+    "COMPLIANT PERIOD": "During the measurement year. Calculated as follows:\nStep 1: For each member, count the units of asthma controller medications dispensed during the measurement year\nNote: One unit equals one inhaler canister, one injection, one infusion, or a 30‑day or less supply of an oral medication\nStep 2: For each member, count the units of asthma reliever medications dispensed during the measurement year\nStep 3: For each member, sum the units calculated in Step 1 and Step 2 to determine units of total asthma medications\nStep 4: For each member, calculate the ratio of controller medications to total asthma medications using the following formula (use the .5 rule to round to the \nnearest whole number):\nUnits of Controller Medications (Step 1)\ndivided by\nUnits of Total Asthma Medications (Step 3)",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Blood Pressure Control for Patients with Diabetes \n(BPD)",
+    "DESCRIPTION": "The percentage of members 18–75 years of age with diabetes (types 1 and 2) whose \nblood pressure (BP) was adequately controlled (<140/90 mm Hg) during the measurement year.",
+    "WHERE IS IT?": "Result in PROGRESS NOTE (LESS THAN 140/90)",
+    "COMPLIANT PERIOD": "During the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+  },
+  {
+    "MEASURE NAME": "Follow‑Up After Emergency Department (ED) Visit for People with Multiple High‑Risk Chronic Conditions (FMC)",
+    "DESCRIPTION": "Members 18 years and older with multiple high‑risk chronic conditions who had a follow‑up service within seven days of the ED visit (eight total days).",
+    "WHERE IS IT?": "FU appointment in eCW",
+    "COMPLIANT PERIOD": "Within seven days of the ED visit",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOPS FU/ FU APPT"
+  },
+  {
+    "MEASURE NAME": "HIV Viral Load Suppression",
+    "DESCRIPTION": "The percentage of Medicaid enrollees confirmed HIV‑positive who had a HIV viral load less than 200 copies/mL at last HIV viral load test during the measurement year",
+    "WHERE IS IT?": "Result in LAB",
+    "COMPLIANT PERIOD": "During the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Osteoporosis Management in Women Who Had a Fracture (OMW)",
+    "DESCRIPTION": "Members 67–85 years of age who suffered a fracture and had a bone mineral density (BMD) test or were dispensed a drug to treat or prevent osteoporosis within six months after the \nfracture",
+    "WHERE IS IT?": "Result in PT DOCS",
+    "COMPLIANT PERIOD": "BMD tests must be completed and/or osteoporosis medications must be dispensed within six months after the fracture",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Statin Therapy for Patients with Cardiovascular Disease (SPC)",
+    "DESCRIPTION": "Males 21–75 years of age and females 40–75 years of age with atherosclerotic cardiovascular disease (ASCVD) should take a high‑intensity or moderate‑intensity statin medication",
+    "WHERE IS IT?": "ePrescription Log",
+    "COMPLIANT PERIOD": "During the measurement year ",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Statin Use in Persons with Diabetes (SPD)",
+    "DESCRIPTION": "The percentage of members 40–75 years of age during the measurement year with diabetes who do not have clinical atherosclerotic cardiovascular disease (ASCVD) who met the following criteria.\nTwo rates are reported:\n1. Received Statin Therapy. Members who were dispensed at least one statin medication of any intensity during the measurement year.\n2. Statin Adherence 80%. Members who remained on a statin medication of any intensity for at least 80% of the treatment period",
+    "WHERE IS IT?": "ePrescription Log",
+    "COMPLIANT PERIOD": "During the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Transitions of Care (TRC)",
+    "DESCRIPTION": "The percentage of discharges for members 18 years and older who had each of the following:\n• Notification of Inpatient Admission: Documentation of receipt of notification of inpatient admission on the day of admission through two days after the admission (three total days)\n• Receipt of Discharge Information: Documentation of receipt of discharge information on the day of discharge through two days after the discharge (three total days)\n• Patient Engagement After Inpatient Discharge: Documentation of patient engagement (e.g., office visits, visits to the home, telehealth) provided within 30 days after discharge\n• Medication Reconciliation Post‑Discharge: Documentation of medication reconciliation on the date of discharge through 30 days after discharge (31 total days)",
+    "WHERE IS IT?": "HOSP FU appointment in eCW",
+    "COMPLIANT PERIOD": "3 days after admission",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU"
+  },
+  {
+    "MEASURE NAME": "Adherence to Antipsychotic Medications for Individuals with Schizophrenia (SAA)",
+    "DESCRIPTION": "The percentage of members 18 years of age and older during the measurement year with schizophrenia or schizoaffective disorder who were dispensed and remained on an antipsychotic medication for at least 80% of their treatment period.",
+    "WHERE IS IT?": "ePrescription Log",
+    "COMPLIANT PERIOD": "During the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Metabolic Monitoring for Children and Adolescents on Antipsychotics (APM-E)",
+    "DESCRIPTION": "The percentage of children and adolescents 1–17 years of age who filled an antipsychotic prescription 2+ times and had metabolic testing",
+    "WHERE IS IT?": "ePrescription Log and LAB",
+    "COMPLIANT PERIOD": "Both a blood glucose test and at least one cholesterol test during the measurement year on the same or different dates of service",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Diabetes Screening for People with Schizophrenia or Bipolar Disorder Who Are Using Antipsychotic Medications (SSD)",
+    "DESCRIPTION": "Adults 18–64 years of age with schizophrenia, schizoaffective disorder, or bipolar disorder who were dispensed an antipsychotic medication and had a diabetes screening test during the measurement year",
+    "WHERE IS IT?": "eprescription Log and LAB",
+    "COMPLIANT PERIOD": "During the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Depression Screening and Follow‑Up for Adolescents and Adults (DSF‑E)",
+    "DESCRIPTION": "The percentage of members 12 years and older who were screened for clinical depression using a standardized instrument and, if screened positive, received follow‑up care.\nTwo Rates: \n• Depression Screening. The percentage of members who were screened for clinical depression using a standardized instrument.\n• Follow‑Up on Positive Screen. The percentage of members who received follow‑up care within 30 days of a positive depression screen finding",
+    "WHERE IS IT?": "PHQ-2 or PHQ-9 in PROGRESS NOTE",
+    "COMPLIANT PERIOD": "During the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Follow‑Up After Emergency Department Visit for Mental Illness (FUM)",
+    "DESCRIPTION": "The percentage of emergency department (ED) visits for members six years of age and older with a principal diagnosis of mental illness or intentional self‑harm who had a follow‑up visit for mental illness within seven days of the ED visit (eight total days)",
+    "WHERE IS IT?": "FU appointment in eCW",
+    "COMPLIANT PERIOD": "1. Follow‑up visit within 30 days (31 total days)\n2. Follow‑up visit within seven days (eight total days)",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT"
+  },
+  {
+    "MEASURE NAME": "Follow‑Up After Emergency Department Visit for Substance Use (FUA)",
+    "DESCRIPTION": "The percentage of emergency department (ED) visits among members age 13 years and older with a principal diagnosis of substance use disorder (SUD), or any diagnosis of drug overdose, for which there was follow‑up.",
+    "WHERE IS IT?": "FU appointment in eCW",
+    "COMPLIANT PERIOD": "1. Follow‑up visit within 30 days (31 total days)\n2. Follow‑up visit within seven days (eight total days)",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT"
+  },
+  {
+    "MEASURE NAME": "Follow‑Up After High‑Intensity Care for Substance Use Disorder (FUI)",
+    "DESCRIPTION": ": The percentage of acute inpatient hospitalizations, residential treatment, or withdrawal management visits for a diagnosis of substance use disorder among members 13 years of age and older that result in a follow‑up visit or service for substance use disorder",
+    "WHERE IS IT?": "FU appointment in eCW",
+    "COMPLIANT PERIOD": "Within 7 days after discharge. Do not include visits that occur on the date of discharge.\nTwo rates are reported: \n1. The percentage of visits or discharges for which the member received follow‑up for substance use disorder within the 30 days after the visit or discharge\n2. The percentage of visits or discharges for which the member received follow‑up for substance use disorder within the 7 days after the visit or discharge",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT"
+  },
+  {
+    "MEASURE NAME": "Follow‑Up After Hospitalization for Mental Illness (FUH)",
+    "DESCRIPTION": "The percentage of discharges for members six years of age and older who were hospitalized for treatment of selected mental illness or intentional self‑harm diagnoses and who had a follow‑up visit with a mental health provider.",
+    "WHERE IS IT?": "FU appointment in eCW",
+    "COMPLIANT PERIOD": "Within 7 days after discharge. (Do not include visits that occur on the date of discharge).\nTwo rates reported:\n1. A follow‑up visit with a mental health provider within 30 days after discharge. Do not include visits that occur on the date of discharge.\n2. Follow‑up visit within seven days of discharge. Do not include visits that occur on the date of discharge",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT"
+  },
+  {
+    "MEASURE NAME": "Initiation and Engagement of Substance Use Disorder Treatment (IET)",
+    "DESCRIPTION": "The percentage of new substance use disorder (SUD) episodes that result in treatment initiation and engagement for patients 13 years and older. New episodes can be initiated in a variety of settings, including inpatient and outpatient. A diagnosis is considered “new” if the member has not had a diagnosis of (or received medication for) alcohol or other drug use in the previous 194 days.",
+    "WHERE IS IT?": "ePrescription Log and PROGRESS NOTE",
+    "COMPLIANT PERIOD": "• Initiation (within 14 days) Ensure the patient receives treatment using a SUD diagnosis code within 14 days of the SUD Episode Start Date. Treatment can be the same day if it’s a different provider.\n• Engagement (within 34 days) Ensure the patient has at least two distinct treatment visits with a SUD diagnosis code. Engagement visits must occur on the day after the initiation visit through 34 calendar days after the initiation visit (34 total days). Two engagement visits can be on the same date of service, but they must be with different providers to count as two events. A total of three visits is required to meet the measure.",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Initiation of Pharmacotherapy Upon New Episode of Opioid Dependence (POD‑N)",
+    "DESCRIPTION": "The percentage of members 18 years and older who initiate pharmacotherapy with at least 1 prescription or visit for opioid treatment medication within 30 days following an initial visit \nwith a diagnosis of opioid dependence",
+    "WHERE IS IT?": "FU appointment in eCW",
+    "COMPLIANT PERIOD": "Within 30 days of the discharge date",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Medication Adherence Measures (ADH)",
+    "DESCRIPTION": "Members who are taking cholesterol (statins), hypertension (RAS antagonists), and/or diabetes (non‑insulin) medications should fill their prescriptions often enough to cover 80% or more of the time they are supposed to be taking the medication.",
+    "WHERE IS IT?": "ePrescription Log",
+    "COMPLIANT PERIOD": "During the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "90‑Day Fills for Adherence Medications",
+    "DESCRIPTION": "The overall percentage of pharmacy claims filled for medication adherence measure drugs that are dispensed as 90‑day fills.",
+    "WHERE IS IT?": "ePrescription Log",
+    "COMPLIANT PERIOD": "During the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Access to Care Support",
+    "DESCRIPTION": "The percentage of members with identified access issues who receive an in‑office visit between February 15 and June 15 in the measurement year.",
+    "WHERE IS IT?": "Face-to-Face appointment in eCW",
+    "COMPLIANT PERIOD": "In the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "Formulary Compliance Rate",
+    "DESCRIPTION": "The overall percentage of members without a non‑formulary drug",
+    "WHERE IS IT?": "ePrescription Log",
+    "COMPLIANT PERIOD": "During the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+  },
+  {
+    "MEASURE NAME": "New Member Visit (EP)",
+    "DESCRIPTION": "The percentage of newly enrolled EP members with a well‑care evaluation within 90 days of enrollment",
+    "WHERE IS IT?": "Face-to-Face appointment in eCW",
+    "COMPLIANT PERIOD": "Within 90 days of enrollment",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+  },
+  {
+    "MEASURE NAME": "Return to Care",
+    "DESCRIPTION": "The percentage of members who have not had a pharmacy or medical claim in the past 12 months who receive an in‑office visit in the measurement year",
+    "WHERE IS IT?": "Face-to-Face appointment in eCW",
+    "COMPLIANT PERIOD": "In the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+  },
+  {
+    "MEASURE NAME": "Plan All‑Cause Readmissions (PCR)",
+    "DESCRIPTION": "Adults 18+ years of age who had an acute inpatient/observation stay should not be readmitted within 30 days",
+    "WHERE IS IT?": "HOSP FU appointment in eCW",
+    "COMPLIANT PERIOD": "Within three to five days of discharge",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT"
+  }
+]

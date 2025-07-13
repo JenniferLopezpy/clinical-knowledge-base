@@ -1,0 +1,35 @@
+{
+  "name": "clinical-knowledge-base-qcm",
+  "version": "1.0.0",
+  "description": "A comprehensive web application for managing Quality Care Measures (QCM) for medical call centers",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "healthcare",
+    "qcm",
+    "quality-measures",
+    "medical",
+    "call-center",
+    "ecw"
+  ],
+  "author": "Medical Call Center Team",
+  "license": "Internal Use Only",
+  "repository": {
+    "type": "git",
+    "url": "internal-repository"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 

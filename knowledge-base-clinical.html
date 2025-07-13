@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Knowledge Base</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        'healthfirst': '#FFD9B3',
+                        'fidelis': '#CFFFCF',
+                        'uhc': '#CFE8FF',
+                        'molina': '#E8D6FF',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-roboto bg-gray-50">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-80 bg-white shadow-lg flex flex-col">
+            <!-- Header -->
+            <div class="p-6 border-b border-gray-200">
+                <h1 class="text-2xl font-montserrat font-bold text-gray-800">Clinical KB</h1>
+                <p class="text-sm text-gray-600 mt-1">Knowledge Base for Medical Call Center</p>
+            </div>
+
+            <!-- Search -->
+            <div class="p-4 border-b border-gray-200">
+                <div class="relative">
+                    <input type="text" id="searchInput" placeholder="Search measures..." 
+                           class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="flex-1 overflow-y-auto p-4">
+                <!-- QCM Measures -->
+                <div class="mb-6">
+                    <button onclick="toggleSection('qcm')" class="flex items-center justify-between w-full text-left p-3 rounded-2xl hover:bg-gray-50 transition-colors">
+                        <div class="flex items-center">
+                            <i class="fas fa-clipboard-list text-gray-600 mr-3"></i>
+                            <span class="font-montserrat font-semibold text-gray-800">QCM Measures</span>
+                        </div>
+                        <i id="qcm-arrow" class="fas fa-chevron-down text-gray-500 transition-transform"></i>
+                    </button>
+                    
+                    <div id="qcm-content" class="ml-8 mt-2">
+                        <button onclick="showInsurer('healthfirst')" class="flex items-center w-full p-2 rounded-xl hover:bg-healthfirst/20 transition-colors">
+                            <div class="w-4 h-4 rounded-full bg-healthfirst mr-3"></div>
+                            <span class="text-sm font-medium text-gray-700">Healthfirst</span>
+                        </button>
+                        <button onclick="showInsurer('fidelis')" class="flex items-center w-full p-2 rounded-xl hover:bg-fidelis/20 transition-colors">
+                            <div class="w-4 h-4 rounded-full bg-fidelis mr-3"></div>
+                            <span class="text-sm font-medium text-gray-700">FidelisCare</span>
+                        </button>
+                        <button onclick="showInsurer('uhc')" class="flex items-center w-full p-2 rounded-xl hover:bg-uhc/20 transition-colors">
+                            <div class="w-4 h-4 rounded-full bg-uhc mr-3"></div>
+                            <span class="text-sm font-medium text-gray-700">UnitedHealthcare</span>
+                        </button>
+                        <button onclick="showInsurer('molina')" class="flex items-center w-full p-2 rounded-xl hover:bg-molina/20 transition-colors">
+                            <div class="w-4 h-4 rounded-full bg-molina mr-3"></div>
+                            <span class="text-sm font-medium text-gray-700">Molina</span>
+                        </button>
+                        <button onclick="showMeasureImages()" class="flex items-center w-full p-2 rounded-xl hover:bg-gray-100 transition-colors">
+                            <i class="fas fa-images text-gray-600 mr-3"></i>
+                            <span class="text-sm font-medium text-gray-700">How does the measure looks?</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Scripts -->
+                <div class="mb-6">
+                    <button onclick="toggleSection('scripts')" class="flex items-center justify-between w-full text-left p-3 rounded-2xl hover:bg-gray-50 transition-colors">
+                        <div class="flex items-center">
+                            <i class="fas fa-file-alt text-gray-600 mr-3"></i>
+                            <span class="font-montserrat font-semibold text-gray-800">Scripts</span>
+                        </div>
+                        <i id="scripts-arrow" class="fas fa-chevron-down text-gray-500 transition-transform"></i>
+                    </button>
+                    <div id="scripts-content" class="ml-8 mt-2">
+                        <button onclick="showScripts()" class="flex items-center w-full p-2 rounded-xl hover:bg-gray-100 transition-colors">
+                            <i class="fas fa-edit text-gray-600 mr-3"></i>
+                            <span class="text-sm font-medium text-gray-700">Manage Scripts</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Add to TO DO -->
+                <div class="mb-6">
+                    <button onclick="toggleSection('todo')" class="flex items-center justify-between w-full text-left p-3 rounded-2xl hover:bg-gray-50 transition-colors">
+                        <div class="flex items-center">
+                            <i class="fas fa-tasks text-gray-600 mr-3"></i>
+                            <span class="font-montserrat font-semibold text-gray-800">Add to "TO DO"</span>
+                        </div>
+                        <i id="todo-arrow" class="fas fa-chevron-down text-gray-500 transition-transform"></i>
+                    </button>
+                    <div id="todo-content" class="ml-8 mt-2">
+                        <button onclick="showTodo()" class="flex items-center w-full p-2 rounded-xl hover:bg-gray-100 transition-colors">
+                            <i class="fas fa-list-check text-gray-600 mr-3"></i>
+                            <span class="text-sm font-medium text-gray-700">eCW Steps</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Call Tracker -->
+                <div class="mb-6">
+                    <button onclick="toggleSection('tracker')" class="flex items-center justify-between w-full text-left p-3 rounded-2xl hover:bg-gray-50 transition-colors">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-gray-600 mr-3"></i>
+                            <span class="font-montserrat font-semibold text-gray-800">Call Tracker</span>
+                        </div>
+                        <i id="tracker-arrow" class="fas fa-chevron-down text-gray-500 transition-transform"></i>
+                    </button>
+                    <div id="tracker-content" class="ml-8 mt-2">
+                        <button onclick="showCallTracker()" class="flex items-center w-full p-2 rounded-xl hover:bg-gray-100 transition-colors">
+                            <i class="fas fa-table text-gray-600 mr-3"></i>
+                            <span class="text-sm font-medium text-gray-700">Call Statistics</span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 overflow-y-auto bg-gray-50">
+            <div id="mainContent" class="p-8">
+                <!-- Welcome Screen -->
+                <div id="welcomeScreen" class="text-center py-20">
+                    <i class="fas fa-stethoscope text-6xl text-gray-400 mb-6"></i>
+                    <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-4">Welcome to Clinical Knowledge Base</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Select a section from the sidebar to access QCM measures, scripts, call tracking, and more tools for your medical call center operations.</p>
+                </div>
+
+                <!-- Dynamic Content Areas -->
+                <div id="measuresContent" class="hidden"></div>
+                <div id="scriptsContent" class="hidden"></div>
+                <div id="todoContent" class="hidden"></div>
+                <div id="callTrackerContent" class="hidden"></div>
+                <div id="measureImagesContent" class="hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample data for QCM measures
+        const measuresData = {
+            healthfirst: [
+                {
+                    name: "Diabetes HbA1c Control",
+                    description: "Percentage of patients 18-75 years of age with diabetes who had HbA1c > 9.0% during the measurement period",
+                    explanation: "This measure tracks how well we're managing your diabetes. We want your HbA1c to be below 9% for better health outcomes.",
+                    location: "eCW > Quality Measures > Diabetes Management",
+                    period: "January 1 - December 31",
+                    coding: "ICD-10: E11.9, CPT: 83036",
+                    schedule: "Schedule follow-up in 3 months"
+                },
+                {
+                    name: "Colorectal Cancer Screening",
+                    description: "Percentage of patients 50-75 years of age who had appropriate screening for colorectal cancer",
+                    explanation: "Regular screening helps catch colon cancer early when it's most treatable. We recommend screening every 10 years.",
+                    location: "eCW > Quality Measures > Cancer Screening",
+                    period: "January 1 - December 31",
+                    coding: "ICD-10: Z12.11, CPT: 45378",
+                    schedule: "Schedule colonoscopy appointment"
+                }
+            ],
+            fidelis: [
+                {
+                    name: "Hypertension Control",
+                    description: "Percentage of patients 18-85 years of age with hypertension whose blood pressure was adequately controlled",
+                    explanation: "Keeping your blood pressure under control reduces your risk of heart disease and stroke.",
+                    location: "eCW > Quality Measures > Hypertension",
+                    period: "January 1 - December 31",
+                    coding: "ICD-10: I10, CPT: 99213",
+                    schedule: "Schedule BP check in 1 month"
+                },
+                {
+                    name: "Breast Cancer Screening",
+                    description: "Percentage of women 50-74 years of age who had a mammogram to screen for breast cancer",
+                    explanation: "Mammograms help detect breast cancer early. We recommend screening every 2 years for women 50-74.",
+                    location: "eCW > Quality Measures > Cancer Screening",
+                    period: "January 1 - December 31",
+                    coding: "ICD-10: Z12.31, CPT: 77067",
+                    schedule: "Schedule mammogram appointment"
+                }
+            ],
+            uhc: [
+                {
+                    name: "Depression Screening",
+                    description: "Percentage of patients 12 years and older screened for depression using a standardized tool",
+                    explanation: "Depression screening helps us identify and treat mental health concerns early.",
+                    location: "eCW > Quality Measures > Mental Health",
+                    period: "January 1 - December 31",
+                    coding: "ICD-10: Z13.89, CPT: 96127",
+                    schedule: "Schedule mental health evaluation"
+                },
+                {
+                    name: "Childhood Immunization",
+                    description: "Percentage of children 2 years of age who had four diphtheria, tetanus and acellular pertussis (DTaP)",
+                    explanation: "Vaccines protect your child from serious diseases. We need to ensure they're up to date.",
+                    location: "eCW > Quality Measures > Immunizations",
+                    period: "January 1 - December 31",
+                    coding: "ICD-10: Z23, CPT: 90700",
+                    schedule: "Schedule immunization appointment"
+                }
+            ],
+            molina: [
+                {
+                    name: "Asthma Control",
+                    description: "Percentage of patients 5-64 years of age with asthma who had an asthma control assessment",
+                    explanation: "Regular asthma control assessments help us adjust your treatment plan for better breathing.",
+                    location: "eCW > Quality Measures > Asthma Management",
+                    period: "January 1 - December 31",
+                    coding: "ICD-10: J45.909, CPT: 94060",
+                    schedule: "Schedule asthma control assessment"
+                },
+                {
+                    name: "Tobacco Cessation",
+                    description: "Percentage of patients 18 years and older who are current tobacco users and received cessation intervention",
+                    explanation: "Quitting smoking improves your health significantly. We can help you with cessation programs.",
+                    location: "eCW > Quality Measures > Tobacco Cessation",
+                    period: "January 1 - December 31",
+                    coding: "ICD-10: F17.200, CPT: 99406",
+                    schedule: "Schedule smoking cessation counseling"
+                }
+            ]
+        };
+
+        // Sample scripts data
+        let scriptsData = [
+            {
+                id: 1,
+                title: "General Appointment Reminder",
+                english: "Hello, this is [Your Name] calling from [Practice Name]. I'm calling to remind you about your upcoming appointment on [Date] at [Time]. Please call us if you need to reschedule.",
+                spanish: "Hola, soy [Su Nombre] llamando desde [Nombre de la Práctica]. Le llamo para recordarle su cita próxima el [Fecha] a las [Hora]. Por favor llámenos si necesita reprogramar."
+            },
+            {
+                id: 2,
+                title: "Lab Results Follow-up",
+                english: "Hello, this is [Your Name] from [Practice Name]. Your recent lab results are ready. Dr. [Name] would like to discuss them with you. Please call us to schedule a follow-up appointment.",
+                spanish: "Hola, soy [Su Nombre] de [Nombre de la Práctica]. Sus resultados de laboratorio recientes están listos. El Dr. [Nombre] le gustaría discutirlos con usted. Por favor llámenos para programar una cita de seguimiento."
+            }
+        ];
+
+        // Call tracker data
+        let callTrackerData = [
+            { insurer: 'Healthfirst', schedule: 15, tryAgain: 8, dontCall: 3 },
+            { insurer: 'FidelisCare', schedule: 12, tryAgain: 5, dontCall: 2 },
+            { insurer: 'UnitedHealthcare', schedule: 18, tryAgain: 10, dontCall: 4 },
+            { insurer: 'Molina', schedule: 9, tryAgain: 6, dontCall: 1 }
+        ];
+
+        // Utility functions
+        function toggleSection(section) {
+            const content = document.getElementById(`${section}-content`);
+            const arrow = document.getElementById(`${section}-arrow`);
+            
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                arrow.style.transform = 'rotate(180deg)';
+            } else {
+                content.style.display = 'none';
+                arrow.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        function showWelcome() {
+            hideAllContent();
+            document.getElementById('welcomeScreen').classList.remove('hidden');
+        }
+
+        function hideAllContent() {
+            document.getElementById('welcomeScreen').classList.add('hidden');
+            document.getElementById('measuresContent').classList.add('hidden');
+            document.getElementById('scriptsContent').classList.add('hidden');
+            document.getElementById('todoContent').classList.add('hidden');
+            document.getElementById('callTrackerContent').classList.add('hidden');
+            document.getElementById('measureImagesContent').classList.add('hidden');
+        }
+
+        function showInsurer(insurer) {
+            hideAllContent();
+            const content = document.getElementById('measuresContent');
+            content.classList.remove('hidden');
+            
+            const measures = measuresData[insurer];
+            const bgColor = {
+                healthfirst: 'bg-healthfirst',
+                fidelis: 'bg-fidelis',
+                uhc: 'bg-uhc',
+                molina: 'bg-molina'
+            }[insurer];
+
+            const insurerName = {
+                healthfirst: 'Healthfirst',
+                fidelis: 'FidelisCare',
+                uhc: 'UnitedHealthcare',
+                molina: 'Molina'
+            }[insurer];
+
+            content.innerHTML = `
+                <div class="mb-6">
+                    <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">${insurerName} QCM Measures</h2>
+                    <p class="text-gray-600">Quality measures and compliance tracking for ${insurerName} patients</p>
+                </div>
+                <div class="grid gap-6">
+                    ${measures.map((measure, index) => `
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                            <button onclick="toggleMeasure(${index})" class="w-full p-6 ${bgColor} hover:opacity-90 transition-opacity">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-clipboard-check text-gray-600 mr-4 text-xl"></i>
+                                        <div>
+                                            <h3 class="text-lg font-montserrat font-semibold text-gray-800">${measure.name}</h3>
+                                            <p class="text-sm text-gray-600 mt-1">Click to expand details</p>
+                                        </div>
+                                    </div>
+                                    <i id="measure-arrow-${index}" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+                                </div>
+                            </button>
+                            <div id="measure-content-${index}" class="hidden p-6 border-t border-gray-200">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div class="space-y-4">
+                                        <div>
+                                            <h4 class="font-montserrat font-semibold text-gray-800 mb-2 flex items-center">
+                                                <i class="fas fa-stethoscope text-gray-500 mr-2"></i>
+                                                Medical Description
+                                            </h4>
+                                            <p class="text-gray-700 bg-gray-50 p-3 rounded-xl">${measure.description}</p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-montserrat font-semibold text-gray-800 mb-2 flex items-center">
+                                                <i class="fas fa-comments text-gray-500 mr-2"></i>
+                                                How Can I Explain to PT?
+                                            </h4>
+                                            <p class="text-gray-700 bg-gray-50 p-3 rounded-xl">${measure.explanation}</p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-montserrat font-semibold text-gray-800 mb-2 flex items-center">
+                                                <i class="fas fa-search text-gray-500 mr-2"></i>
+                                                Where is it in eCW?
+                                            </h4>
+                                            <p class="text-gray-700 bg-gray-50 p-3 rounded-xl">${measure.location}</p>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-4">
+                                        <div>
+                                            <h4 class="font-montserrat font-semibold text-gray-800 mb-2 flex items-center">
+                                                <i class="fas fa-calendar text-gray-500 mr-2"></i>
+                                                Compliant Period
+                                            </h4>
+                                            <p class="text-gray-700 bg-gray-50 p-3 rounded-xl">${measure.period}</p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-montserrat font-semibold text-gray-800 mb-2 flex items-center">
+                                                <i class="fas fa-code text-gray-500 mr-2"></i>
+                                                Coding
+                                            </h4>
+                                            <p class="text-gray-700 bg-gray-50 p-3 rounded-xl">${measure.coding}</p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-montserrat font-semibold text-gray-800 mb-2 flex items-center">
+                                                <i class="fas fa-calendar-plus text-gray-500 mr-2"></i>
+                                                Schedule As / Add to Appt
+                                            </h4>
+                                            <p class="text-gray-700 bg-gray-50 p-3 rounded-xl">${measure.schedule}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function toggleMeasure(index) {
+            const content = document.getElementById(`measure-content-${index}`);
+            const arrow = document.getElementById(`measure-arrow-${index}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                arrow.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                arrow.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        function showScripts() {
+            hideAllContent();
+            const content = document.getElementById('scriptsContent');
+            content.classList.remove('hidden');
+            
+            content.innerHTML = `
+                <div class="mb-6">
+                    <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">Scripts Management</h2>
+                    <p class="text-gray-600">Create and manage call scripts in English and Spanish</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg p-6 mb-6">
+                    <h3 class="text-xl font-montserrat font-semibold text-gray-800 mb-4">Add New Script</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Script Title</label>
+                            <input type="text" id="scriptTitle" class="w-full p-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">English Script</label>
+                            <textarea id="scriptEnglish" rows="4" class="w-full p-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Spanish Script</label>
+                            <textarea id="scriptSpanish" rows="4" class="w-full p-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button onclick="addScript()" class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition-colors font-medium">
+                            <i class="fas fa-plus mr-2"></i>Add Script
+                        </button>
+                    </div>
+                </div>
+
+                <div class="space-y-4" id="scriptsList">
+                    ${scriptsData.map(script => `
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-lg font-montserrat font-semibold text-gray-800">${script.title}</h3>
+                                <button onclick="deleteScript(${script.id})" class="text-red-500 hover:text-red-700 transition-colors">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <h4 class="font-medium text-gray-700 mb-2 flex items-center">
+                                        <i class="fas fa-flag-usa text-gray-500 mr-2"></i>English
+                                    </h4>
+                                    <p class="text-gray-600 bg-gray-50 p-3 rounded-xl">${script.english}</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-700 mb-2 flex items-center">
+                                        <i class="fas fa-flag text-gray-500 mr-2"></i>Spanish
+                                    </h4>
+                                    <p class="text-gray-600 bg-gray-50 p-3 rounded-xl">${script.spanish}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function addScript() {
+            const title = document.getElementById('scriptTitle').value;
+            const english = document.getElementById('scriptEnglish').value;
+            const spanish = document.getElementById('scriptSpanish').value;
+            
+            if (!title || !english || !spanish) {
+                alert('Please fill in all fields');
+                return;
+            }
+            
+            const newScript = {
+                id: Date.now(),
+                title: title,
+                english: english,
+                spanish: spanish
+            };
+            
+            scriptsData.push(newScript);
+            showScripts(); // Refresh the display
+            
+            // Clear form
+            document.getElementById('scriptTitle').value = '';
+            document.getElementById('scriptEnglish').value = '';
+            document.getElementById('scriptSpanish').value = '';
+        }
+
+        function deleteScript(id) {
+            if (confirm('Are you sure you want to delete this script?')) {
+                scriptsData = scriptsData.filter(script => script.id !== id);
+                showScripts(); // Refresh the display
+            }
+        }
+
+        function showTodo() {
+            hideAllContent();
+            const content = document.getElementById('todoContent');
+            content.classList.remove('hidden');
+            
+            const steps = [
+                { step: 1, action: "Go to Progress Note", icon: "fas fa-file-medical" },
+                { step: 2, action: "Click \"To Do List\"", icon: "fas fa-tasks" },
+                { step: 3, action: "Add measure name", icon: "fas fa-plus" },
+                { step: 4, action: "Set due date as same day", icon: "fas fa-calendar-day" },
+                { step: 5, action: "Set Priority = High", icon: "fas fa-exclamation-triangle" },
+                { step: 6, action: "Add comment to Reason", icon: "fas fa-comment" }
+            ];
+            
+            content.innerHTML = `
+                <div class="mb-6">
+                    <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">Add to "TO DO" - eCW Steps</h2>
+                    <p class="text-gray-600">Follow these 6 steps to add measures to the patient's To Do list in eCW</p>
+                </div>
+                
+                <div class="grid gap-4">
+                    ${steps.map(step => `
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                    <span class="text-blue-600 font-montserrat font-bold text-lg">${step.step}</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="${step.icon} text-gray-500 text-xl mr-4"></i>
+                                    <span class="text-lg font-medium text-gray-800">${step.action}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function showCallTracker() {
+            hideAllContent();
+            const content = document.getElementById('callTrackerContent');
+            content.classList.remove('hidden');
+            
+            const totalSchedule = callTrackerData.reduce((sum, row) => sum + row.schedule, 0);
+            const totalTryAgain = callTrackerData.reduce((sum, row) => sum + row.tryAgain, 0);
+            const totalDontCall = callTrackerData.reduce((sum, row) => sum + row.dontCall, 0);
+            
+            content.innerHTML = `
+                <div class="mb-6">
+                    <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">Call Tracker</h2>
+                    <p class="text-gray-600">Track call outcomes by insurer</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-6 py-4 text-left text-sm font-montserrat font-semibold text-gray-800">Insurer</th>
+                                    <th class="px-6 py-4 text-center text-sm font-montserrat font-semibold text-gray-800">
+                                        <i class="fas fa-calendar-check text-green-500 mr-2"></i>Schedule
+                                    </th>
+                                    <th class="px-6 py-4 text-center text-sm font-montserrat font-semibold text-gray-800">
+                                        <i class="fas fa-redo text-yellow-500 mr-2"></i>Try Again
+                                    </th>
+                                    <th class="px-6 py-4 text-center text-sm font-montserrat font-semibold text-gray-800">
+                                        <i class="fas fa-times text-red-500 mr-2"></i>Don't Call
+                                    </th>
+                                    <th class="px-6 py-4 text-center text-sm font-montserrat font-semibold text-gray-800">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="callTrackerBody">
+                                ${callTrackerData.map((row, index) => `
+                                    <tr class="border-t border-gray-200 hover:bg-gray-50">
+                                        <td class="px-6 py-4">
+                                            <input type="text" value="${row.insurer}" onchange="updateCallTracker(${index}, 'insurer', this.value)" 
+                                                   class="bg-transparent border-none focus:outline-none font-medium text-gray-800">
+                                        </td>
+                                        <td class="px-6 py-4 text-center">
+                                            <input type="number" value="${row.schedule}" onchange="updateCallTracker(${index}, 'schedule', this.value)" 
+                                                   class="w-16 text-center bg-transparent border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                        </td>
+                                        <td class="px-6 py-4 text-center">
+                                            <input type="number" value="${row.tryAgain}" onchange="updateCallTracker(${index}, 'tryAgain', this.value)" 
+                                                   class="w-16 text-center bg-transparent border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                        </td>
+                                        <td class="px-6 py-4 text-center">
+                                            <input type="number" value="${row.dontCall}" onchange="updateCallTracker(${index}, 'dontCall', this.value)" 
+                                                   class="w-16 text-center bg-transparent border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                        </td>
+                                        <td class="px-6 py-4 text-center">
+                                            <button onclick="deleteCallTrackerRow(${index})" class="text-red-500 hover:text-red-700 transition-colors">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                            <tfoot class="bg-gray-50 font-semibold">
+                                <tr>
+                                    <td class="px-6 py-4 font-montserrat font-semibold text-gray-800">TOTAL</td>
+                                    <td class="px-6 py-4 text-center text-green-600 font-montserrat font-semibold">${totalSchedule}</td>
+                                    <td class="px-6 py-4 text-center text-yellow-600 font-montserrat font-semibold">${totalTryAgain}</td>
+                                    <td class="px-6 py-4 text-center text-red-600 font-montserrat font-semibold">${totalDontCall}</td>
+                                    <td class="px-6 py-4 text-center">
+                                        <button onclick="addCallTrackerRow()" class="text-blue-600 hover:text-blue-700 transition-colors">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            `;
+        }
+
+        function updateCallTracker(index, field, value) {
+            callTrackerData[index][field] = parseInt(value) || 0;
+            showCallTracker(); // Refresh to update totals
+        }
+
+        function addCallTrackerRow() {
+            callTrackerData.push({ insurer: 'New Insurer', schedule: 0, tryAgain: 0, dontCall: 0 });
+            showCallTracker();
+        }
+
+        function deleteCallTrackerRow(index) {
+            if (confirm('Are you sure you want to delete this row?')) {
+                callTrackerData.splice(index, 1);
+                showCallTracker();
+            }
+        }
+
+        function showMeasureImages() {
+            hideAllContent();
+            const content = document.getElementById('measureImagesContent');
+            content.classList.remove('hidden');
+            
+            content.innerHTML = `
+                <div class="mb-6">
+                    <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">How does the measure looks?</h2>
+                    <p class="text-gray-600">Upload and view measure screenshots (up to 10 images)</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg p-6">
+                    <div class="mb-6">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Upload Measure Screenshot</label>
+                        <input type="file" id="imageUpload" accept="image/*" multiple class="w-full p-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <p class="text-sm text-gray-500 mt-2">You can upload up to 10 images. Supported formats: JPG, PNG, GIF</p>
+                    </div>
+                    
+                    <div id="imagePreview" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <div class="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center">
+                            <i class="fas fa-image text-4xl text-gray-400 mb-4"></i>
+                            <p class="text-gray-500">No images uploaded yet</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            // Add event listener for image upload
+            document.getElementById('imageUpload').addEventListener('change', handleImageUpload);
+        }
+
+        function handleImageUpload(event) {
+            const files = event.target.files;
+            const preview = document.getElementById('imagePreview');
+            
+            if (files.length > 10) {
+                alert('You can only upload up to 10 images');
+                return;
+            }
+            
+            preview.innerHTML = '';
+            
+            Array.from(files).forEach((file, index) => {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const div = document.createElement('div');
+                    div.className = 'relative group';
+                    div.innerHTML = `
+                        <img src="${e.target.result}" alt="Measure ${index + 1}" class="w-full h-32 object-cover rounded-xl">
+                        <button onclick="this.parentElement.remove()" class="absolute top-2 right-2 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <i class="fas fa-times text-xs"></i>
+                        </button>
+                    `;
+                    preview.appendChild(div);
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            if (searchTerm === '') {
+                return;
+            }
+            
+            // Search through all measures
+            let foundMeasures = [];
+            Object.keys(measuresData).forEach(insurer => {
+                measuresData[insurer].forEach(measure => {
+                    if (measure.name.toLowerCase().includes(searchTerm) || 
+                        measure.description.toLowerCase().includes(searchTerm)) {
+                        foundMeasures.push({ ...measure, insurer });
+                    }
+                });
+            });
+            
+            if (foundMeasures.length > 0) {
+                hideAllContent();
+                const content = document.getElementById('measuresContent');
+                content.classList.remove('hidden');
+                
+                content.innerHTML = `
+                    <div class="mb-6">
+                        <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">Search Results</h2>
+                        <p class="text-gray-600">Found ${foundMeasures.length} measure(s) matching "${searchTerm}"</p>
+                    </div>
+                    <div class="grid gap-6">
+                        ${foundMeasures.map((measure, index) => {
+                            const bgColor = {
+                                healthfirst: 'bg-healthfirst',
+                                fidelis: 'bg-fidelis',
+                                uhc: 'bg-uhc',
+                                molina: 'bg-molina'
+                            }[measure.insurer];
+                            
+                            return `
+                                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                                    <div class="p-6 ${bgColor}">
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <i class="fas fa-clipboard-check text-gray-600 mr-4 text-xl"></i>
+                                                <div>
+                                                    <h3 class="text-lg font-montserrat font-semibold text-gray-800">${measure.name}</h3>
+                                                    <p class="text-sm text-gray-600 mt-1">${measure.insurer.charAt(0).toUpperCase() + measure.insurer.slice(1)}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-6 border-t border-gray-200">
+                                        <p class="text-gray-700 mb-4">${measure.description}</p>
+                                        <div class="flex items-center text-sm text-gray-600">
+                                            <i class="fas fa-map-marker-alt mr-2"></i>
+                                            <span>${measure.location}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                `;
+            }
+        });
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', function() {
+            showWelcome();
+        });
+    </script>
+</body>
+</html> 

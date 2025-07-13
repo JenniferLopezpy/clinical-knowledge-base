@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Knowledge Base</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body class="font-roboto">
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <!-- Header -->
+            <div class="sidebar-header">
+                <h1 class="sidebar-title">Clinical KB</h1>
+                <p class="sidebar-subtitle">Knowledge Base for Medical Call Center</p>
+            </div>
+
+            <!-- Search -->
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <input type="text" id="searchInput" placeholder="Search measures..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+                <!-- QCM Measures -->
+                <div class="nav-section">
+                    <button onclick="toggleSection('qcm')" class="nav-section-button">
+                        <div class="nav-section-content">
+                            <i class="fas fa-clipboard-list nav-icon"></i>
+                            <span class="nav-section-title">QCM Measures</span>
+                        </div>
+                        <i id="qcm-arrow" class="fas fa-chevron-down nav-arrow"></i>
+                    </button>
+                    
+                    <div id="qcm-content" class="nav-subsection">
+                        <button onclick="showInsurer('healthfirst')" class="nav-item">
+                            <div class="insurer-indicator healthfirst"></div>
+                            <span>Healthfirst</span>
+                        </button>
+                        <button onclick="showInsurer('fidelis')" class="nav-item">
+                            <div class="insurer-indicator fidelis"></div>
+                            <span>FidelisCare</span>
+                        </button>
+                        <button onclick="showInsurer('uhc')" class="nav-item">
+                            <div class="insurer-indicator uhc"></div>
+                            <span>UnitedHealthcare</span>
+                        </button>
+                        <button onclick="showInsurer('molina')" class="nav-item">
+                            <div class="insurer-indicator molina"></div>
+                            <span>Molina</span>
+                        </button>
+                        <button onclick="showMeasureImages()" class="nav-item">
+                            <i class="fas fa-images nav-icon"></i>
+                            <span>How does the measure looks?</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Scripts -->
+                <div class="nav-section">
+                    <button onclick="toggleSection('scripts')" class="nav-section-button">
+                        <div class="nav-section-content">
+                            <i class="fas fa-file-alt nav-icon"></i>
+                            <span class="nav-section-title">Scripts</span>
+                        </div>
+                        <i id="scripts-arrow" class="fas fa-chevron-down nav-arrow"></i>
+                    </button>
+                    <div id="scripts-content" class="nav-subsection">
+                        <button onclick="showScripts()" class="nav-item">
+                            <i class="fas fa-edit nav-icon"></i>
+                            <span>Manage Scripts</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Add to TO DO -->
+                <div class="nav-section">
+                    <button onclick="toggleSection('todo')" class="nav-section-button">
+                        <div class="nav-section-content">
+                            <i class="fas fa-tasks nav-icon"></i>
+                            <span class="nav-section-title">Add to "TO DO"</span>
+                        </div>
+                        <i id="todo-arrow" class="fas fa-chevron-down nav-arrow"></i>
+                    </button>
+                    <div id="todo-content" class="nav-subsection">
+                        <button onclick="showTodo()" class="nav-item">
+                            <i class="fas fa-list-check nav-icon"></i>
+                            <span>eCW Steps</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Call Tracker -->
+                <div class="nav-section">
+                    <button onclick="toggleSection('tracker')" class="nav-section-button">
+                        <div class="nav-section-content">
+                            <i class="fas fa-phone nav-icon"></i>
+                            <span class="nav-section-title">Call Tracker</span>
+                        </div>
+                        <i id="tracker-arrow" class="fas fa-chevron-down nav-arrow"></i>
+                    </button>
+                    <div id="tracker-content" class="nav-subsection">
+                        <button onclick="showCallTracker()" class="nav-item">
+                            <i class="fas fa-table nav-icon"></i>
+                            <span>Call Statistics</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Updates -->
+                <div class="nav-section">
+                    <button onclick="toggleSection('updates')" class="nav-section-button">
+                        <div class="nav-section-content">
+                            <i class="fas fa-bell nav-icon"></i>
+                            <span class="nav-section-title">Updates</span>
+                        </div>
+                        <i id="updates-arrow" class="fas fa-chevron-down nav-arrow"></i>
+                    </button>
+                    <div id="updates-content" class="nav-subsection">
+                        <button onclick="showUpdates()" class="nav-item">
+                            <i class="fas fa-calendar-alt nav-icon"></i>
+                            <span>Reminders & Updates</span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div id="mainContent" class="content-wrapper">
+                <!-- Welcome Screen -->
+                <div id="welcomeScreen" class="welcome-screen">
+                    <i class="fas fa-stethoscope welcome-icon"></i>
+                    <h2 class="welcome-title">Welcome to Clinical Knowledge Base</h2>
+                    <p class="welcome-description">Select a section from the sidebar to access QCM measures, scripts, call tracking, and more tools for your medical call center operations.</p>
+                </div>
+
+                <!-- Dynamic Content Areas -->
+                <div id="measuresContent" class="content-section hidden"></div>
+                <div id="scriptsContent" class="content-section hidden"></div>
+                <div id="todoContent" class="content-section hidden"></div>
+                <div id="callTrackerContent" class="content-section hidden"></div>
+                <div id="measureImagesContent" class="content-section hidden"></div>
+                <div id="updatesContent" class="content-section hidden"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/image-list.js"></script>
+    <script src="js/json-loader.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/excel-parser.js"></script>
+</body>
+</html> 

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "General Appointment Reminder",
+        "english": "Hello, this is [Your Name] calling from [Practice Name]. I'm calling to remind you about your upcoming appointment on [Date] at [Time]. Please call us if you need to reschedule.",
+        "spanish": "Hola, soy [Su Nombre] llamando desde [Nombre de la Práctica]. Le llamo para recordarle su cita próxima el [Fecha] a las [Hora]. Por favor llámenos si necesita reprogramar."
+    },
+    {
+        "id": 2,
+        "title": "Lab Results Follow-up",
+        "english": "Hello, this is [Your Name] from [Practice Name]. Your recent lab results are ready. Dr. [Name] would like to discuss them with you. Please call us to schedule a follow-up appointment.",
+        "spanish": "Hola, soy [Su Nombre] de [Nombre de la Práctica]. Sus resultados de laboratorio recientes están listos. El Dr. [Nombre] le gustaría discutirlos con usted. Por favor llámenos para programar una cita de seguimiento."
+    },
+    {
+        "id": 3,
+        "title": "QCM Measure Follow-up",
+        "english": "Hello, this is [Your Name] from [Practice Name]. We're calling to schedule your [Measure Name] appointment. This is important for your health and our quality measures. When would be a good time for you?",
+        "spanish": "Hola, soy [Su Nombre] de [Nombre de la Práctica]. Le llamamos para programar su cita de [Nombre de la Medida]. Esto es importante para su salud y nuestras medidas de calidad. ¿Cuándo sería un buen momento para usted?"
+    },
+    {
+        "id": 4,
+        "title": "Patient Satisfaction Survey",
+        "english": "Hello, this is [Your Name] from [Practice Name]. We value your feedback. Please take a moment to complete our patient satisfaction survey. Your input helps us improve our services.",
+        "spanish": "Hola, soy [Su Nombre] de [Nombre de la Práctica]. Valoramos sus comentarios. Por favor, tómese un momento para completar nuestra encuesta de satisfacción del paciente. Su opinión nos ayuda a mejorar nuestros servicios."
+    }
+] 

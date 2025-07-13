@@ -1,0 +1,538 @@
+[
+  {
+    "MEASURE NAME": "Advance Care Planning",
+    "DESCRIPTION": "Percentage of adults ages 66 to 80 with advanced illness, an indication of frailty or who are receiving palliative care, and adults ages 81 and older who had evidence of advance care planning in the measurement year.",
+    "WHERE IS IT?": "PT DOCS",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Care for Older Adults (COA) – Functional Status Assessment",
+    "DESCRIPTION": "Percentage of adults 66 and older who had evidence of a functional status assessment in the measurement year",
+    "WHERE IS IT?": "General Health Assessment in PROGRESS NOTE",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "G0438, G0439",
+    "SCHEDULE AS/ADD TO APPT": "AWV"
+  },
+  {
+    "MEASURE NAME": "Care for Older Adults (COA) – Medication Review",
+    "DESCRIPTION": "Percentage of adults ages 66 and older who had a medication review by a clinical pharmacist or prescribing practitioner and the presence of a medication list in the medical record or transitional care management services in the measurement year.",
+    "WHERE IS IT?": "Med list and Med review in PROGRESS NOTE",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "1159F AND 1160F on the same date of service",
+    "SCHEDULE AS/ADD TO APPT": "AWV OR ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Care for Older Adults (COA) – Pain Assessment",
+    "DESCRIPTION": "Percentage of adults ages 66 and older who were assessed for pain in the measurement year",
+    "WHERE IS IT?": "Pain Assessment in PROGRESS NOTE",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "1125F, 1126F",
+    "SCHEDULE AS/ADD TO APPT": "AWV"
+  },
+  {
+    "MEASURE NAME": "Cervical Cancer Screening (CCS and CCS-E)",
+    "DESCRIPTION": "Percentage of members ages 21-64 who were recommended for routine cervical cancer screening and were screened for cervical cancer",
+    "WHERE IS IT?": "Result in LAB and PAP appointment in eCW",
+    "COMPLIANT PERIOD": "Members recommended for routine cervical cancer screening ages 21–64 who had cervical cytology performed in the measurement year or 2 years prior\nMembers recommended for routine cervical cancer screening ages 30–64 who had cervical cytology/high-risk human papillomavirus (hrHPV) co-testing performed in the measurement year or four years prior. The member must have been at least age 30 on the date of the test.\nMembers recommended for routine cervical cancer screening ages 30–64 who had cervical high-risk human papillomavirus (hrHPV) testing performed in the measurement year or four years prior",
+    "CODING": "G0101, Q0091, 3015F",
+    "SCHEDULE AS/ADD TO APPT": "PAP"
+  },
+  {
+    "MEASURE NAME": "Chlamydia Screening in Women (CHL)",
+    "DESCRIPTION": "Percentage of female members ages 16–24 who were identified as sexually active and had at least one test to screen for chlamydia during the measurement year.",
+    "WHERE IS IT?": "Result in LAB",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Osteoporosis Management in Women Who Had a Fracture (OMW)",
+    "DESCRIPTION": "Percentage of women ages 67–85 who suffered a fracture and who had either a bone mineral density (BMD) test or prescription for a drug to treat osteoporosis within 6 months of the fracture (does not include fractures to the finger, toe, face or skull).",
+    "WHERE IS IT?": "PT DOCS/ePrescription logs",
+    "COMPLIANT PERIOD": "Within 6 months of the fracture",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Prenatal and Postpartum Care (PPC)",
+    "DESCRIPTION": "Percentage of deliveries of live births on or between Oct. 8 of the year prior to the measurement year and Oct. 7 of the measurement year. The measure includes the following 2 indicators:\n• Timeliness of prenatal care – Percentage of women who had a live birth that received a prenatal care visit in the first trimester, on or before the enrollment start date or within 42 days of enrollment in a UnitedHealthcare health plan\n• Postpartum care – Percentage of women who had a live birth that had a postpartum visit on or between 7–84 days after delivery",
+    "WHERE IS IT?": "AV and PAP appointment in eCW",
+    "COMPLIANT PERIOD": "• Timeliness of prenatal care –\u00a0 in the first trimester, on or before the enrollment start date or within 42 days of enrollment in a UnitedHealthcare health plan\n• Postpartum care –\u00a0 on or between 7–84 days after delivery",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT AND PAP (DIFFERENT DATES)"
+  },
+  {
+    "MEASURE NAME": "Asthma Medication Ratio (AMR)",
+    "DESCRIPTION": "Percentage of members ages 5–64 who were identified as having persistent asthma and had a ratio of controller medications to total asthma medications of 0.50 or greater during the measurement year",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Blood Pressure Control for Patients With Diabetes (BPD)",
+    "DESCRIPTION": "Percentage of members ages 18–75 with diabetes (Types 1 and 2) who have a blood pressure (BP) reading of <140/90 mmHg in the measurement year",
+    "WHERE IS IT?": "PROGRESS NOTE (LESS THAN 140/90)",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+  },
+  {
+    "MEASURE NAME": "Controlling High Blood Pressure (CBP)",
+    "DESCRIPTION": "Percentage of members ages 18–85 who had a diagnosis of hypertension (HTN) and whose blood pressure (BP) was adequately controlled at <140/90 mmHg during the measurement year",
+    "WHERE IS IT?": "PROGRESS NOTE (LESS THAN 140/90)",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+  },
+  {
+    "MEASURE NAME": "Eye Exam for Patients With Diabetes (EED)",
+    "DESCRIPTION": "Percentage of members ages 18–75 with diabetes (Types 1 and 2) who had any one of the following:\n• Retinal or dilated eye exam by an optometrist or ophthalmologist in the measurement year\n• Negative retinal or dilated eye exam by an optometrist or ophthalmologist in the year prior to the measurement year\n• Bilateral eye enucleations any time during their history through Dec. 31 of the measurement year",
+    "WHERE IS IT?": "Result in PT DOCS",
+    "COMPLIANT PERIOD": "• Retinal or dilated eye exam by an optometrist or ophthalmologist in the measurement year\n• Negative retinal or dilated eye exam by an optometrist or ophthalmologist in the year prior to the measurement year\n• Bilateral eye enucleations any time during their history through Dec. 31 of the measurement year",
+    "CODING": "2023F, 92227",
+    "SCHEDULE AS/ADD TO APPT": "NATALIA (OPT) OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Glycemic Status Assessment for Patients With Diabetes (GSD)",
+    "DESCRIPTION": "The percentage of members 18–75 years of age with diabetes (types 1 and 2) whose most recent glycemic status (hemoglobin A1c [HbA1c] or glucose management indicator [GMI]) showed their blood sugar is under control during the measurement year adequate control is < 8.0%, poor control is > 9.0%)",
+    "WHERE IS IT?": "Result in LAB (LESS THAN 9.0)",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Kidney Health Evaluation for Patients With Diabetes (KED)",
+    "DESCRIPTION": "Percentage of members ages 18–85 with diabetes (Types 1 and 2) who had a kidney health evaluation in the measurement year. \nBoth an eGFR and a uACR test are required on same or different dates of service.\n• At least 1 estimated glomerular filtration rate (eGFR); AND\n• At least 1 urine albumin-creatinine ratio (uACR) test identified by one of the following:\n– A quantitative urine albumin test AND a urine creatinine test 4 or less days apart; OR\n– A uACR",
+    "WHERE IS IT?": "Result in LAB",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Persistence of Beta-Blocker Treatment After a Heart Attack (PBH)",
+    "DESCRIPTION": "The percentage of members ages 18 and older during the measurement year who were hospitalized and discharged from July 1 of the year prior to the measurement year to June 30 of the measurement year with a diagnosis of AMI and who received persistent beta-blocker treatment for 6 months after discharge.\n• Persistent beta-blocker treatment: at least 135 days during 180 days post discharge.",
+    "WHERE IS IT?": "HOSP FU/ePrescription logs",
+    "COMPLIANT PERIOD": "6 months after discharge",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT"
+  },
+  {
+    "MEASURE NAME": "Pharmacotherapy Management of COPD Exacerbation (PCE)",
+    "DESCRIPTION": "Percentage of chronic obstructive pulmonary disease (COPD) exacerbations for members ages 40 and older who had an acute inpatient discharge or emergency department visit on or between January 1-November 30 of the measurement year and were dispensed appropriate medications. Two rates are reported:\n1. Percentage of members dispensed a systemic corticosteroid – or with evidence of an active prescription – within 14 days of the event\n2. Percentage of members dispensed a bronchodilator – or with evidence of an active prescription – within 30 days of the event",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "14-30 days of the event",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Acute Hospital Utilization (AHU)",
+    "DESCRIPTION": "For members ages 18 and older, the risk-adjusted ratio of observed to expected acute inpatient and observation stay discharges during the measurement year",
+    "WHERE IS IT?": "FU appointment in eCW",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Adults' Access to Preventive/Ambulatory Health Services (AAP)",
+    "DESCRIPTION": "Percentage of members ages 20 and older who had an ambulatory or preventive care visit",
+    "WHERE IS IT?": "Any visit type in eCW",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Emergency Department Utilization (EDU)",
+    "DESCRIPTION": "For members ages 18 and older, the risk-adjusted ratio of observed to expected emergency department (ED) visits during the measurement year ",
+    "WHERE IS IT?": "FU appointment in eCW",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "99401, Z00.00, Z00.01",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Hospitalization for Potentially Preventable Complications (HPC)",
+    "DESCRIPTION": "Rate of discharges for an ambulatory care sensitive condition (ACSC) per 1,000 for members ages 67 and older, taking into account the risk-adjusted ratio of observed to expected discharges for an ACSC by chronic and acute condition.",
+    "WHERE IS IT?": "FU appointment in eCW",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Follow-Up After Emergency Department Visit for People With Multiple High-Risk Chronic Conditions (FMC)",
+    "DESCRIPTION": "Percentage of emergency department (ED) visits for members ages 18 and older who have multiple high-risk chronic conditions who had a follow-up service within 7 days of the ED visit. ",
+    "WHERE IS IT?": "HOSP FU/ FU appointment in eCW",
+    "COMPLIANT PERIOD": "7 days after ED visit",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT"
+  },
+  {
+    "MEASURE NAME": "Initiation and Engagement of Substance Use Disorder Treatment (IET)",
+    "DESCRIPTION": "Percentage of new episodes of substance use disorder (SUD) that result in one or both of the following: \n• Initiation of SUD Treatment – Percentage of new SUD episodes that result in treatment through an inpatient SUD admission, outpatient visit, intensive outpatient encounter, partial hospitalization, telehealth or medication treatment within 14 days of diagnosis\n• Engagement of SUD Treatment – Percentage of new SUD episodes that result in treatment within 34 days of initiation visit",
+    "WHERE IS IT?": "MEDS FU/ePrescription logs",
+    "COMPLIANT PERIOD": "14 days for initiation, 34 days for engagement",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Plan All-Cause Readmissions (PCR)",
+    "DESCRIPTION": "For members ages 18 and older, the number of acute inpatient and observation stays during the measurement year that were followed by an unplanned acute readmission for any diagnosis within 30 days and the predicted probability of an acute readmission.",
+    "WHERE IS IT?": "HOSP FU/ FU appointment in eCW",
+    "COMPLIANT PERIOD": "Within 30 days of the event",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT"
+  },
+  {
+    "MEASURE NAME": "Transitions of Care TRCRA – Inpatient Admission Notification",
+    "DESCRIPTION": "For members ages 18 and older, percentage of acute or non-acute inpatient discharges on or between Jan. 1—Dec. 1 of the measurement year with a notification of inpatient admission documented the day of or 2 days after the admission (3 days total). ",
+    "WHERE IS IT?": "HOSP FU/ FU appointment in eCW",
+    "COMPLIANT PERIOD": "The day of or 2 days after the admission",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT"
+  },
+  {
+    "MEASURE NAME": "Transitions of Care TRCMRP – Medication Reconciliation Post-Discharge",
+    "DESCRIPTION": "For members ages 18 and older, percentage with an acute or non-acute inpatient discharge on or between Jan. 1—Dec. 1 of the measurement year with medication reconciliation documented on the date of the discharge through 30 days after the discharge (31 days total)",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "30 days after discharge",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Transitions of Care TRCPE – Patient Engagement After Inpatient Discharge",
+    "DESCRIPTION": "For members ages 18 and older, percentage of acute or non-acute inpatient discharges on or between Jan. 1—Dec. 1 of the measurement year with engagement documented within 30 days of the discharge. Do not include patient engagement that happens on the day of discharge.",
+    "WHERE IS IT?": "HOSP FU/ FU appointment in eCW",
+    "COMPLIANT PERIOD": "Within 30 days of the discharge",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT"
+  },
+  {
+    "MEASURE NAME": "Transitions of Care TRCRD – Receipt of Discharge Information",
+    "DESCRIPTION": "For members ages 18 and older, percentage of acute or non-acute inpatient discharges on or between Jan. 1—Dec. 1 of the measurement year with a receipt of discharge information documented the day of or 2 days after the discharge (3 days total)",
+    "WHERE IS IT?": "HOSP FU/ FU appointment in eCW",
+    "COMPLIANT PERIOD": "The day of or 2 days after the discharge",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT"
+  },
+  {
+    "MEASURE NAME": "Use of Imaging Studies for Low Back Pain (LBP)",
+    "DESCRIPTION": "Percentage of members ages 18–75 with a principal diagnosis of low back pain who did not have an imaging study (plain X-ray, MRI, CT scan) within 28 days of the diagnosis.\nThis measure is reported as an inverted measure and a higher score indicates appropriate treatment of low back pain, where imaging studies did not occur.",
+    "WHERE IS IT?": "PT DOCS",
+    "COMPLIANT PERIOD": "Within 28 days of the diagnosis",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Adherence to Antipsychotic Medications for Individuals With Schizophrenia (SAA)",
+    "DESCRIPTION": "Percentage of members ages 18 and older during the measurement year with schizophrenia or schizoaffective disorder who were dispensed and remained on an antipsychotic medication for at least 80% of the treatment period.",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Antidepressant Medication Management (AMM)",
+    "DESCRIPTION": "Percentage of members ages 18 and older who were treated with antidepressant medication, had a diagnosis of major depression and remained on an antidepressant medication treatment.\nTwo rates are reported:\n1. Effective Acute Phase Treatment – Percentage of members who remained on an antidepressant medication for at least 84 days (12 weeks)\n2. Effective Continuation Phase Treatment – Percentage of members who remained on an antidepressant medication for at least 180 days (6 months)",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "12 weeks - Acute Phase; 6 months - Continuation Phase",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Cardiovascular Monitoring for People With Cardiovascular Disease and Schizophrenia (SMC)",
+    "DESCRIPTION": "Percentage of members ages 18–64 with schizophrenia or schizoaffective disorder and cardiovascular disease who had a low-density lipoprotein cholesterol (LDL-C) test during the measurement year",
+    "WHERE IS IT?": "Result in LAB",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Diabetes Monitoring for People With Diabetes and Schizophrenia (SMD)",
+    "DESCRIPTION": "Percentage of members ages 18–64 with schizophrenia or schizoaffective disorder and diabetes who had both an HbA1c test and a low-density lipoprotein cholesterol (LDL-C) test during the measurement year.",
+    "WHERE IS IT?": "Results in LAB",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Diabetes Screening for People With Schizophrenia or Bipolar Disorder Who Are Using Antipsychotic Medications (SSD)",
+    "DESCRIPTION": "Percentage of members ages 18–64 with schizophrenia, schizoaffective disorder or bipolar disorder who were dispensed an antipsychotic medication and had a diabetes screening test during the measurement year",
+    "WHERE IS IT?": "Result in LAB and ePrescription",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Follow-Up After Hospitalization for Mental Illness (FUH)",
+    "DESCRIPTION": "Percentage of discharges for members ages 6 and older who were hospitalized for treatment of select mental illness or intentional self-harm diagnoses and had a follow-up visit with a mental health provider.\nTwo rates are reported:\n1. Percentage of discharges where the member received follow-up within 30 days of their discharge.\n2. Percentage of discharges where the member received follow-up within 7 days of their discharge.",
+    "WHERE IS IT?": "HOSP FU/ FU appointment in eCW",
+    "COMPLIANT PERIOD": "7-30 days of their discharge",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT"
+  },
+  {
+    "MEASURE NAME": "Follow-Up After High-Intensity Care for Substance Use Disorder (FUI)\u00a0",
+    "DESCRIPTION": "The percentage of acute inpatient hospitalizations, residential treatment or withdrawal management visits for a diagnosis of substance use disorder among members ages 13 and older that result in a follow-up visit or service for substance use disorder.\nTwo rates are reported:\n1. The percentage of visits or discharges for which the member received follow-up for substance use disorder within the 7 days after the visit or discharge\n2. The percentage of visits or discharges for which the member received follow-up for substance use disorder within the 30 days after the visit or discharge. ",
+    "WHERE IS IT?": "HOSP FU/ FU appointment in eCW",
+    "COMPLIANT PERIOD": "7-30 days of their discharge",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT"
+  },
+  {
+    "MEASURE NAME": "Follow-Up After Emergency Department Visit for Mental Illness (FUM)",
+    "DESCRIPTION": "The percentage of ED visits for members ages 6 years and older with a principal diagnosis of mental illness or intentional self-harm, who then had a follow-up visit for mental illness with any practitioner type.\nTwo rates are reported:\n1. The percentage of ED visits for which the member received follow-up for mental illness within the 7 days after the visit (8 days total)\n2. The percentage of ED visits for which the member received follow-up for mental illness within the 30 days after the visit (31 days total)",
+    "WHERE IS IT?": "HOSP FU/ FU appointment in eCW",
+    "COMPLIANT PERIOD": "7-30 days after ED visit",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT"
+  },
+  {
+    "MEASURE NAME": "Follow-Up After Emergency Department Visit for Substance Use (FUA)",
+    "DESCRIPTION": "The percentage of ED visits for members ages 13 and older with a principal diagnosis of substance use disorder (SUD) or any drug overdose diagnosis and who had a follow-up visit.\nTwo rates are reported:\n1. The percentage of ED visits for which the member received follow-up for SUD within the 7 days after the visit (8 days total)\n2. The percentage of visits or discharges for which the member received follow-up for SUD within the 30 days after the visit (31 days total)",
+    "WHERE IS IT?": "HOSP FU/ FU appointment in eCW",
+    "COMPLIANT PERIOD": "7-30 days after ED visit",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT"
+  },
+  {
+    "MEASURE NAME": "Appropriate Testing for Pharyngitis (CWP)",
+    "DESCRIPTION": "Percentage of episodes for members age 3 years and older where the member was diagnosed with pharyngitis, dispensed an antibiotic and received a group A streptococcus (strep) test within 3 days prior to or 3 days after the diagnosis day (7 days total). ",
+    "WHERE IS IT?": "ePrescription logs and result in LAB",
+    "COMPLIANT PERIOD": "Within 3 days prior to or 3 days after the diagnosis day",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Avoidance of Antibiotic Treatment for Acute Bronchitis/Bronchiolitis (AAB)",
+    "DESCRIPTION": "Percentage of episodes for members ages 3 months and older with a diagnosis of acute bronchitis/bronchiolitis between July 1 of the year prior to the measurement year through June 30 of the measurement year who were not dispensed an antibiotic medication on or 3 days after the episode. A higher rate indicates appropriate treatment (not prescribed an antibiotic).",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "On or 3 days after the episode",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Appropriate Treatment for Upper Respiratory Infection (URI)",
+    "DESCRIPTION": "Percentage of episodes for members 3 months and older who were given a diagnosis of upper respiratory infection (URI) between July 1 of the year prior to the measurement year through June 30 of the measurement year and were not dispensed an antibiotic prescription on or 3 days after the diagnosis day (4 days total). A higher rate indicates appropriate treatment (not prescribed an antibiotic).",
+    "WHERE IS IT?": "eprescription logs",
+    "COMPLIANT PERIOD": "On or 3 days after the episode",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Statin Therapy for Patients With Cardiovascular Disease (SPC)",
+    "DESCRIPTION": "Percentage of males ages 21–75 and females ages 40–75 during the measurement year who were identified as having clinical atherosclerotic cardiovascular disease (ASCVD) and met the following criteria: \n• Received statin therapy – Members who were dispensed at least 1 high- or moderate-intensity statin medication during the measurement year\n• Statin adherence 80% - Members who remained on a high- or moderate-intensity statin medication for at least 80% of the treatment period",
+    "WHERE IS IT?": "eprescription logs",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Statin Therapy for Patients With Diabetes (SPD)",
+    "DESCRIPTION": "Percentage of members ages 40–75 during the measurement year with diabetes who do not have clinical atherosclerotic cardiovascular disease (ASCVD) who met the following criteria: \n• Received statin therapy – Members who were dispensed at least 1 statin medication of any intensity during the measurement year\n• Statin adherence 80% – Members who remained on a statin medication of any intensity for at least 80% of the treatment period",
+    "WHERE IS IT?": "ePrescription logs ",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Use of Opioids at High Dosage (HDO)",
+    "DESCRIPTION": "Percentage of members ages 18 and older receiving prescription opioids for ≥ 15 days during the measurement year at a high dosage (average milligram morphine equivalent [MME] dose ≥ 90 mg).",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Use of Opioids From Multiple Providers (UOP)",
+    "DESCRIPTION": "Percentage of members ages 18 and older receiving prescription opioids for ≥ 15 days during the measurement year who received opioids from multiple providers.",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Pharmacotherapy for Opioid Use Disorder (POD)",
+    "DESCRIPTION": "Percentage of new opioid use disorder pharmacotherapy events that lasted at least 180 days among members 16 years of age and older with a diagnosis of opioid use disorder and a new opioid use disorder pharmacotherapy event.",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Risk of Continued Opioid Use (COU)",
+    "DESCRIPTION": "Percentage of members ages 18 and older with a new episode of opioid use that puts them at risk for continued use. \nTwo rates are reported:\n• The percentage of members with at least 15 days of prescription opioids in a 30-day period.\n• The Percentage of members with at least 31 days of prescription opioids in a 62-day period.",
+    "WHERE IS IT?": "eprescription logs",
+    "COMPLIANT PERIOD": "15-31 days of prescription",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Childhood Immunization Status (CIS and CIS-E)",
+    "DESCRIPTION": "Percentage of children age 2 who had 4 doses of diphtheria, tetanus and a cellular pertussis (DTaP) vaccine; 1 hepatitis A (Hep A) vaccine; 3 doses of hepatitis B (Hep B) vaccine; 3 doses of haemophilus influenza type B (HiB) vaccine; 2 doses of influenza (flu) vaccine; 3 doses of polio (IPV) vaccine; 1 measles, mumps and rubella (MMR) vaccine;4 doses of pneumococcal conjugate (PCV) vaccine; 2 or 3 doses of rotavirus (RV) vaccine; and 1 chicken pox (VZV) vaccine on or before their second birthday",
+    "WHERE IS IT?": "Immunization records in PT DOCS",
+    "COMPLIANT PERIOD": "On or before the second birthday",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Child and Adolescent Well-Care Visits (WCV)",
+    "DESCRIPTION": "Percentage of members ages ages 3-21 years who had one or more comprehensive well-care visits with a primary care provider or OB-GYN during the measurement year.",
+    "WHERE IS IT?": "AV/WCV appointment in eCW",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT"
+  },
+  {
+    "MEASURE NAME": "Immunizations for Adolescents (IMA and IMA-E)",
+    "DESCRIPTION": "Percentage of adolescents age 13 who had 1 dose of meningococcal vaccine, 1 tetanus, diphtheria toxoids and acellular pertussis (Tdap) vaccine, and at least 2 doses of human papillomavirus (HPV) vaccine by their 13th birthday",
+    "WHERE IS IT?": "Immunization records in PT DOCS",
+    "COMPLIANT PERIOD": "By the 13th birthday",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Lead Screening in Children (LSC)",
+    "DESCRIPTION": "Percentage of children age 2 who had one or more capillary or venous lead blood test for lead poisoning on or by theirsecond birthday",
+    "WHERE IS IT?": "Result in LAB",
+    "COMPLIANT PERIOD": "On or by the 13th birthday",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Use of First-Line Psychosocial Care for Children and Adolescents on Antipsychotics (APP)",
+    "DESCRIPTION": "Percentage of children and adolescents ages 1–17 who had a new prescription for an antipsychotic and had psychosocial care or residential behavioral health treatment as first line treatment in 121 days. 121 days includes 90 days before the earliest dispensing date to 30 days after",
+    "WHERE IS IT?": "Referral/FU appointment in eCW/ePrescription logs",
+    "COMPLIANT PERIOD": "90 days before the earliest dispensing date to 30 days after",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Weight Assessment and Counseling for Nutrition and Physical Activity for Children/Adolescents (WCC)",
+    "DESCRIPTION": "Percentage of members ages 3–17 who had an outpatient visit with a primary care provider or OB-GYN and had evidence of the following during the measurement year:\n• Body mass index (BMI) percentile\n• Counseling for nutrition\n• Counseling for physical activity",
+    "WHERE IS IT?": "PROGRESS NOTE",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "BMI: Z68.51, Z68.52, Z68.53, Z68.54 Physical Activity: G0447, S9451 Nutrition: 97802, 97803, 97804, G0270, G0271, G0447",
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT OR ANNY APPT BUT SPECIALTY (BW, SONO, SUDO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Well-Child Visits in the First 30 Months of Life (W30",
+    "DESCRIPTION": "Percentage of members who turned 15–30 months old during the measurement year and had the recommended number of well-child visits with a primary care provider.\n• Children 0-15 months old during the measurement year: 6 or more well-child visits in the first 15 months of life.\n• Children 15-30 months old during the measurement year: 2 or more well-child visits between 15–30 months of age.",
+    "WHERE IS IT?": "AV/WCV appointment in eCW",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "Z00.00, Z00.01, Z00.110, Z00.111, Z00.121, Z00.129",
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT"
+  },
+  {
+    "MEASURE NAME": "Medication Adherence for Cholesterol (MAC)",
+    "DESCRIPTION": "Percentage of members ages 18 and older who adhere to their cholesterol (statin) medication at least 80% of the time in the measurement period",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Medication Adherence for Diabetes Medications (MAD)",
+    "DESCRIPTION": "Percentage of members ages 18 or older who are adherent to their diabetes medications at least 80% of the time in the measurement period",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Medication Adherence for Hypertension (RAS Antagonists) (MAH)",
+    "DESCRIPTION": "Percentage of members ages 18 or older who adhere to their hypertension (RAS antagonist) medication at least 80% of the time in the measurement period.",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Medication Therapy Management Program Completion Rate for Comprehensive Medication Reviews (CMR)",
+    "DESCRIPTION": "Percentage of members ages 18 or older enrolled in a medication therapy management (MTM) program who received a comprehensive medication review (CMR) during the reporting period. ",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Statin Use in Persons With Diabetes (SUPD)",
+    "DESCRIPTION": "Percentage of Medicare members with diabetes ages 40–75 who receive at least 1 fill of a statin medication in the measurement year",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Annual Monitoring for Persons on Long-Term Opioid Therapy (AMO) ",
+    "DESCRIPTION": "Percentage of members 18 years and older who are prescribed long-term opioid therapy (≥ 90 days) and have not received a drug test at least once during the measurement year",
+    "WHERE IS IT?": "ePrescription logs/ LAB",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "International Normalized Ratio Monitoring for Individuals on Warfarin (INR)",
+    "DESCRIPTION": "Percentage of members 18 years of age and older who had at least one 56-day interval of warfarin therapy and who received at least one international normalized ratio (INR) monitoring test, or had an inpatient hospital stay (>48 hours) during each 56-day interval with active warfarin therapy",
+    "WHERE IS IT?": "ePrescription logs/LAB",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Proportion of Days Covered (PDC)",
+    "DESCRIPTION": "Percentage of members ages 18 or older who are adherent to their blood pressure, diabetes and cholesterol medication(s) at least 80% of the time in the measurement period.",
+    "WHERE IS IT?": "ePrescription logs",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Adult Immunization Status (AIS-E)",
+    "DESCRIPTION": "Percentage of members ages 19 and older who have had the following vaccinations in the recommended time frame:\n• 1 Influenza vaccine\n• 1 Td/Tdap vaccine\n• 1 (live) or 2 (recombinant) Herpes Zoster (Shingles)\n• 1 Adult Pneumococcal vaccine",
+    "WHERE IS IT?": "Immunization records in PT DOCS",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Breast Cancer Screening (BCS-E)",
+    "DESCRIPTION": "Percentage of members ages 50-74 who were recommended for routine breast cancer screening and had a mammogram screening completed on or by Oct. 1, two years prior to the measurement year through Dec. 31 of the measurement year",
+    "WHERE IS IT?": "PT DOCS",
+    "COMPLIANT PERIOD": "On or by Oct. 1, two years prior to the measurement year through Dec. 31 of the measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Colorectal Cancer Screening (COL-E)",
+    "DESCRIPTION": "Percentage of members ages 45–75 who had an appropriate screening for colorectal cancer",
+    "WHERE IS IT?": "PT DOCS (You'll find the referral in REFERRAL/LAB)",
+    "COMPLIANT PERIOD": "Measurement year or 9 years prior Colonoscopy\nMeasurement year or 4 years prior Flexible sigmoidoscopy, CT colonography\nMeasurement year or 2 years prior Stool DNA (sDNA) with FIT Test\nMeasurement year iFOBT, gFOBT, FIT",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Depression Screening and Follow-Up for Adolescents and Adults (DSF-E)",
+    "DESCRIPTION": "Members ages 12 and over as of January 1 of the measurement year who had:\n• Depression Screening: Documented result of depression in the measurement year using a\u00a0 age-appropriate standardized instrument\n• Follow-Up: Upon documentation of a positive depression screening, members receive follow-up\u00a0 (medication or treatment) within 30 days of the positive screening",
+    "WHERE IS IT?": "PROGRESS NOTE",
+    "COMPLIANT PERIOD": "During measurement year",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Follow-Up Care for Children Prescribed ADHD Medication (ADD-E)",
+    "DESCRIPTION": "Percentage of children newly prescribed attention-deficit/hyperactivity disorder (ADHD) medication between March 1 of the year prior to the measurement year through the last day of February in the measurement year and who had at least 3 follow-up care visits within a 10-month period, one of which was within 30 days of when the first ADHD medication was dispensed. A new prescription is defined as having no new or refill ADHD medications 120 days prior to an ADHD medication dispense date. \nTwo rates are reported:\n1. Initiation Phase – Percentage of members ages 6–12 with an ambulatory prescription dispensed for ADHD medication who had 1 follow-up visit with a practitioner with prescribing authority during the 30-day Initiation Phase. A member must be between ages 6–12 when the first prescription for an ADHD medicine was dispensed.\n2. Continuation and Maintenance Phase – Percentage of members ages 6–12 with an ambulatory prescription dispensed for ADHD medication, who remained on the medication for at least 210 days and who, in addition to the visit in the Initiation Phase, had at least 2 follow-up visits with a practitioner on different dates of service within 270 days – 9 months – after the initiation Phase ended. A member must be between ages 6–12 when the first prescription for an ADHD medicine was dispensed.",
+    "WHERE IS IT?": "FU appointment in eCW/ePrescription logs",
+    "COMPLIANT PERIOD": "Within a 10-month period, one of which was within 30 days of when the first ADHD medication was dispensed",
+    "CODING": "-",
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+  },
+  {
+    "MEASURE NAME": "Utilization of the PHQ-9 to Monitor Depression Symptoms for Adolescents and Adults (DMS-E)",
+    "DESCRIPTION": "Members ages 12 and older with a diagnosis of major depression or dysthymia, who had an outpatient encounter with a PHQ-9 score present in their record in the same assessment period as the encounter. \nThree Assessment Periods include: \n• Assessment period 1: Jan.1—Apr. 30 \n• Assessment period 2: May 1—Aug, 31 \n• Assessment period 3: S",
+    "WHERE IS IT?": null,
+    "COMPLIANT PERIOD": null,
+    "CODING": null,
+    "SCHEDULE AS/ADD TO APPT": null
+  }
+]
