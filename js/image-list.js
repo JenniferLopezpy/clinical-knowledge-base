@@ -477,4 +477,4 @@ async function getImagesForEnvironment() {
         console.log('Detected local environment, using dynamic detection');
         return await getAllImagesFromFolder();
     }
-} 
+}
