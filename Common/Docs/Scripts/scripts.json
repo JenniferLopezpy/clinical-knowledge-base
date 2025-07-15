@@ -1,6 +1,5 @@
 
-{
-  [
+[
     {
       "id": 1,
       "measure": "GSD",
@@ -71,5 +70,4 @@
       "english": "Hello [Patient's Name], this is [Your Name] from Suffolk Primary Health.\n\nYour health plan indicates it’s time for your cervical cancer screening, such as a Pap smear or HPV test.\n\nThis routine screening helps detect abnormal cells early and is a key part of women’s preventive care.\n\nGive us a call at [Phone Number] to book your appointment. We’d be happy to help.",
       "spanish": "Buen día [Nombre del paciente], habla [Tu nombre] de Suffolk Primary Health.\n\nEstamos siguiendo las recomendaciones de su aseguradora, la cual indica que es momento de hacer su Papanicolaou (PAP) o prueba de VPH para prevención del cáncer cervical.\n\nEste examen es rápido, discreto y muy importante para su salud ginecológica. Le invitamos a programar su visita para mantener todo en orden.\n\nLlámenos al [número]. Con gusto le ayudamos a reservar la cita."
     }
-  ]
-}
+]
