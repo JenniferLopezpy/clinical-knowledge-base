@@ -85,7 +85,7 @@ function clearJsonCache() {
 // ===== SCRIPTS LOADER =====
 
 // Cache for loaded scripts data
-const scriptsDataCache = null;
+let scriptsDataCache = null;
 
 // Function to load scripts data from JSON file
 async function loadScriptsData() {
@@ -103,7 +103,7 @@ async function loadScriptsData() {
         }
         
         const data = await response.json();
-        
+        scriptsDataCache = data; // Guardar en caché
         console.log(`Loaded ${data.length} scripts`);
         return data;
         
