@@ -932,6 +932,65 @@ async function showUpdates() {
     }
 }
 
+// Función para mostrar los SMS Templates
+async function showSMSTemplates() {
+    hideAllContent();
+    const content = document.getElementById('smsTemplatesContent');
+    content.classList.remove('hidden');
+    content.innerHTML = `
+        <div class="mb-6">
+            <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">SMS Templates</h2>
+            <p class="text-gray-600">Mensajes de texto automáticos para Quality Care Measures (QCM)</p>
+        </div>
+        <div class="loading-placeholder">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Cargando SMS templates...</p>
+        </div>
+    `;
+    try {
+        const response = await fetch('Common/Docs/SMS template/sms_template_qcm.json');
+        if (!response.ok) throw new Error('No se pudo cargar el archivo de SMS templates');
+        const templates = await response.json();
+        if (!Array.isArray(templates) || templates.length === 0) {
+            content.innerHTML += `<div class='no-data-placeholder'><i class='fas fa-sms'></i><p>No hay SMS templates disponibles.</p></div>`;
+            return;
+        }
+        // Renderizar los templates
+        const html = templates.map(t => `
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">${t.name}</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-bold text-gray-700 mb-1">Español</h4>
+                            <ul class="list-disc ml-6">
+                                <li><span class="font-semibold">Riverhead:</span> ${t.es.Riverhead}</li>
+                                <li><span class="font-semibold">Hempstead:</span> ${t.es.Hempstead}</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-700 mb-1">English</h4>
+                            <ul class="list-disc ml-6">
+                                <li><span class="font-semibold">Riverhead:</span> ${t.en.Riverhead}</li>
+                                <li><span class="font-semibold">Hempstead:</span> ${t.en.Hempstead}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+        content.innerHTML = `
+            <div class="mb-6">
+                <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">SMS Templates</h2>
+                <p class="text-gray-600">Mensajes de texto automáticos para Quality Care Measures (QCM)</p>
+            </div>
+            <div class="space-y-4">${html}</div>
+        `;
+    } catch (error) {
+        content.innerHTML = `<div class='no-data-placeholder'><i class='fas fa-exclamation-triangle'></i><p>Error cargando SMS templates: ${error.message}</p></div>`;
+    }
+}
+
 // Search functionality
 function initializeSearch() {
     document.getElementById('searchInput').addEventListener('input', function(e) {

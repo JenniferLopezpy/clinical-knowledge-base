@@ -1,26 +1,75 @@
-[
+
+{
+  [
     {
-        "id": 1,
-        "title": "General Appointment Reminder",
-        "english": "Hello, this is [Your Name] calling from [Practice Name]. I'm calling to remind you about your upcoming appointment on [Date] at [Time]. Please call us if you need to reschedule.",
-        "spanish": "Hola, soy [Su Nombre] llamando desde [Nombre de la Práctica]. Le llamo para recordarle su cita próxima el [Fecha] a las [Hora]. Por favor llámenos si necesita reprogramar."
+      "id": 1,
+      "measure": "GSD",
+      "title": "Glycemic Status (A1c Test)",
+      "english": "Hi [Patient's Name], this is [Your Name] calling from Suffolk Primary Health.\n\nWe're reaching out because your health insurance requires an annual blood sugar test called A1c, especially for patients managing diabetes.\n\nThis test helps us monitor your glucose levels over time and is key to preventing complications. It only takes a few minutes and helps keep your medical record up to date.\n\nPlease give us a call at [Phone Number] to schedule your appointment. We’re happy to assist you!",
+      "spanish": "Hola [Nombre del paciente], le habla [Tu nombre] de Suffolk Primary Health. Esperamos que esté teniendo un buen día.\n\nLe llamamos porque su seguro médico requiere un control anual de azúcar en la sangre (prueba de A1c), especialmente si ha sido diagnosticado con diabetes o está en seguimiento por ello.\n\nEste estudio es muy importante para prevenir complicaciones y mantener su historial médico actualizado. Solo toma unos minutos y nos permite saber cómo ha estado su glucosa en los últimos meses.\n\nPor favor, llámenos al [número] para agendar su cita. ¡Estamos aquí para ayudarle!"
     },
     {
-        "id": 2,
-        "title": "Lab Results Follow-up",
-        "english": "Hello, this is [Your Name] from [Practice Name]. Your recent lab results are ready. Dr. [Name] would like to discuss them with you. Please call us to schedule a follow-up appointment.",
-        "spanish": "Hola, soy [Su Nombre] de [Nombre de la Práctica]. Sus resultados de laboratorio recientes están listos. El Dr. [Nombre] le gustaría discutirlos con usted. Por favor llámenos para programar una cita de seguimiento."
+      "id": 2,  
+      "measure": "CBP",
+      "title": "Controlling High Blood Pressure",
+      "english": "Hello [Patient's Name], this is [Your Name] from Suffolk Primary Health.\n\nWe're calling because your insurance recommends a blood pressure check, especially if you have a history of high blood pressure or heart issues.\n\nIt’s a quick visit but very important to make sure your numbers are in a safe range and to update your records.\n\nFeel free to call us at [Phone Number] to book your appointment. We’re here to help!",
+      "spanish": "Hola [Nombre del paciente], le habla [Tu nombre] desde Suffolk Primary Health.\n\nLo estamos contactando porque su plan de salud solicita que se realice un chequeo de presión arterial, ya que es parte del seguimiento anual para pacientes con hipertensión o antecedentes cardiovasculares.\n\nEsta visita es corta, pero muy importante para asegurar que todo esté bien y registrar su presión en el sistema. Así también cumplimos con los requisitos de su aseguradora.\n\nPuede llamarnos al [número] y con gusto le ayudamos a agendar."
     },
     {
-        "id": 3,
-        "title": "QCM Measure Follow-up",
-        "english": "Hello, this is [Your Name] from [Practice Name]. We're calling to schedule your [Measure Name] appointment. This is important for your health and our quality measures. When would be a good time for you?",
-        "spanish": "Hola, soy [Su Nombre] de [Nombre de la Práctica]. Le llamamos para programar su cita de [Nombre de la Medida]. Esto es importante para su salud y nuestras medidas de calidad. ¿Cuándo sería un buen momento para usted?"
+      "id": 3,
+      "measure": "KED",
+      "title": "Kidney Evaluation for Diabetes",
+      "english": "Hi [Patient's Name], this is [Your Name] from Suffolk Primary Health.\n\nWe're reaching out because your health plan recommends a kidney function screening, particularly for patients with diabetes.\n\nThis includes a simple urine and blood test to detect any early signs of kidney issues. It’s important for your overall care and helps keep your records current.\n\nPlease call us at [Phone Number] to set up your appointment. Thank you for choosing us!",
+      "spanish": "Hola [Nombre del paciente], soy [Tu nombre] de Suffolk Primary Health.\n\nQueremos recordarle que su seguro médico solicita que se haga un estudio para revisar la salud de sus riñones, especialmente si tiene diagnóstico de diabetes.\n\nEs un análisis de orina y sangre que nos ayuda a detectar cualquier cambio temprano en la función renal. Este estudio es parte de su cuidado integral y ayuda a mantener su expediente médico al día.\n\nLlámenos cuando pueda al [número] para programar su cita. ¡Gracias por confiar en nosotros!"
     },
     {
-        "id": 4,
-        "title": "Patient Satisfaction Survey",
-        "english": "Hello, this is [Your Name] from [Practice Name]. We value your feedback. Please take a moment to complete our patient satisfaction survey. Your input helps us improve our services.",
-        "spanish": "Hola, soy [Su Nombre] de [Nombre de la Práctica]. Valoramos sus comentarios. Por favor, tómese un momento para completar nuestra encuesta de satisfacción del paciente. Su opinión nos ayuda a mejorar nuestros servicios."
+      "id": 4,    
+      "measure": "EED",
+      "title": "Eye Exam for Diabetic Retinopathy",
+      "english": "Hello [Patient's Name], this is [Your Name] from Suffolk Primary Health.\n\nYour insurance recommends an annual diabetic eye exam, especially if you are managing diabetes.\n\nThis exam checks the back of your eyes for any early signs of damage. It’s quick, non-invasive, and helps protect your vision long term.\n\nGive us a call at [Phone Number] to schedule your exam. We’re looking forward to seeing you!",
+      "spanish": "Buen día [Nombre del paciente], le saluda [Tu nombre] desde Suffolk Primary Health.\n\nSu aseguradora recomienda que se realice su examen anual de la vista, especialmente si tiene diabetes.\n\nEsta evaluación permite detectar cambios en la retina a tiempo y evitar problemas mayores en la visión. No es invasiva y toma muy poco tiempo. Además, es un requisito importante que el seguro necesita registrar cada año.\n\nPuede llamarnos al [número] para coordinar su cita. ¡Un gusto atenderle!"
+    },
+    {
+      "id": 5,    
+      "measure": "SPC",
+      "title": "Statin Therapy for Cardiovascular Conditions",
+      "english": "Hi [Patient's Name], this is [Your Name] with Suffolk Primary Health.\n\nWe're calling because your insurance recommends a review of your statin medication, especially if you have high cholesterol or heart-related conditions.\n\nThis helps ensure you’re on the right treatment to prevent heart attacks or strokes, and also keeps your health record complete.\n\nFeel free to contact us at [Phone Number] to set up a time to come in. We’re here for you!",
+      "spanish": "Hola [Nombre del paciente], habla [Tu nombre] desde Suffolk Primary Health.\n\nLo contactamos porque su plan médico sugiere una revisión de su tratamiento con estatinas, si tiene colesterol alto o antecedentes cardiovasculares.\n\nEs importante confirmar si está tomando el medicamento adecuado o si necesita ajustes. Esta visita ayuda a prevenir eventos cardíacos y mantener su información médica completa.\n\nPuede llamarnos al [número] para agendar su consulta. ¡Estamos para apoyarle!"
+    },
+    { 
+      "id": 6,
+      "measure": "IMA(E)",
+      "title": "Immunizations for Adolescents",
+      "english": "Hello, this message is for [Patient's Name or Parent/Guardian]. This is [Your Name] calling from Suffolk Primary Health.\n\nYour insurance recommends that [Adolescent's Name] receive age-appropriate vaccines, like Tdap, Meningitis, and HPV boosters, which are typically due around age 11 to 13.\n\nThese vaccines are safe, CDC-recommended, and necessary for long-term protection and insurance compliance.\n\nPlease call us at [Phone Number] to schedule a convenient time. Thank you!",
+      "spanish": "Buen día, este mensaje es para [Nombre del paciente o tutor]. Le habla [Tu nombre] de Suffolk Primary Health.\n\nSu aseguradora indica que [Nombre del adolescente] requiere vacunas de seguimiento que suelen aplicarse a los 11 y 13 años, como el refuerzo de meningitis, Tdap y el VPH.\n\nSon vacunas seguras, recomendadas por los CDC y necesarias para mantener su salud protegida y su expediente actualizado.\n\nLlámenos al [número] para coordinar una cita conveniente para usted."
+    },
+    {
+      "id": 7,
+      "measure": "APV",
+      "title": "Annual Preventive Visit",
+      "english": "Hi [Patient's Name], this is [Your Name] from Suffolk Primary Health.\n\nWe’re reaching out to remind you that your annual wellness visit is due, and it's required by your insurance to help keep your health records up to date.\n\nThis visit helps us check in on your overall health, screen for early signs of illness, and keep everything current.\n\nCall us at [Phone Number] when you're ready to schedule. We’d love to see you!",
+      "spanish": "Hola [Nombre del paciente], le habla [Tu nombre] de Suffolk Primary Health.\n\nQueríamos recordarle que su chequeo anual está pendiente y es requerido por su plan médico para asegurar que todos sus registros estén actualizados.\n\nEsta visita es clave para monitorear su salud general, prevenir enfermedades y detectar cualquier necesidad médica antes de que avance.\n\nEstamos disponibles para agendarle en el momento que mejor le convenga. Puede llamarnos al [número]. ¡Gracias!"
+    },
+    {
+      "id": 8,
+      "measure": "OSW",
+      "title": "Osteoporosis Screening for Women",
+      "english": "Hello [Patient's Name], this is [Your Name] with Suffolk Primary Health.\n\nYour insurance recommends a bone density scan (DEXA) if you’re over age 65 to screen for osteoporosis.\n\nThis is a quick and painless test that helps prevent fractures by detecting early bone loss. It’s fully covered and important for your long-term health.\n\nYou can reach us at [Phone Number] to set up your appointment. We’ll be happy to assist you!",
+      "spanish": "Buen día [Nombre del paciente], le saluda [Tu nombre] desde Suffolk Primary Health.\n\nSu aseguradora recomienda que se realice una prueba de densidad ósea, también conocida como DEXA scan, ya que es una evaluación preventiva para detectar osteoporosis.\n\nEsta prueba es rápida, indolora y muy útil para prevenir fracturas en mujeres mayores de 65 años. Además, su seguro la cubre y necesita tenerla registrada.\n\nSi desea agendar, estamos disponibles en el [número]. ¡Con gusto le atendemos!"
+    },
+    {
+      "id": 9,    
+      "measure": "BCS",
+      "title": "Breast Cancer Screening",
+      "english": "Hi [Patient's Name], this is [Your Name] from Suffolk Primary Health.\n\nWe’re calling to remind you that your insurance recommends a mammogram, especially if you're age 50 or older.\n\nThis is an important screening to catch any early signs of breast cancer and to keep your records compliant.\n\nPlease call us at [Phone Number] when you're ready to schedule. We're here for you!",
+      "spanish": "Hola [Nombre del paciente], le habla [Tu nombre] desde Suffolk Primary Health.\n\nLe estamos llamando porque su plan médico requiere que se realice su mamografía preventiva, especialmente si tiene 50 años o más.\n\nEs una prueba importante para detectar cualquier cambio a tiempo y mantener su salud al día. También ayuda a mantener su expediente médico actualizado, tal como solicita su aseguradora.\n\nPuede llamarnos al [número] para coordinar su cita. ¡Gracias por priorizar su salud!"
+    },
+    {
+      "id": 10,
+      "measure": "CCS",
+      "title": "Cervical Cancer Screening",
+      "english": "Hello [Patient's Name], this is [Your Name] from Suffolk Primary Health.\n\nYour health plan indicates it’s time for your cervical cancer screening, such as a Pap smear or HPV test.\n\nThis routine screening helps detect abnormal cells early and is a key part of women’s preventive care.\n\nGive us a call at [Phone Number] to book your appointment. We’d be happy to help.",
+      "spanish": "Buen día [Nombre del paciente], habla [Tu nombre] de Suffolk Primary Health.\n\nEstamos siguiendo las recomendaciones de su aseguradora, la cual indica que es momento de hacer su Papanicolaou (PAP) o prueba de VPH para prevención del cáncer cervical.\n\nEste examen es rápido, discreto y muy importante para su salud ginecológica. Le invitamos a programar su visita para mantener todo en orden.\n\nLlámenos al [número]. Con gusto le ayudamos a reservar la cita."
     }
-] 
+  ]
+}
