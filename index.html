@@ -81,12 +81,25 @@
                     </div>
                 </div>
 
-                <!-- SMS Templates -->
+                <!-- SMS Templates QCM -->
                 <div class="nav-section">
-                    <button onclick="showSMSTemplates()" class="nav-item">
-                        <i class="fas fa-sms nav-icon"></i>
-                        <span class="nav-section-title">SMS Templates</span>
+                    <button onclick="toggleSection('smsTemplates')" class="nav-section-button">
+                        <div class="nav-section-content">
+                            <i class="fas fa-sms nav-icon"></i>
+                            <span class="nav-section-title">SMS Template QCM</span>
+                        </div>
+                        <i id="smsTemplates-arrow" class="fas fa-chevron-down nav-arrow"></i>
                     </button>
+                    <div id="smsTemplates-content" class="nav-subsection">
+                        <button onclick="showSMSTemplatesClinic('Riverhead')" class="nav-item">
+                            <i class="fas fa-hospital nav-icon"></i>
+                            <span>Riverhead</span>
+                        </button>
+                        <button onclick="showSMSTemplatesClinic('Hempstead')" class="nav-item">
+                            <i class="fas fa-hospital nav-icon"></i>
+                            <span>Hempstead</span>
+                        </button>
+                    </div>
                 </div>
 
                 <!-- Add to TO DO -->

@@ -991,6 +991,60 @@ async function showSMSTemplates() {
     }
 }
 
+// Función para mostrar los SMS Templates de una clínica específica
+async function showSMSTemplatesClinic(clinic) {
+    hideAllContent();
+    const content = document.getElementById('smsTemplatesContent');
+    content.classList.remove('hidden');
+    content.innerHTML = `
+        <div class="mb-6">
+            <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">SMS Templates - ${clinic}</h2>
+            <p class="text-gray-600">Mensajes de texto automáticos para Quality Care Measures (QCM) - <span class="font-semibold">${clinic}</span></p>
+        </div>
+        <div class="loading-placeholder">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Cargando SMS templates...</p>
+        </div>
+    `;
+    try {
+        const file = `Common/Docs/SMS template/${clinic}.json`;
+        const response = await fetch(file);
+        if (!response.ok) throw new Error('No se pudo cargar el archivo de SMS templates para ' + clinic);
+        const templates = await response.json();
+        if (!Array.isArray(templates) || templates.length === 0) {
+            content.innerHTML += `<div class='no-data-placeholder'><i class='fas fa-sms'></i><p>No hay SMS templates disponibles para ${clinic}.</p></div>`;
+            return;
+        }
+        // Renderizar los templates
+        const html = templates.map(t => `
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">${t.name}</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-bold text-gray-700 mb-1">Español</h4>
+                            <div class="bg-gray-100 rounded p-2 text-gray-800 text-sm">${t.es}</div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-700 mb-1">English</h4>
+                            <div class="bg-gray-100 rounded p-2 text-gray-800 text-sm">${t.en}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+        content.innerHTML = `
+            <div class="mb-6">
+                <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">SMS Templates - ${clinic}</h2>
+                <p class="text-gray-600">Mensajes de texto automáticos para Quality Care Measures (QCM) - <span class="font-semibold">${clinic}</span></p>
+            </div>
+            <div class="space-y-4">${html}</div>
+        `;
+    } catch (error) {
+        content.innerHTML = `<div class='no-data-placeholder'><i class='fas fa-exclamation-triangle'></i><p>Error cargando SMS templates: ${error.message}</p></div>`;
+    }
+}
+
 // Search functionality
 function initializeSearch() {
     document.getElementById('searchInput').addEventListener('input', function(e) {

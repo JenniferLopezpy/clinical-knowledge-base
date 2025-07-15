@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "GSD – A1c Test",
+    "en": "Suffolk Primary Health at 170 Old Country Rd, Riverhead, NY 11901 is contacting you because your insurance requires an A1c blood sugar test; call 6643768229 ext [Extension] to schedule with [Agent’s Name].",
+    "es": "Suffolk Primary Health en 170 Old Country Rd, Riverhead, NY 11901 le recuerda que su seguro requiere un examen de azúcar A1c para monitoreo de diabetes; llame al 6643768229 ext [Extensión] y [Nombre del agente] le apoyará."
+  },
+  {
+    "id": 2,
+    "name": "CBP – Blood Pressure Check",
+    "en": "Suffolk Primary Health at 170 Old Country Rd, Riverhead, NY 11901 is reminding you that your insurance requires a blood pressure check; please call 6643768229 ext [Extension] to schedule with [Agent’s Name].",
+    "es": "Suffolk Primary Health en 170 Old Country Rd, Riverhead, NY 11901 le recuerda que su plan de salud requiere control de presión arterial; llame al 6643768229 ext [Extensión], [Nombre del agente] está para apoyarle."
+  },
+  {
+    "id": 3,
+    "name": "KED – Kidney Evaluation",
+    "en": "Suffolk Primary Health at 170 Old Country Rd, Riverhead, NY 11901 is reaching out because your insurance recommends kidney function testing (urine and blood); call 6643768229 ext [Extension] to schedule with [Agent’s Name].",
+    "es": "Suffolk Primary Health en 170 Old Country Rd, Riverhead, NY 11901 le informa que su plan requiere análisis de riñón por historial de diabetes; llame al 6643768229 ext [Extensión] y [Nombre del agente] le ayudará."
+  },
+  {
+    "id": 4,
+    "name": "EED – Diabetic Eye Exam",
+    "en": "Suffolk Primary Health at 170 Old Country Rd, Riverhead, NY 11901 is notifying you that your insurance requires a diabetic eye exam; call 6643768229 ext [Extension] to schedule with [Agent’s Name].",
+    "es": "Suffolk Primary Health en 170 Old Country Rd, Riverhead, NY 11901 le recuerda que su seguro requiere examen de retina por diabetes; llame al 6643768229 ext [Extensión], le atenderá [Nombre del agente]."
+  },
+  {
+    "id": 5,
+    "name": "SPC – Statin Therapy Review",
+    "en": "Suffolk Primary Health at 170 Old Country Rd, Riverhead, NY 11901 invites you to review your cholesterol medication as requested by your plan; call 6643768229 ext [Extension] to book with [Agent’s Name].",
+    "es": "Suffolk Primary Health en 170 Old Country Rd, Riverhead, NY 11901 su seguro indica que debe revisar su medicamento para colesterol; llame al 6643768229 ext [Extensión] con [Nombre del agente]."
+  },
+  {
+    "id": 6,
+    "name": "IMA – Teen Immunizations",
+    "en": "Suffolk Primary Health at 170 Old Country Rd, Riverhead, NY 11901 reminds you that your teen may be due for vaccines (Tdap, HPV, Meningitis); call 6643768229 ext [Extension] to schedule with [Agent’s Name].",
+    "es": "Suffolk Primary Health en 170 Old Country Rd, Riverhead, NY 11901 su seguro requiere vacunas Tdap, VPH y meningitis en adolescentes; llame al 6643768229 ext [Extensión] con [Nombre del agente]."
+  },
+  {
+    "id": 7,
+    "name": "APV – Annual Wellness Visit",
+    "en": "Suffolk Primary Health at 170 Old Country Rd, Riverhead, NY 11901 reminds you to complete your annual wellness visit required by your insurance; call 6643768229 ext [Extension] to schedule with [Agent’s Name].",
+    "es": "Suffolk Primary Health en 170 Old Country Rd, Riverhead, NY 11901 le recuerda que debe realizar su chequeo médico anual por indicación del seguro; llame al 6643768229 ext [Extensión] con [Nombre del agente]."
+  },
+  {
+    "id": 8,
+    "name": "OSW – Bone Density Test",
+    "en": "Suffolk Primary Health at 170 Old Country Rd, Riverhead, NY 11901 is reaching out to schedule your osteoporosis screening (DEXA scan); your insurance requires it—call 6643768229 ext [Extension] for [Agent’s Name].",
+    "es": "Suffolk Primary Health en 170 Old Country Rd, Riverhead, NY 11901 su plan recomienda una densitometría ósea (DEXA); llame al 6643768229 ext [Extensión] para agendar con [Nombre del agente]."
+  },
+  {
+    "id": 9,
+    "name": "BCS – Mammogram",
+    "en": "Suffolk Primary Health at 170 Old Country Rd, Riverhead, NY 11901 reminds you that your plan recommends a mammogram for breast cancer screening; call 6643768229 ext [Extension] to book with [Agent’s Name].",
+    "es": "Suffolk Primary Health en 170 Old Country Rd, Riverhead, NY 11901 su seguro indica que es tiempo de su mamografía anual; agende llamando al 6643768229 ext [Extensión] con [Nombre del agente]."
+  },
+  {
+    "id": 10,
+    "name": "CCS – Cervical Cancer Screening",
+    "en": "Suffolk Primary Health at 170 Old Country Rd, Riverhead, NY 11901 invites you to schedule your cervical cancer screening (PAP/HPV) per your insurance; call 6643768229 ext [Extension] with [Agent’s Name].",
+    "es": "Suffolk Primary Health en 170 Old Country Rd, Riverhead, NY 11901 le invitamos a realizar su examen Papanicolaou por requerimiento del seguro; llame al 6643768229 ext [Extensión] con [Nombre del agente]."
+  }
+] 
