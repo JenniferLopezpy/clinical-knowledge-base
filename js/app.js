@@ -24,6 +24,7 @@ function hideAllContent() {
         'welcomeScreen',
         'measuresContent',
         'scriptsContent',
+        'smsTemplatesContent', // <-- Agregado
         'todoContent',
         'callTrackerContent',
         'measureImagesContent',
