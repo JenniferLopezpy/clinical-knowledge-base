@@ -34,6 +34,8 @@ function hideAllContent() {
     contentSections.forEach(section => {
         document.getElementById(section).classList.add('hidden');
     });
+    // Restablecer scroll al inicio
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 }
 
 async function showInsurer(insurer) {
