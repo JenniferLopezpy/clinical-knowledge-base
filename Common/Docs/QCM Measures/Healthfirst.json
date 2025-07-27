@@ -5,7 +5,8 @@
     "WHERE IS IT?": "Results in PT DOCS (You'll find the referral in REFERRAL or DI)",
     "COMPLIANT PERIOD": "October 1 two years prior to the measurement year and December 31 of the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "Mammo Referral"
   },
   {
     "MEASURE NAME": "Cervical Cancer Screening (CCS)",
@@ -13,7 +14,8 @@
     "WHERE IS IT?": "Results in LAB and PAP appointment in eCW",
     "COMPLIANT PERIOD": "Pap Smear: measurement year and 2 years prior\nHrHPV: measurement year and 4 years prior ",
     "CODING": "G0101, Q0091, 3015F\n\n ",
-    "SCHEDULE AS/ADD TO APPT": "PAP"
+    "SCHEDULE AS/ADD TO APPT": "PAP",
+    "KEY WORDS": "Already specified in Visit Type (PAP)"
   },
   {
     "MEASURE NAME": "Colorectal Cancer Screening (COL-E)",
@@ -21,15 +23,17 @@
     "WHERE IS IT?": "Results in PT DOCS (You'll find the referral in REFERRAL/LAB)",
     "COMPLIANT PERIOD": "Colonoscopy in the measurement year or nine years prior\nCT colonography or flexible sigmoidoscopy in the measurement year or four years prior\nFIT‑DNA (Cologuard®) in the measurement year or two years prior\nFecal occult blood test (FOBT, gFOBT, iFOBT, or FIT) in the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "Colonoscopy Referral"
   },
   {
     "MEASURE NAME": "Glycemic Status Assessment for Patients with Diabetes (GSD)",
-    "DESCRIPTION": "The percentage of members 18–75 years of age with diabetes (types 1 and 2) whose most recent glycemic status (hemoglobin A1c [HbA1c] or glucose management indicator [GMI]) has a controlled blood sugar result < 8.0%. For this year’s HQIP, a glycemic status ≤ 9.0% meets criteria.",
+    "DESCRIPTION": "The percentage of members 18–75 years of age with diabetes (types 1 and 2) whose most recent glycemic status (hemoglobin A1c [HbA1c] or glucose management indicator [GMI]) has a controlled blood sugar result < 8.0%. For this year's HQIP, a glycemic status ≤ 9.0% meets criteria.",
     "WHERE IS IT?": "Results in LAB (LESS THAN 9.0)",
     "COMPLIANT PERIOD": "Most recent glycemic status assessment (HbA1c or Glucose management indicator (GMI)) during the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "A1C CHECK"
   },
   {
     "MEASURE NAME": "Controlling High Blood Pressure (CBP)",
@@ -37,7 +41,8 @@
     "WHERE IS IT?": "Result in PROGRESS NOTE (LESS THAN 140/90)",
     "COMPLIANT PERIOD": "Most recent BP (both systolic and diastolic) during the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT",
+    "KEY WORDS": "Supposed to be checked on every appointment type"
   },
   {
     "MEASURE NAME": "Kidney Health Evaluation for Patients with Diabetes (KED)",
@@ -45,15 +50,17 @@
     "WHERE IS IT?": "Result in LAB / PROGRESS NOTE",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "Kidney Health Evaluation"
   },
   {
     "MEASURE NAME": "Eye Exam for Patients with Diabetes (EED)",
     "DESCRIPTION": "Adults 18–75 years of age diagnosed with diabetes (types 1 and 2) should have a retinal or dilated eye exam by an eye care professional annually (or can be every two years when negative for retinopathy)",
     "WHERE IS IT?": "Result in PT DOCS (You'll find the order in DI)",
-    "COMPLIANT PERIOD": "Retinal or dilated eye exam read by an optometrist, ophthalmologist, or a system that provides an artificial intelligence (AI) interpretation in the measurement year\nNegative retinal or dilated eye exam (negative for retinopathy) read by an optometrist, ophthalmologist, or a system that provides an artificial intelligence (AI) interpretation in the year prior to the measurement year\nBilateral eye enucleation anytime during the member’s history through December 31 of the measurement year",
+    "COMPLIANT PERIOD": "Retinal or dilated eye exam read by an optometrist, ophthalmologist, or a system that provides an artificial intelligence (AI) interpretation in the measurement year\nNegative retinal or dilated eye exam (negative for retinopathy) read by an optometrist, ophthalmologist, or a system that provides an artificial intelligence (AI) interpretation in the year prior to the measurement year\nBilateral eye enucleation anytime during the member's history through December 31 of the measurement year",
     "CODING": "2023F, 92227",
-    "SCHEDULE AS/ADD TO APPT": "NATALIA (OPT) OR ANY APPT BUT SCPECIALTY (SUDO, SONO, EMG, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "NATALIA (OPT) OR ANY APPT BUT SCPECIALTY (SUDO, SONO, EMG, SCOTT)",
+    "KEY WORDS": "Diabetic Eye Exam order"
   },
   {
     "MEASURE NAME": "Adult Immunization Status (AIS‑E)",
@@ -61,7 +68,8 @@
     "WHERE IS IT?": "Immunization Record in PT DOCS",
     "COMPLIANT PERIOD": "Members who turned 19 years of age during the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "TDAP, HPV, FLU, PNEUMOCOCCAL"
   },
   {
     "MEASURE NAME": "Care for Older Adults (COA) Measures",
@@ -69,7 +77,8 @@
     "WHERE IS IT?": "General Health/Pain Assessment; Med List and Med review in PROGRESS NOTE",
     "COMPLIANT PERIOD": "During the measurement year for each",
     "CODING": "Medication Review – 90863, 99438, 99605, 1160F AND 1159F, G8427/ OR 99495, 99496. \nFunctional Status Assessment – 99483, 1170F, G0438, G0439",
-    "SCHEDULE AS/ADD TO APPT": "AWV"
+    "SCHEDULE AS/ADD TO APPT": "AWV",
+    "KEY WORDS": "Functional Assessment, Medication Review"
   },
   {
     "MEASURE NAME": "Chlamydia Screening in Women (CHL)",
@@ -77,7 +86,8 @@
     "WHERE IS IT?": "Result in LAB",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "Chlamydia Screening"
   },
   {
     "MEASURE NAME": "Diabetes Monitoring for People with Diabetes and Schizophrenia (SMD)",
@@ -85,7 +95,8 @@
     "WHERE IS IT?": "Result in LAB / PROGRESS NOTE. Both tests must be done",
     "COMPLIANT PERIOD": "During the measurement year (on the same or different dates of service).\n",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "LDL-C and A1C test for schizophrenic PT"
   },
   {
     "MEASURE NAME": "Statin Therapy for Patients with Diabetes (SPD)",
@@ -93,7 +104,8 @@
     "WHERE IS IT?": "ePrescription Log",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "Statin Therapy for Diabetic/Cardiovascular PT"
   },
   {
     "MEASURE NAME": "Social Needs Screening and Intervention (SNS‑E)",
@@ -101,7 +113,8 @@
     "WHERE IS IT?": "PRAPARE questionaire in PROGRESS NOTE/PT DOCS",
     "COMPLIANT PERIOD": "Screening: January 1 and December 1 of the measurement period  \nIntervention: on or up to 30 days after the date of the first positive transportation screen (31 days total)  ",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "PRAPARE QUESTIONNAIRE"
   },
   {
     "MEASURE NAME": "Child and Adolescent Well‑Care Visits (WCV)",
@@ -109,7 +122,8 @@
     "WHERE IS IT?": "AV/WCV appointment in eCW",
     "COMPLIANT PERIOD": "During the measurement year ",
     "CODING": "99381, 99382, 99383, 99384, 99385, 99386, 99387, 99391, 99392,  99393, 99394, 99395, 99396, 99397",
-    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT"
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT",
+    "KEY WORDS": "Already specified in Visit Type (WCV)"
   },
   {
     "MEASURE NAME": "Childhood Immunization Status (CIS-E)",
@@ -117,7 +131,8 @@
     "WHERE IS IT?": "Immunization Record in PT DOCS",
     "COMPLIANT PERIOD": "By their second birthday",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "TDAP, HPV, FLU, PNEUMOCOCCAL"
   },
   {
     "MEASURE NAME": "Developmental Screening in the First Three Years of Life (DEV‑N)",
@@ -125,7 +140,8 @@
     "WHERE IS IT?": "PROGRESS NOTE",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "96110, Z13.42",
-    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT"
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT",
+    "KEY WORDS": "Developmental Screening"
   },
   {
     "MEASURE NAME": "Immunizations for Adolescents (IMA)",
@@ -133,7 +149,8 @@
     "WHERE IS IT?": "Immunization Record in PT DOCS",
     "COMPLIANT PERIOD": "By their 13th birthday",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "TDAP, HPV, FLU, PNEUMOCOCCAL"
   },
   {
     "MEASURE NAME": "Prenatal Immunization Status (PRS‑E)",
@@ -141,7 +158,8 @@
     "WHERE IS IT?": "Immunization Record in PT DOCS",
     "COMPLIANT PERIOD": "On or between July 1 of the year prior to the measurement period and the delivery date",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "TDAP, HPV, FLU, PNEUMOCOCCAL"
   },
   {
     "MEASURE NAME": "Well‑Child Visits – 30 Months (W30)",
@@ -149,7 +167,8 @@
     "WHERE IS IT?": "AV/WCV appointment in eCW",
     "COMPLIANT PERIOD": "Six or more well‑child visits from birth through 15 months of age (visits must be 14 days apart)  \nTwo or more well‑child visits from 15 months and one day through 30 months of age (visits must be at least 14 days apart)",
     "CODING": "99381, 99382, 99383, 99384, 99385, 99391, 99392, 99393, 99394, 99395, 99461",
-    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT"
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT",
+    "KEY WORDS": "Already specified in Visit Type (WCV)"
   },
   {
     "MEASURE NAME": "Weight Assessment and Counseling for Nutrition (WCC)",
@@ -157,7 +176,8 @@
     "WHERE IS IT?": "PROGRESS NOTE",
     "COMPLIANT PERIOD": "As of December 31 of the measurement year",
     "CODING": "Counseling for nutrition – 97802. \nCounseling for physical activity – Z71.82 ",
-    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT OR ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT OR ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)",
+    "KEY WORDS": "Nutrition Counseling, Activity Counseling"
   },
   {
     "MEASURE NAME": "Timeliness of Prenatal and Postpartum Care (PPC)\n",
@@ -165,7 +185,8 @@
     "WHERE IS IT?": "ANN VISIT + PAP",
     "COMPLIANT PERIOD": "Timeliness of Prenatal Care: initial prenatal visit must be within first trimester or within 42 days of enrollment with health plan\nPostpartum Care visit must occur between seven and 84 days after delivery",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT + PAP (DIFFERENT DATES)"
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT + PAP (DIFFERENT DATES)",
+    "KEY WORDS": "Postpartum Care"
   },
   {
     "MEASURE NAME": "Asthma Medication Ratio (AMR)",
@@ -173,7 +194,8 @@
     "WHERE IS IT?": "ePrescription Log",
     "COMPLIANT PERIOD": "During the measurement year. Calculated as follows:\nStep 1: For each member, count the units of asthma controller medications dispensed during the measurement year\nNote: One unit equals one inhaler canister, one injection, one infusion, or a 30‑day or less supply of an oral medication\nStep 2: For each member, count the units of asthma reliever medications dispensed during the measurement year\nStep 3: For each member, sum the units calculated in Step 1 and Step 2 to determine units of total asthma medications\nStep 4: For each member, calculate the ratio of controller medications to total asthma medications using the following formula (use the .5 rule to round to the \nnearest whole number):\nUnits of Controller Medications (Step 1)\ndivided by\nUnits of Total Asthma Medications (Step 3)",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "Asthma Medication Ratio"
   },
   {
     "MEASURE NAME": "Blood Pressure Control for Patients with Diabetes \n(BPD)",
@@ -181,7 +203,8 @@
     "WHERE IS IT?": "Result in PROGRESS NOTE (LESS THAN 140/90)",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT",
+    "KEY WORDS": "Supposed to be checked on every appointment type"
   },
   {
     "MEASURE NAME": "Follow‑Up After Emergency Department (ED) Visit for People with Multiple High‑Risk Chronic Conditions (FMC)",
@@ -189,7 +212,8 @@
     "WHERE IS IT?": "FU appointment in eCW",
     "COMPLIANT PERIOD": "Within seven days of the ED visit",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOPS FU/ FU APPT"
+    "SCHEDULE AS/ADD TO APPT": "HOPS FU/ FU APPT",
+    "KEY WORDS": "Already specified in Visit Type (HOSP F/U)"
   },
   {
     "MEASURE NAME": "HIV Viral Load Suppression",
@@ -197,7 +221,8 @@
     "WHERE IS IT?": "Result in LAB",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "HIV VIRAL LOAD TEST"
   },
   {
     "MEASURE NAME": "Osteoporosis Management in Women Who Had a Fracture (OMW)",
@@ -205,7 +230,8 @@
     "WHERE IS IT?": "Result in PT DOCS",
     "COMPLIANT PERIOD": "BMD tests must be completed and/or osteoporosis medications must be dispensed within six months after the fracture",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "BONE MINERAL DENSITY TEST"
   },
   {
     "MEASURE NAME": "Statin Therapy for Patients with Cardiovascular Disease (SPC)",
@@ -213,7 +239,8 @@
     "WHERE IS IT?": "ePrescription Log",
     "COMPLIANT PERIOD": "During the measurement year ",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "Statin Therapy for Diabetic/Cardiovascular PT"
   },
   {
     "MEASURE NAME": "Statin Use in Persons with Diabetes (SPD)",
@@ -221,7 +248,8 @@
     "WHERE IS IT?": "ePrescription Log",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "Statin Therapy for Diabetic/Cardiovascular PT"
   },
   {
     "MEASURE NAME": "Transitions of Care (TRC)",
@@ -229,7 +257,8 @@
     "WHERE IS IT?": "HOSP FU appointment in eCW",
     "COMPLIANT PERIOD": "3 days after admission",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOSP FU"
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU",
+    "KEY WORDS": "Already specified in Visit Type (HOSP F/U)"
   },
   {
     "MEASURE NAME": "Adherence to Antipsychotic Medications for Individuals with Schizophrenia (SAA)",
@@ -237,7 +266,8 @@
     "WHERE IS IT?": "ePrescription Log",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "Check Adherence to Antipsychotic Medications"
   },
   {
     "MEASURE NAME": "Metabolic Monitoring for Children and Adolescents on Antipsychotics (APM-E)",
@@ -245,7 +275,8 @@
     "WHERE IS IT?": "ePrescription Log and LAB",
     "COMPLIANT PERIOD": "Both a blood glucose test and at least one cholesterol test during the measurement year on the same or different dates of service",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "Metabolic testing"
   },
   {
     "MEASURE NAME": "Diabetes Screening for People with Schizophrenia or Bipolar Disorder Who Are Using Antipsychotic Medications (SSD)",
@@ -253,7 +284,8 @@
     "WHERE IS IT?": "eprescription Log and LAB",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "Diabetes Screening for Antipsychotic Medications"
   },
   {
     "MEASURE NAME": "Depression Screening and Follow‑Up for Adolescents and Adults (DSF‑E)",
@@ -261,7 +293,8 @@
     "WHERE IS IT?": "PHQ-2 or PHQ-9 in PROGRESS NOTE",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "Supposed to be checked on every appointment type"
   },
   {
     "MEASURE NAME": "Follow‑Up After Emergency Department Visit for Mental Illness (FUM)",
@@ -269,7 +302,8 @@
     "WHERE IS IT?": "FU appointment in eCW",
     "COMPLIANT PERIOD": "1. Follow‑up visit within 30 days (31 total days)\n2. Follow‑up visit within seven days (eight total days)",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT"
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT",
+    "KEY WORDS": "Already specified in Visit Type (HOSP F/U)"
   },
   {
     "MEASURE NAME": "Follow‑Up After Emergency Department Visit for Substance Use (FUA)",
@@ -277,7 +311,8 @@
     "WHERE IS IT?": "FU appointment in eCW",
     "COMPLIANT PERIOD": "1. Follow‑up visit within 30 days (31 total days)\n2. Follow‑up visit within seven days (eight total days)",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT"
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT",
+    "KEY WORDS": "Already specified in Visit Type (HOSP F/U)"
   },
   {
     "MEASURE NAME": "Follow‑Up After High‑Intensity Care for Substance Use Disorder (FUI)",
@@ -285,7 +320,8 @@
     "WHERE IS IT?": "FU appointment in eCW",
     "COMPLIANT PERIOD": "Within 7 days after discharge. Do not include visits that occur on the date of discharge.\nTwo rates are reported: \n1. The percentage of visits or discharges for which the member received follow‑up for substance use disorder within the 30 days after the visit or discharge\n2. The percentage of visits or discharges for which the member received follow‑up for substance use disorder within the 7 days after the visit or discharge",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT"
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT",
+    "KEY WORDS": "Already specified in Visit Type (HOSP F/U)"
   },
   {
     "MEASURE NAME": "Follow‑Up After Hospitalization for Mental Illness (FUH)",
@@ -293,15 +329,17 @@
     "WHERE IS IT?": "FU appointment in eCW",
     "COMPLIANT PERIOD": "Within 7 days after discharge. (Do not include visits that occur on the date of discharge).\nTwo rates reported:\n1. A follow‑up visit with a mental health provider within 30 days after discharge. Do not include visits that occur on the date of discharge.\n2. Follow‑up visit within seven days of discharge. Do not include visits that occur on the date of discharge",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT"
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT",
+    "KEY WORDS": "Already specified in Visit Type (HOSP F/U)"
   },
   {
     "MEASURE NAME": "Initiation and Engagement of Substance Use Disorder Treatment (IET)",
-    "DESCRIPTION": "The percentage of new substance use disorder (SUD) episodes that result in treatment initiation and engagement for patients 13 years and older. New episodes can be initiated in a variety of settings, including inpatient and outpatient. A diagnosis is considered “new” if the member has not had a diagnosis of (or received medication for) alcohol or other drug use in the previous 194 days.",
+    "DESCRIPTION": "The percentage of new substance use disorder (SUD) episodes that result in treatment initiation and engagement for patients 13 years and older. New episodes can be initiated in a variety of settings, including inpatient and outpatient. A diagnosis is considered \"new\" if the member has not had a diagnosis of (or received medication for) alcohol or other drug use in the previous 194 days.",
     "WHERE IS IT?": "ePrescription Log and PROGRESS NOTE",
-    "COMPLIANT PERIOD": "• Initiation (within 14 days) Ensure the patient receives treatment using a SUD diagnosis code within 14 days of the SUD Episode Start Date. Treatment can be the same day if it’s a different provider.\n• Engagement (within 34 days) Ensure the patient has at least two distinct treatment visits with a SUD diagnosis code. Engagement visits must occur on the day after the initiation visit through 34 calendar days after the initiation visit (34 total days). Two engagement visits can be on the same date of service, but they must be with different providers to count as two events. A total of three visits is required to meet the measure.",
+    "COMPLIANT PERIOD": "• Initiation (within 14 days) Ensure the patient receives treatment using a SUD diagnosis code within 14 days of the SUD Episode Start Date. Treatment can be the same day if it's a different provider.\n• Engagement (within 34 days) Ensure the patient has at least two distinct treatment visits with a SUD diagnosis code. Engagement visits must occur on the day after the initiation visit through 34 calendar days after the initiation visit (34 total days). Two engagement visits can be on the same date of service, but they must be with different providers to count as two events. A total of three visits is required to meet the measure.",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "Substance Use Disorder Treatment"
   },
   {
     "MEASURE NAME": "Initiation of Pharmacotherapy Upon New Episode of Opioid Dependence (POD‑N)",
@@ -309,7 +347,8 @@
     "WHERE IS IT?": "FU appointment in eCW",
     "COMPLIANT PERIOD": "Within 30 days of the discharge date",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "Pharmacotherapy for Opioid Dependence"
   },
   {
     "MEASURE NAME": "Medication Adherence Measures (ADH)",
@@ -317,7 +356,8 @@
     "WHERE IS IT?": "ePrescription Log",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "Medication Adherence"
   },
   {
     "MEASURE NAME": "90‑Day Fills for Adherence Medications",
@@ -325,7 +365,8 @@
     "WHERE IS IT?": "ePrescription Log",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "No reason needed as it's dependant on medication"
   },
   {
     "MEASURE NAME": "Access to Care Support",
@@ -333,7 +374,8 @@
     "WHERE IS IT?": "Face-to-Face appointment in eCW",
     "COMPLIANT PERIOD": "In the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "No reason needed as it's any appointment type"
   },
   {
     "MEASURE NAME": "Formulary Compliance Rate",
@@ -341,7 +383,8 @@
     "WHERE IS IT?": "ePrescription Log",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SONO, SUDO, SCOTT, NATALIA)",
+    "KEY WORDS": "No reason needed as it's dependant on medication"
   },
   {
     "MEASURE NAME": "New Member Visit (EP)",
@@ -349,7 +392,8 @@
     "WHERE IS IT?": "Face-to-Face appointment in eCW",
     "COMPLIANT PERIOD": "Within 90 days of enrollment",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT",
+    "KEY WORDS": "No reason needed as it's any appointment type"
   },
   {
     "MEASURE NAME": "Return to Care",
@@ -357,7 +401,8 @@
     "WHERE IS IT?": "Face-to-Face appointment in eCW",
     "COMPLIANT PERIOD": "In the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT",
+    "KEY WORDS": "No reason needed as it's any appointment type"
   },
   {
     "MEASURE NAME": "Plan All‑Cause Readmissions (PCR)",
@@ -365,6 +410,7 @@
     "WHERE IS IT?": "HOSP FU appointment in eCW",
     "COMPLIANT PERIOD": "Within three to five days of discharge",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT"
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT",
+    "KEY WORDS": "Already specified in Visit Type (HOSP F/U)"
   }
 ]
