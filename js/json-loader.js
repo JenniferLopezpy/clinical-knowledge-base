@@ -44,6 +44,7 @@ async function loadInsurerData(insurer) {
             compliantPeriod: measure['COMPLIANT PERIOD'] || 'Period not specified',
             coding: measure['CODING'] || 'No coding specified',
             scheduleAs: measure['SCHEDULE AS/ADD TO APPT'] || 'Schedule not specified',
+            keyWords: measure['KEY WORDS'] || '',
             insurer: insurer
         }));
         

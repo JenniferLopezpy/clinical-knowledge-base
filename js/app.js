@@ -133,6 +133,15 @@ async function showInsurer(insurer) {
                                         </h4>
                                         <p class="measure-detail-content">${measure.coding}</p>
                                     </div>
+                                    ${measure.keyWords && measure.keyWords.trim() !== '' ? `
+                                    <div class="measure-detail-item">
+                                        <h4 class="measure-detail-title">
+                                            <i class="fas fa-key measure-detail-icon"></i>
+                                            Key Words
+                                        </h4>
+                                        <p class="measure-detail-content">${measure.keyWords}</p>
+                                    </div>
+                                    ` : ''}
                                     <div class="measure-detail-item">
                                         <h4 class="measure-detail-title">
                                             <i class="fas fa-calendar-plus measure-detail-icon"></i>
