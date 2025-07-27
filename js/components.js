@@ -84,32 +84,30 @@ function debounce(func, wait) {
     };
 }
 
+// Función para normalizar texto (quitar acentos, minúsculas y símbolos)
+function normalizeText(text) {
+    return text
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/\p{Diacritic}/gu, '')
+        .replace(/[^a-z0-9]/gi, ''); // Elimina todo lo que no sea letra o número
+}
+
 // Enhanced search functionality
 const debouncedSearch = debounce(function(searchTerm) {
-    if (searchTerm.length < 2) return;
-    
+    if (searchTerm.length < 1) return;
+    const searchNorm = normalizeText(searchTerm);
     // Search through all measures with highlighting
     let foundMeasures = [];
     Object.keys(measuresData).forEach(insurer => {
         measuresData[insurer].forEach(measure => {
-            const searchFields = [
-                measure.name,
-                measure.description,
-                measure.explanation,
-                measure.location,
-                measure.coding
-            ];
-            
-            const hasMatch = searchFields.some(field => 
-                field.toLowerCase().includes(searchTerm.toLowerCase())
-            );
-            
-            if (hasMatch) {
+            // Revisar todos los campos de la medida
+            const allFields = Object.values(measure).join(' ');
+            if (normalizeText(allFields).includes(searchNorm)) {
                 foundMeasures.push({ ...measure, insurer });
             }
         });
     });
-    
     displaySearchResults(foundMeasures, searchTerm);
 }, 300);
 

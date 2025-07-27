@@ -24,11 +24,12 @@ function hideAllContent() {
         'welcomeScreen',
         'measuresContent',
         'scriptsContent',
-        'smsTemplatesContent', // <-- Agregado
+        'smsTemplatesContent',
         'todoContent',
         'callTrackerContent',
         'measureImagesContent',
-        'updatesContent'
+        'updatesContent',
+        'callFlowContent'
     ];
     
     contentSections.forEach(section => {
@@ -742,26 +743,41 @@ async function refreshMeasureImages() {
     }
 }
 
-// Function to filter measure images by title
+// Function to normalize text (remove accents, lowercase)
+function normalizeText(text) {
+    return text
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/\p{Diacritic}/gu, '');
+}
+
+// Mejorar la función de búsqueda para que sea más flexible
 function filterMeasureImages(searchTerm) {
     const measureGroups = document.querySelectorAll('.measure-group');
-    const searchLower = searchTerm.toLowerCase();
-    
+    const searchNorm = normalizeText(searchTerm);
+    let anyVisible = false;
+
     measureGroups.forEach(group => {
-        const title = group.querySelector('.measure-group-title').textContent.toLowerCase();
-        
-        if (title.includes(searchLower)) {
+        const title = group.querySelector('.measure-group-title').textContent;
+        const titleNorm = normalizeText(title);
+        // Buscar también en los nombres de las imágenes
+        const imageLabels = Array.from(group.querySelectorAll('.measure-image-label'));
+        const imageLabelsNorm = imageLabels.map(lbl => normalizeText(lbl.textContent));
+        // Coincidencia si el título o alguna imagen coincide
+        const match =
+            titleNorm.includes(searchNorm) ||
+            imageLabelsNorm.some(lbl => lbl.includes(searchNorm));
+        if (match || searchNorm === '') {
             group.style.display = 'block';
+            anyVisible = true;
         } else {
             group.style.display = 'none';
         }
     });
-    
+
     // Show/hide no results message
-    const visibleGroups = document.querySelectorAll('.measure-group[style="display: block;"]');
     const noResultsMsg = document.getElementById('noResultsMessage');
-    
-    if (visibleGroups.length === 0 && searchTerm !== '') {
+    if (!anyVisible && searchTerm !== '') {
         if (!noResultsMsg) {
             const container = document.getElementById('measureImagesContainer');
             const msg = document.createElement('div');
@@ -1109,6 +1125,92 @@ function initializeSearch() {
             `;
         }
     });
+}
+
+// Call Flow Check List functionality
+async function showCallFlowCheckList() {
+    hideAllContent();
+    const content = document.getElementById('callFlowContent');
+    content.classList.remove('hidden');
+    
+    // Show loading state
+    content.innerHTML = `
+        <div class="mb-6">
+            <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">Call Flow Check List</h2>
+            <p class="text-gray-600">Complete checklist for call center procedures and protocols</p>
+        </div>
+        
+        <div class="loading-placeholder">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Loading call flow checklist...</p>
+        </div>
+    `;
+    
+    try {
+        // Load data from JSON file
+        const response = await fetch('Common/Docs/Call Flow/call-flow-checklist.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        
+        if (!data.call_flow) {
+            throw new Error('Invalid JSON structure: call_flow not found');
+        }
+        
+        const callFlow = data.call_flow;
+        
+        // Create the HTML content
+        content.innerHTML = `
+            <div class="mb-6">
+                <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">Call Flow Check List</h2>
+                <p class="text-gray-600">Complete checklist for call center procedures and protocols</p>
+            </div>
+            
+            <div class="call-flow-grid">
+                ${Object.entries(callFlow).map(([sectionKey, steps]) => {
+                    const sectionTitle = sectionKey
+                        .split('_')
+                        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                        .join(' ');
+                    
+                    return `
+                        <div class="call-flow-section">
+                            <h3>
+                                <i class="fas fa-list-check"></i>
+                                ${sectionTitle}
+                            </h3>
+                            <ol class="call-flow-list">
+                                ${steps.map((step, index) => `
+                                    <li>
+                                        <span class="call-flow-number">
+                                            ${index + 1}
+                                        </span>
+                                        <span class="call-flow-text">${step}</span>
+                                    </li>
+                                `).join('')}
+                            </ol>
+                        </div>
+                    `;
+                }).join('')}
+            </div>
+        `;
+        
+    } catch (error) {
+        console.error('Error loading call flow checklist:', error);
+        content.innerHTML = `
+            <div class="mb-6">
+                <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">Call Flow Check List</h2>
+                <p class="text-gray-600">Complete checklist for call center procedures and protocols</p>
+            </div>
+            
+            <div class="error-placeholder">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Error loading call flow checklist</p>
+                <p class="text-sm text-gray-500 mt-2">${error.message}</p>
+            </div>
+        `;
+    }
 }
 
 // Initialize the application

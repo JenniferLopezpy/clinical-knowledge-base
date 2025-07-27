@@ -136,6 +136,23 @@
                     </div>
                 </div>
 
+                <!-- Call Flow -->
+                <div class="nav-section">
+                    <button onclick="toggleSection('callFlow')" class="nav-section-button">
+                        <div class="nav-section-content">
+                            <i class="fas fa-phone-volume nav-icon"></i>
+                            <span class="nav-section-title">Call Flow</span>
+                        </div>
+                        <i id="callFlow-arrow" class="fas fa-chevron-down nav-arrow"></i>
+                    </button>
+                    <div id="callFlow-content" class="nav-subsection">
+                        <button onclick="showCallFlowCheckList()" class="nav-item">
+                            <i class="fas fa-clipboard-check nav-icon"></i>
+                            <span>Check List</span>
+                        </button>
+                    </div>
+                </div>
+
                 <!-- Updates -->
                 <div class="nav-section">
                     <button onclick="toggleSection('updates')" class="nav-section-button">
@@ -173,6 +190,7 @@
                 <div id="callTrackerContent" class="content-section hidden"></div>
                 <div id="measureImagesContent" class="content-section hidden"></div>
                 <div id="updatesContent" class="content-section hidden"></div>
+                <div id="callFlowContent" class="content-section hidden"></div>
             </div>
         </main>
     </div>

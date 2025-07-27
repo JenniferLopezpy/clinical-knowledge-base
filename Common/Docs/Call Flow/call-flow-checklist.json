@@ -1,0 +1,41 @@
+{
+  "call_flow": {
+    "before_calling": [
+      "Was the measure already done and complaint? (CHECK ON ECW)",
+      "What type of appointment can I schedule for the measures I have pending? (CHECK ON QCM GUIDE)",
+      "Verify patient's insurance information is current",
+      "Check if patient has any upcoming appointments scheduled",
+      "Review patient's medical history for relevant measures"
+    ],
+    "when_calling": [
+      "Greet politely, in a professional manner, and introduce yourself (NAME AND FACILITY)",
+      "Am I speaking with the correct patient? IF NOT LEAVE YOUR EXT FOR A CALL BACK AND ASK FOR A BETTER TIME TO TRY AGAIN",
+      "Explain the reason of calling (INSURANCE, MEASURE AND IMPORTANCE OF PREVENTIVE VISIT)",
+      "Confirm patient's contact information and preferred contact method",
+      "Ask if patient has any questions about their health or upcoming appointments",
+      "Schedule appropriate appointment based on pending measures",
+      "Provide clear instructions for appointment preparation if needed"
+    ],
+    "if_no_answer": [
+      "Leave a professional voicemail with your name and facility",
+      "Include callback number and best times to reach you",
+      "Mention the purpose of the call briefly",
+      "Ask for a callback or alternative contact method",
+      "Document the attempt in the system"
+    ],
+    "after_voicemail": [
+      "Wait appropriate time before follow-up call",
+      "Try calling at different times of day",
+      "Consider alternative contact methods (text, email)",
+      "Update patient's preferred contact method if provided",
+      "Document all communication attempts"
+    ],
+    "after_calling": [
+      "Document all call outcomes in the system",
+      "Schedule follow-up calls if needed",
+      "Update patient's appointment status",
+      "Send confirmation messages if appointments were scheduled",
+      "Flag any issues or special requirements for follow-up"
+    ]
+  }
+} 

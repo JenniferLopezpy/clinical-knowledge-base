@@ -478,3 +478,4 @@ async function getImagesForEnvironment() {
         return await getAllImagesFromFolder();
     }
 }
+ 
