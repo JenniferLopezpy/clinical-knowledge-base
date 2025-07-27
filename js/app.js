@@ -506,24 +506,12 @@ function showMeasureImages() {
     content.innerHTML = `
         <div class="mb-6">
             <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">How does the measure looks?</h2>
-            <p class="text-gray-600">Measure screenshots from Common/Img folder. Use the scan button to detect new images.</p>
+            <p class="text-gray-600">Measure screenshots from Common/Img folder. Use Force Refresh to reload images.</p>
         </div>
         
         <div class="mb-4 flex gap-4">
-            <button onclick="autoDetectAllImages()" class="btn btn-secondary">
-                <i class="fas fa-search"></i> Auto-Detect All Images
-            </button>
-            <button onclick="scanForNewImages()" class="btn btn-secondary">
-                <i class="fas fa-search"></i> Scan for New Images
-            </button>
             <button onclick="forceRefreshImages()" class="btn btn-primary">
                 <i class="fas fa-sync-alt"></i> Force Refresh
-            </button>
-            <button onclick="showDebugInfo()" class="btn btn-warning">
-                <i class="fas fa-bug"></i> Debug Info
-            </button>
-            <button onclick="showJSONManagement()" class="btn btn-info">
-                <i class="fas fa-cog"></i> JSON Management
             </button>
         </div>
         
