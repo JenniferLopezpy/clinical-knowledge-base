@@ -119,6 +119,7 @@ const measuresData = {
 };
 
 // Scripts data is now loaded from Common/Docs/Scripts/scripts.json
+let scriptsData = []; // Initialize as empty array, will be loaded from JSON
 
 // Call tracker data
 let callTrackerData = [
