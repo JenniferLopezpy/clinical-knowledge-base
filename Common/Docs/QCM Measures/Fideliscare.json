@@ -1,11 +1,12 @@
 [
   {
-    "MEASURE NAME": "(AAP) Adults’ Access to Preventive/Ambulatory Health Services ",
+    "MEASURE NAME": "(AAP) Adults' Access to Preventive/Ambulatory Health Services ",
     "DESCRIPTION": "Measure evaluates the percentage of members 20 years of age and older who had an ambulatory or preventive care visit during the measurement year. Marketplace members who had an ambulatory or preventive care visit during the measurement year or the two years prior to the measurement. Services that count include outpatient evaluation and management (E&M) visits, consultations, assisted living/home care oversight, preventive medicine, and counseling",
     "WHERE IS IT?": "Any visit type in eCW",
     "COMPLIANT PERIOD": "Measurement year",
     "CODING": "99401, Z00.00, Z00.01",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT",
+    "KEY WORDS": "No reason needed as it's any appointment type"
   },
   {
     "MEASURE NAME": "(ACP) Advance Care Planning",
@@ -13,7 +14,8 @@
     "WHERE IS IT?": "PT DOCS",
     "COMPLIANT PERIOD": "Measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Advance Care Planning"
   },
   {
     "MEASURE NAME": " (AIS-E) Adult Immunization Status",
@@ -21,7 +23,8 @@
     "WHERE IS IT?": "Immunization Records in PT DOCS",
     "COMPLIANT PERIOD": "Measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "TDAP, HPV, FLU, PNEUMOCOCCAL"
   },
   {
     "MEASURE NAME": "(BPC-E) Blood Pressure Control for Patients with Hypertension ",
@@ -29,7 +32,8 @@
     "WHERE IS IT?": "Result in PROGRESS NOTE (LESS THAN 140/90)",
     "COMPLIANT PERIOD": "Most recent BP during the measurement period.",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT",
+    "KEY WORDS": "Supposed to be checked on every appointment type"
   },
   {
     "MEASURE NAME": "(BPD) Blood Pressure Control for Patients with Diabetes ",
@@ -37,7 +41,8 @@
     "WHERE IS IT?": "Result in PROGRESS NOTE (LESS THAN 140/90)",
     "COMPLIANT PERIOD": "Most recent BP during the measurement period",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT",
+    "KEY WORDS": "Supposed to be checked on every appointment type"
   },
   {
     "MEASURE NAME": "(CBP) Controlling High Blood Pressure ",
@@ -45,7 +50,8 @@
     "WHERE IS IT?": "Result in PROGRESS NOTE (LESS THAN 140/90)",
     "COMPLIANT PERIOD": "Most recent BP during the measurement period",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT",
+    "KEY WORDS": "Supposed to be checked on every appointment type"
   },
   {
     "MEASURE NAME": "(COA) Care for Older Adults",
@@ -53,7 +59,8 @@
     "WHERE IS IT?": "General Health/Pain Assessment; Med List and Med review in PROGRESS NOTE",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "Medication Review (would require both CPT II codes \nof 1159F [Medication List] and 1160F [Medication Review]  \nFunctional Status Assessment – 99483, 1170F, G0438, G0439",
-    "SCHEDULE AS/ADD TO APPT": "AWV"
+    "SCHEDULE AS/ADD TO APPT": "AWV",
+    "KEY WORDS": "Functional Assessment, Medication Review"
   },
   {
     "MEASURE NAME": "(COL-E) Colorectal Cancer Screening",
@@ -61,7 +68,8 @@
     "WHERE IS IT?": "Result in PT DOCS (You'll finde the referral in REFERRAL/LAB)",
     "COMPLIANT PERIOD": "Colonoscopy – within past 10 years  \nFlexible Sigmoidoscopy – within past 5 years \nCT Colonography – within past 5 years \nsDNA FIT Lab Test – within past 3 years \nFOBT Lab Test – within measurement year ",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Colonoscopy Referral"
   },
   {
     "MEASURE NAME": "(EED) Eye Exam for Patients with Diabetes",
@@ -69,7 +77,8 @@
     "WHERE IS IT?": "Result in PT DOCS (You'll finde the order in DI)",
     "COMPLIANT PERIOD": "Dilated Retinal Eye Exam (DRE) – Yearly\nNegative retinal or dilated eye exam (negative for retinopathy) in the year prior to measurement year",
     "CODING": "92227, 2023F",
-    "SCHEDULE AS/ADD TO APPT": "NATALIA(OPT) OR ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "NATALIA(OPT) OR ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, SCOTT)",
+    "KEY WORDS": "Diabetic Eye Exam order"
   },
   {
     "MEASURE NAME": "(FMC) Follow-Up After Emergency Department Visit for People with Multiple High-Risk Chronic Conditions",
@@ -77,7 +86,8 @@
     "WHERE IS IT?": "FU appointment in eCW",
     "COMPLIANT PERIOD": "Within seven days of the ED visit during the measurement year.",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT"
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT",
+    "KEY WORDS": "Already specified in Visit Type (HOSP F/U)"
   },
   {
     "MEASURE NAME": "(GSD) Glycemic Status Assessment for Patients with Diabetes",
@@ -85,7 +95,8 @@
     "WHERE IS IT?": "Result in LAB/PROGRESS NOTE (LESS THAN 9)",
     "COMPLIANT PERIOD": "Most recent glycemic status during the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONOS, EMG, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONOS, EMG, SCOTT, NATALIA)",
+    "KEY WORDS": "A1C CHECK"
   },
   {
     "MEASURE NAME": "(KED) Kidney Health Evaluation for Patients with Diabetes ",
@@ -93,15 +104,17 @@
     "WHERE IS IT?": "Result in LAB/PROGRESS NOTE (LESS THAN 9)",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONOS, EMG, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONOS, EMG, SCOTT, NATALIA)",
+    "KEY WORDS": "Kidney Health Evaluation"
   },
   {
     "MEASURE NAME": "(PBH) Persistence of Beta-Blocker Treatment After a Heart Attack",
     "DESCRIPTION": "Measure evaluates the percentage of members 18 years of age and older during the measurement year who were hospitalized and discharged from July 1 of the year prior to June 30 of the measurement year with a diagnosis of acute myocardial infarction (AMI), and who received persistent beta-blocker treatment for 180 days (six months) after discharge.",
-    "WHERE IS IT?": "HOSP FU/ MEDS FU appointment in eCW",
-    "COMPLIANT PERIOD": "6 months after discharge",
+    "WHERE IS IT?": "ePrescription Log",
+    "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Beta-Blocker Treatment"
   },
   {
     "MEASURE NAME": "(PCE) Pharmacotherapy Management of COPD Exacerbation ",
@@ -109,7 +122,8 @@
     "WHERE IS IT?": "HOSP FU/ MEDS FU appointment in eCW",
     "COMPLIANT PERIOD": "Within 14/30 days of the event",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT"
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT",
+    "KEY WORDS": "COPD Exacerbation"
   },
   {
     "MEASURE NAME": "(PCR) Plan All-Cause Readmissions",
@@ -117,7 +131,8 @@
     "WHERE IS IT?": "HOSP FU appointment in eCW",
     "COMPLIANT PERIOD": "Within seven days after discharge",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT"
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT",
+    "KEY WORDS": "Readmission"
   },
   {
     "MEASURE NAME": "(SPC) Statin Therapy for Patients with Cardiovascular Disease",
@@ -125,7 +140,8 @@
     "WHERE IS IT?": "ePrescription logs",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Statin Therapy"
   },
   {
     "MEASURE NAME": "(TRC) Transitions of Care ",
@@ -133,7 +149,8 @@
     "WHERE IS IT?": "HOSP FU appointment in eCW",
     "COMPLIANT PERIOD": "3 days after admission",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT"
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/FU APPT",
+    "KEY WORDS": "Transitions of Care"
   },
   {
     "MEASURE NAME": "(AMO) Annual Monitoring for Persons on Long-Term Opioid Therapy",
@@ -141,7 +158,8 @@
     "WHERE IS IT?": "Urine drug screens (UDS) in LAB",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONOS, EMG, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONOS, EMG, SCOTT, NATALIA)",
+    "KEY WORDS": "Opioid Therapy"
   },
   {
     "MEASURE NAME": "(INR) International Normalized Ratio Monitoring for Individuals on Warfarin",
@@ -149,7 +167,8 @@
     "WHERE IS IT?": "MEDS FU/ FU appointment in eCW",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Warfarin Monitoring"
   },
   {
     "MEASURE NAME": "(PDC) Proportion of Days Covered",
@@ -157,7 +176,8 @@
     "WHERE IS IT?": "ePrescription logs",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "PDC Coverage"
   },
   {
     "MEASURE NAME": "(SPD) Statin Therapy for Patients with Diabete",
@@ -165,7 +185,8 @@
     "WHERE IS IT?": "ePrescription logs",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Statin Therapy"
   },
   {
     "MEASURE NAME": "(SUPD) Statin Use in Persons with Diabetes",
@@ -173,7 +194,8 @@
     "WHERE IS IT?": "ePrescription logs",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Statin Use"
   },
   {
     "MEASURE NAME": "(BCS-E) Breast Cancer Screening",
@@ -181,7 +203,8 @@
     "WHERE IS IT?": "Result in PT DOCS (You'll find the referral in REFERRAL or DI)",
     "COMPLIANT PERIOD": "On or between October 1 two years prior to the measurement period and the end of the measurement period",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Breast Cancer Screening"
   },
   {
     "MEASURE NAME": "(CCS-E) Cervical Cancer Screening",
@@ -189,7 +212,8 @@
     "WHERE IS IT?": "Result in LAB and PAP appointment in eCW",
     "COMPLIANT PERIOD": "Members 21 to 64 years of age who had cervical cytology performed within last three years.\nMembers 30 to 64 years of age who had cervical high-risk human papillomavirus (hrHPV) testing performed within the last five years.\nMembers 30 to 64 years of age who had cervical cytology/high risk human papillomavirus (hrHPV) co-testing within the last five years",
     "CODING": "G0101, Q0091, 3015F",
-    "SCHEDULE AS/ADD TO APPT": "PAP"
+    "SCHEDULE AS/ADD TO APPT": "PAP",
+    "KEY WORDS": "Cervical Cancer Screening"
   },
   {
     "MEASURE NAME": "(CHL) Chlamydia Screening ",
@@ -197,7 +221,8 @@
     "WHERE IS IT?": "Result in LAB",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONOS, EMG, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONOS, EMG, SCOTT, NATALIA)",
+    "KEY WORDS": "Chlamydia Screening"
   },
   {
     "MEASURE NAME": "(DBM-E) Documented Assessment After Mammogram",
@@ -205,7 +230,8 @@
     "WHERE IS IT?": "PT DOCS",
     "COMPLIANT PERIOD": "On or within 14 days (15 days total) after mammogram",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Mammogram Assessment"
   },
   {
     "MEASURE NAME": "(FMA-E) Follow-Up After Abnormal Mammogram Assessment",
@@ -213,7 +239,8 @@
     "WHERE IS IT?": "PT DOCS",
     "COMPLIANT PERIOD": "90 days after the episode date (91 days total)",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Mammogram Follow-Up"
   },
   {
     "MEASURE NAME": "(OMW) Osteoporosis Management in Women Who Had a Fracture",
@@ -221,7 +248,8 @@
     "WHERE IS IT?": "PT DOCS/ ePrescription logs",
     "COMPLIANT PERIOD": "6 months after fracture",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Osteoporosis Management"
   },
   {
     "MEASURE NAME": "(OSW) Osteoporosis Screening in Older Women",
@@ -229,7 +257,8 @@
     "WHERE IS IT?": "PT DOCS",
     "COMPLIANT PERIOD": "On or between the member’s 65th birthday and Dec. 31 of the measurement ",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Osteoporosis Screening"
   },
   {
     "MEASURE NAME": "(PPC) Prenatal and Postpartum Care",
@@ -237,7 +266,8 @@
     "WHERE IS IT?": "AV and PAP appointments in eCW",
     "COMPLIANT PERIOD": "On or between seven and 84 days after delivery ",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT AND PAP (DIFFERENT DATES)"
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT AND PAP (DIFFERENT DATES)",
+    "KEY WORDS": "Prenatal and Postpartum Care"
   },
   {
     "MEASURE NAME": "(PRS-E) Prenatal Immunization Status",
@@ -245,7 +275,8 @@
     "WHERE IS IT?": "Immunization Records in PT DOCS",
     "COMPLIANT PERIOD": "Flu — on or between July 1 of the year prior to the measurement year and the delivery date. \nTdap — vaccine received during the pregnancy (including the delivery date).",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Prenatal Immunization"
   },
   {
     "MEASURE NAME": "(CIS-E) Childhood Immunization Status",
@@ -253,7 +284,8 @@
     "WHERE IS IT?": "Immunization Records in PT DOCS",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Childhood Immunization"
   },
   {
     "MEASURE NAME": "(IMA-E) Immunizations for Adolescents",
@@ -261,7 +293,8 @@
     "WHERE IS IT?": "Immunization Records in PT DOCS",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Adolescent Immunization"
   },
   {
     "MEASURE NAME": "(LSC) Lead Screening in Children",
@@ -269,7 +302,8 @@
     "WHERE IS IT?": "Result in LAB",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONOS, EMG, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONOS, EMG, SCOTT, NATALIA)",
+    "KEY WORDS": "Lead Screening"
   },
   {
     "MEASURE NAME": "(OED) Oral Evaluation, Dental Services",
@@ -277,7 +311,8 @@
     "WHERE IS IT?": "Referral in PT HUB",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Dental Services"
   },
   {
     "MEASURE NAME": "(TFC) Topical Fluoride for Children",
@@ -285,7 +320,8 @@
     "WHERE IS IT?": "Referral in PT HUB",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Fluoride Treatment"
   },
   {
     "MEASURE NAME": "(W30) Well-Child Visits in the First 30 Months of Life",
@@ -293,7 +329,8 @@
     "WHERE IS IT?": "AV/WCV appointment in eCW",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT"
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT",
+    "KEY WORDS": "Well-Child Visits"
   },
   {
     "MEASURE NAME": "(WCC) Weight Assessment and Counseling for Nutrition and Physical Activity for Children/Adolescents ",
@@ -301,7 +338,8 @@
     "WHERE IS IT?": "PROGRESS NOTE",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "G0447",
-    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT OR ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT OR ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)",
+    "KEY WORDS": "Weight Assessment and Counseling"
   },
   {
     "MEASURE NAME": "(WCV) Child and Adolescent Well-Care Visits",
@@ -309,7 +347,8 @@
     "WHERE IS IT?": "AV/WCV appointment in eCW",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "Z00.00, Z00.01, Z00.121, Z00.129, Z00.2, Z00.3, Z01.411, Z01.419, Z02.5, Z76.2",
-    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT"
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT",
+    "KEY WORDS": "Well-Care Visits"
   },
   {
     "MEASURE NAME": "(AAB) Avoidance of Antibiotic Treatment for Acute Bronchitis/Bronchiolitis",
@@ -317,7 +356,8 @@
     "WHERE IS IT?": "ePrescription logs",
     "COMPLIANT PERIOD": "Between July 1 of the year prior to the measurement year to June 30 of the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Antibiotic Avoidance"
   },
   {
     "MEASURE NAME": "(AMR) Asthma Medication Ratio",
@@ -325,7 +365,8 @@
     "WHERE IS IT?": "ePrescription logs",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Asthma Medication Ratio"
   },
   {
     "MEASURE NAME": "(CWP) Appropriate Testing for Pharyngitis",
@@ -333,7 +374,8 @@
     "WHERE IS IT?": "Result in LAB/ ePrescription logs",
     "COMPLIANT PERIOD": "Seven-day period: from three days prior to the episode date through three days after the episode",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Pharyngitis Testing"
   },
   {
     "MEASURE NAME": "(LBP) Use of Imaging Studies for Low Back Pain",
@@ -341,7 +383,8 @@
     "WHERE IS IT?": "PT DOCS",
     "COMPLIANT PERIOD": "Within 28 days of the diagnosis",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Low Back Pain Imaging"
   },
   {
     "MEASURE NAME": "(SNS-E) Social Needs Screening and Intervention",
@@ -349,7 +392,8 @@
     "WHERE IS IT?": "PRAPARE questionaire in PROGRESS NOTE/PT DOCS",
     "COMPLIANT PERIOD": "during the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Social Needs Screening"
   },
   {
     "MEASURE NAME": "(URI) Appropriate Treatment for Upper Respiratory Infectio",
@@ -357,7 +401,8 @@
     "WHERE IS IT?": "ePrescription logs",
     "COMPLIANT PERIOD": "On or three days after the episode",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Upper Respiratory Infection"
   },
   {
     "MEASURE NAME": "(ADD-E) Follow-up Care for Children Prescribed ADHD Medication",
@@ -365,7 +410,8 @@
     "WHERE IS IT?": "FU appointments in eCW",
     "COMPLIANT PERIOD": "Within a 300-day (10-month) period, one of which was within 30 days of when the first ADHD medication was dispensed. ",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "ADHD Follow-Up"
   },
   {
     "MEASURE NAME": "(APM-E) Metabolic Monitoring for Children and Adolescents on Antipsychotics ",
@@ -373,7 +419,8 @@
     "WHERE IS IT?": "Result in LAB/ ePrescription logs",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW ANY APPT BUT SPECIALTY (SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "BW ANY APPT BUT SPECIALTY (SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Metabolic Monitoring"
   },
   {
     "MEASURE NAME": "(APP) Use of First-Line Psychosocial Care for Children and Adolescents on Antipsychotics ",
@@ -381,7 +428,8 @@
     "WHERE IS IT?": "Referral for a trial of first-line psychosocial care",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Psychosocial Care"
   },
   {
     "MEASURE NAME": "(DSF-E) Depression Screening and Follow-Up for Adolescents and Adults",
@@ -389,7 +437,8 @@
     "WHERE IS IT?": "PHQ-2 or PHQ-9 in PROGRESS NOTE",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Depression Screening"
   },
   {
     "MEASURE NAME": "(FUA) Follow-Up After Emergency Department Visit with Substance Use Disorder (SUD)",
@@ -397,7 +446,8 @@
     "WHERE IS IT?": "HOSP FU/FU appointment in eCW",
     "COMPLIANT PERIOD": "30 days after discharge",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT"
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT",
+    "KEY WORDS": "Substance Use Disorder Follow-Up"
   },
   {
     "MEASURE NAME": "(FUH) Follow-Up After Hospitalization for Mental Illnes",
@@ -405,7 +455,8 @@
     "WHERE IS IT?": "HOSP FU/FU appointment in eCW",
     "COMPLIANT PERIOD": "7-30 days after discharge",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT"
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT",
+    "KEY WORDS": "Mental Health Follow-Up"
   },
   {
     "MEASURE NAME": "(FUI) Follow-Up After High-Intensity Care for Substance Use Disorder (SUD)",
@@ -413,7 +464,8 @@
     "WHERE IS IT?": "HOSP FU/ FU appointment in eCW",
     "COMPLIANT PERIOD": "7-30 days after discharge",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT"
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT",
+    "KEY WORDS": "Substance Use Disorder Follow-Up"
   },
   {
     "MEASURE NAME": "(FUM) Follow-Up After Emergency Department Visit for Mental Illness",
@@ -421,7 +473,8 @@
     "WHERE IS IT?": "HOSP FU/FU appointment in eCW",
     "COMPLIANT PERIOD": "7-30 days after discharge",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT"
+    "SCHEDULE AS/ADD TO APPT": "HOSP FU/ FU APPT",
+    "KEY WORDS": "Mental Health Follow-Up"
   },
   {
     "MEASURE NAME": "(IET) Initiation and Engagement of Substance Use Disorder (SUD) Treatment",
@@ -429,7 +482,8 @@
     "WHERE IS IT?": "FU appointments in eCW",
     "COMPLIANT PERIOD": "14 for initiation and 34 for engagement",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Substance Use Disorder Treatment"
   },
   {
     "MEASURE NAME": "(PND-E) Prenatal Depression Screening",
@@ -437,7 +491,8 @@
     "WHERE IS IT?": "PHQ-2 or PHQ-9 in PROGRESS NOTE",
     "COMPLIANT PERIOD": "Before giving birth",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Prenatal Depression Screening"
   },
   {
     "MEASURE NAME": "(POD) Pharmacotherapy for Opioid Use Disorder",
@@ -445,7 +500,8 @@
     "WHERE IS IT?": "ePrescription logs",
     "COMPLIANT PERIOD": "When the member adheres to OUD pharmacotherapy for 180 days or more without a gap in treatment of more than eight days",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Opioid Use Disorder"
   },
   {
     "MEASURE NAME": "(SAA) Adherence to Antipsychotic Medications for Individuals with Schizophrenia",
@@ -453,7 +509,8 @@
     "WHERE IS IT?": "ePrescription logs",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, EMG SONO, NATALIA, SCOTT)",
+    "KEY WORDS": "Antipsychotic Adherence"
   },
   {
     "MEASURE NAME": "(SSD) Diabetes Screening for People with Schizophrenia or Bipolar Disorder Who are Using Antipsychotic Medications",
@@ -461,6 +518,7 @@
     "WHERE IS IT?": "ePrescription logs and LAB",
     "COMPLIANT PERIOD": "During the measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONOS, EMG, SCOTT, NATALIA)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONOS, EMG, SCOTT, NATALIA)",
+    "KEY WORDS": "Diabetes Screening"
   }
 ]

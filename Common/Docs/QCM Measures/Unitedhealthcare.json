@@ -5,7 +5,8 @@
     "WHERE IS IT?": "PT DOCS",
     "COMPLIANT PERIOD": "During measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)",
+    "KEY WORDS": "Advance Care Planning"
   },
   {
     "MEASURE NAME": "Care for Older Adults (COA) – Functional Status Assessment",
@@ -13,7 +14,8 @@
     "WHERE IS IT?": "General Health Assessment in PROGRESS NOTE",
     "COMPLIANT PERIOD": "During measurement year",
     "CODING": "G0438, G0439",
-    "SCHEDULE AS/ADD TO APPT": "AWV"
+    "SCHEDULE AS/ADD TO APPT": "AWV",
+    "KEY WORDS": "Functional Assessment"
   },
   {
     "MEASURE NAME": "Care for Older Adults (COA) – Medication Review",
@@ -21,7 +23,8 @@
     "WHERE IS IT?": "Med list and Med review in PROGRESS NOTE",
     "COMPLIANT PERIOD": "During measurement year",
     "CODING": "1159F AND 1160F on the same date of service",
-    "SCHEDULE AS/ADD TO APPT": "AWV OR ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "AWV OR ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)",
+    "KEY WORDS": "Medication Review"
   },
   {
     "MEASURE NAME": "Care for Older Adults (COA) – Pain Assessment",
@@ -29,7 +32,8 @@
     "WHERE IS IT?": "Pain Assessment in PROGRESS NOTE",
     "COMPLIANT PERIOD": "During measurement year",
     "CODING": "1125F, 1126F",
-    "SCHEDULE AS/ADD TO APPT": "AWV"
+    "SCHEDULE AS/ADD TO APPT": "AWV",
+    "KEY WORDS": "Pain Assessment"
   },
   {
     "MEASURE NAME": "Cervical Cancer Screening (CCS and CCS-E)",
@@ -37,7 +41,8 @@
     "WHERE IS IT?": "Result in LAB and PAP appointment in eCW",
     "COMPLIANT PERIOD": "Members recommended for routine cervical cancer screening ages 21–64 who had cervical cytology performed in the measurement year or 2 years prior\nMembers recommended for routine cervical cancer screening ages 30–64 who had cervical cytology/high-risk human papillomavirus (hrHPV) co-testing performed in the measurement year or four years prior. The member must have been at least age 30 on the date of the test.\nMembers recommended for routine cervical cancer screening ages 30–64 who had cervical high-risk human papillomavirus (hrHPV) testing performed in the measurement year or four years prior",
     "CODING": "G0101, Q0091, 3015F",
-    "SCHEDULE AS/ADD TO APPT": "PAP"
+    "SCHEDULE AS/ADD TO APPT": "PAP",
+    "KEY WORDS": "Already specified in Visit Type (PAP)"
   },
   {
     "MEASURE NAME": "Chlamydia Screening in Women (CHL)",
@@ -45,7 +50,8 @@
     "WHERE IS IT?": "Result in LAB",
     "COMPLIANT PERIOD": "During measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALIA, SCOTT)",
+    "KEY WORDS": "Chlamydia Screening"
   },
   {
     "MEASURE NAME": "Osteoporosis Management in Women Who Had a Fracture (OMW)",
@@ -53,7 +59,8 @@
     "WHERE IS IT?": "PT DOCS/ePrescription logs",
     "COMPLIANT PERIOD": "Within 6 months of the fracture",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)",
+    "KEY WORDS": "BONE MINERAL DENSITY TEST"
   },
   {
     "MEASURE NAME": "Prenatal and Postpartum Care (PPC)",
@@ -61,7 +68,8 @@
     "WHERE IS IT?": "AV and PAP appointment in eCW",
     "COMPLIANT PERIOD": "• Timeliness of prenatal care –\u00a0 in the first trimester, on or before the enrollment start date or within 42 days of enrollment in a UnitedHealthcare health plan\n• Postpartum care –\u00a0 on or between 7–84 days after delivery",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT AND PAP (DIFFERENT DATES)"
+    "SCHEDULE AS/ADD TO APPT": "ANNUAL VISIT AND PAP (DIFFERENT DATES)",
+    "KEY WORDS": "Postpartum Care"
   },
   {
     "MEASURE NAME": "Asthma Medication Ratio (AMR)",
@@ -69,7 +77,8 @@
     "WHERE IS IT?": "ePrescription logs",
     "COMPLIANT PERIOD": "During measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT BUT SPECIALTY (BW, SUDO, SONO, EMG, NATALIA, SCOTT)",
+    "KEY WORDS": "Asthma Medication Ratio"
   },
   {
     "MEASURE NAME": "Blood Pressure Control for Patients With Diabetes (BPD)",
@@ -77,7 +86,8 @@
     "WHERE IS IT?": "PROGRESS NOTE (LESS THAN 140/90)",
     "COMPLIANT PERIOD": "During measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT",
+    "KEY WORDS": "Supposed to be checked on every appointment type"
   },
   {
     "MEASURE NAME": "Controlling High Blood Pressure (CBP)",
@@ -85,7 +95,8 @@
     "WHERE IS IT?": "PROGRESS NOTE (LESS THAN 140/90)",
     "COMPLIANT PERIOD": "During measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "ANY APPT"
+    "SCHEDULE AS/ADD TO APPT": "ANY APPT",
+    "KEY WORDS": "Supposed to be checked on every appointment type"
   },
   {
     "MEASURE NAME": "Eye Exam for Patients With Diabetes (EED)",
@@ -93,7 +104,8 @@
     "WHERE IS IT?": "Result in PT DOCS",
     "COMPLIANT PERIOD": "• Retinal or dilated eye exam by an optometrist or ophthalmologist in the measurement year\n• Negative retinal or dilated eye exam by an optometrist or ophthalmologist in the year prior to the measurement year\n• Bilateral eye enucleations any time during their history through Dec. 31 of the measurement year",
     "CODING": "2023F, 92227",
-    "SCHEDULE AS/ADD TO APPT": "NATALIA (OPT) OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "NATALIA (OPT) OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, SCOTT)",
+    "KEY WORDS": "Diabetic Eye Exam order"
   },
   {
     "MEASURE NAME": "Glycemic Status Assessment for Patients With Diabetes (GSD)",
@@ -101,7 +113,8 @@
     "WHERE IS IT?": "Result in LAB (LESS THAN 9.0)",
     "COMPLIANT PERIOD": "During measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALIA, SCOTT)",
+    "KEY WORDS": "A1C CHECK"
   },
   {
     "MEASURE NAME": "Kidney Health Evaluation for Patients With Diabetes (KED)",
@@ -109,7 +122,8 @@
     "WHERE IS IT?": "Result in LAB",
     "COMPLIANT PERIOD": "During measurement year",
     "CODING": "-",
-    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALIA, SCOTT)"
+    "SCHEDULE AS/ADD TO APPT": "BW OR ANY APPT BUT SPECIALTY (SUDO, SONO, EMG, NATALIA, SCOTT)",
+    "KEY WORDS": "Kidney Health Evaluation"
   },
   {
     "MEASURE NAME": "Persistence of Beta-Blocker Treatment After a Heart Attack (PBH)",
