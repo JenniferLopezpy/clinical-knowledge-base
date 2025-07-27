@@ -27,7 +27,7 @@ async function loadInsurerData(insurer) {
     }
     
     try {
-        const response = await fetch(`Common/Docs/${fileName}`);
+        const response = await fetch(`Common/Docs/${fileName}?v=1.2`);
         
         if (!response.ok) {
             console.warn(`JSON file not found for ${insurer}: ${fileName}`);
@@ -95,7 +95,7 @@ async function loadScriptsData() {
     }
     
     try {
-        const response = await fetch('Common/Docs/Scripts/scripts.json');
+        const response = await fetch('Common/Docs/Scripts/scripts.json?v=1.2');
         
         if (!response.ok) {
             console.warn('Scripts JSON file not found');
@@ -131,7 +131,7 @@ async function loadUpdatesData() {
     }
     
     try {
-        const response = await fetch('Common/Docs/Updates/Updates.json');
+        const response = await fetch('Common/Docs/Updates/Updates.json?v=1.2');
         
         if (!response.ok) {
             console.warn('Updates JSON file not found');
