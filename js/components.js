@@ -233,7 +233,7 @@ function importData() {
                 try {
                     const data = JSON.parse(e.target.result);
                     if (data.measures) measuresData = data.measures;
-                    if (data.scripts) scriptsData = data.scripts;
+                    if (data.scripts) window.scriptsData = data.scripts;
                     if (data.callTracker) callTrackerData = data.callTracker;
                     
                     showNotification('Data imported successfully!', 'success');
@@ -284,7 +284,7 @@ function initializeAutoSave() {
     // Save data to localStorage every 30 seconds
     setInterval(() => {
         const data = {
-            scripts: scriptsData,
+            scripts: window.scriptsData || [],
             callTracker: callTrackerData,
             lastSaved: new Date().toISOString()
         };
@@ -296,7 +296,7 @@ function initializeAutoSave() {
     if (savedData) {
         try {
             const data = JSON.parse(savedData);
-            if (data.scripts) scriptsData = data.scripts;
+            if (data.scripts) window.scriptsData = data.scripts;
             if (data.callTracker) callTrackerData = data.callTracker;
         } catch (error) {
             console.warn('Could not load saved data:', error);

@@ -1128,7 +1128,7 @@ function initializeSearch() {
 }
 
 // Call Flow Check List functionality
-async function showCallFlowCheckList() {
+window.showCallFlowCheckList = async function() {
     hideAllContent();
     const content = document.getElementById('callFlowContent');
     content.classList.remove('hidden');
@@ -1215,6 +1215,95 @@ async function showCallFlowCheckList() {
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
+    // Ensure all functions are available globally
+    if (typeof window.showCallFlowCheckList === 'undefined') {
+        console.warn('showCallFlowCheckList not found, redefining...');
+        window.showCallFlowCheckList = async function() {
+            hideAllContent();
+            const content = document.getElementById('callFlowContent');
+            content.classList.remove('hidden');
+            
+            // Show loading state
+            content.innerHTML = `
+                <div class="mb-6">
+                    <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">Call Flow Check List</h2>
+                    <p class="text-gray-600">Complete checklist for call center procedures and protocols</p>
+                </div>
+                
+                <div class="loading-placeholder">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading call flow checklist...</p>
+                </div>
+            `;
+            
+            try {
+                // Load data from JSON file
+                const response = await fetch('Common/Docs/Call Flow/call-flow-checklist.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                
+                if (!data.call_flow) {
+                    throw new Error('Invalid JSON structure: call_flow not found');
+                }
+                
+                const callFlow = data.call_flow;
+                
+                // Create the HTML content
+                content.innerHTML = `
+                    <div class="mb-6">
+                        <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">Call Flow Check List</h2>
+                        <p class="text-gray-600">Complete checklist for call center procedures and protocols</p>
+                    </div>
+                    
+                    <div class="call-flow-grid">
+                        ${Object.entries(callFlow).map(([sectionKey, steps]) => {
+                            const sectionTitle = sectionKey
+                                .split('_')
+                                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                                .join(' ');
+                            
+                            return `
+                                <div class="call-flow-section">
+                                    <h3>
+                                        <i class="fas fa-list-check"></i>
+                                        ${sectionTitle}
+                                    </h3>
+                                    <ol class="call-flow-list">
+                                        ${steps.map((step, index) => `
+                                            <li>
+                                                <span class="call-flow-number">
+                                                    ${index + 1}
+                                                </span>
+                                                <span class="call-flow-text">${step}</span>
+                                            </li>
+                                        `).join('')}
+                                    </ol>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                `;
+                
+            } catch (error) {
+                console.error('Error loading call flow checklist:', error);
+                content.innerHTML = `
+                    <div class="mb-6">
+                        <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">Call Flow Check List</h2>
+                        <p class="text-gray-600">Complete checklist for call center procedures and protocols</p>
+                    </div>
+                    
+                    <div class="error-placeholder">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p>Error loading call flow checklist</p>
+                        <p class="text-sm text-gray-500 mt-2">${error.message}</p>
+                    </div>
+                `;
+            }
+        };
+    }
+    
     showWelcome();
     initializeSearch();
 });
