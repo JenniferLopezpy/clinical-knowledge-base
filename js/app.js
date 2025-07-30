@@ -2,6 +2,7 @@
 
 // Utility functions
 window.toggleSection = function(section) {
+    console.log('toggleSection called with:', section);
     const content = document.getElementById(`${section}-content`);
     const arrow = document.getElementById(`${section}-arrow`);
     
@@ -40,6 +41,7 @@ window.hideAllContent = function() {
 }
 
 window.showInsurer = async function(insurer) {
+    console.log('showInsurer called with:', insurer);
     hideAllContent();
     const content = document.getElementById('measuresContent');
     content.classList.remove('hidden');
@@ -1158,6 +1160,8 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
     
+    console.log('DOM loaded, initializing application...');
     showWelcome();
     initializeSearch();
+    console.log('Application initialized successfully');
 });
