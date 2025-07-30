@@ -1,0 +1,62 @@
+[
+    {
+        "name": "QCM ANNUAL TEMPLATE",
+        "description": "Good for WCV, COA, EP and pts that have many measures and have CPE due",
+        "spanish": "Buen día, {{TOFIRSTNAME}}, somos SUFFOLK PRIMARY HEALTH. Nos comunicamos para programarle una cita para realizar el Examen Físico Anual, el cual es una medida preventiva cubierta por su seguro médico. Por favor llamenos al 631-208-4460 para programar la cita. Muchas gracias.",
+        "english": "Good morning, {{TOFIRSTNAME}}, this is SUFFOLK PRIMARY HEALTH. We're trying to schedule an appointment to do the Annual Physical Exam, which is a preventative measure covered by your insurance. Please call us at 631-208-4460 to schedule the appointment. Thank you."
+    },
+    {
+        "name": "QCM F/U APPT TEMPLATE",
+        "description": "Good for dep screening only measure if CPE is not due",
+        "spanish": "Buen día, {{TOFIRSTNAME}}, somos SUFFOLK PRIMARY HEALTH. Nos comunicamos para hacerle una cita de seguimiento dado la última vez que vino a la clínica fue hace más de 3 meses. Por favor llamenos al 631-208-4460 para programar la cita. Muchas gracias.",
+        "english": "Good morning, {{TOFIRSTNAME}} , this is SUFFOLK PRIMARY HEALTH. We're trying to schedule a follow up appointment we haven't seen you since more than 3 months ago. Please call us at 631-208-4460 to schedule an appointment. Thank you."
+    },
+    {
+        "name": "QCM NP TEMPLATE",
+        "description": "New patient template for annual physical exam",
+        "spanish": "Buen día, {{TOFIRSTNAME}}, somos SUFFOLK PRIMARY HEALTH. Nos comunicamos ya que somos su clínica de preferencia en su seguro médico y nos gustaría programarle una cita para realizar el Examen Físico Anual, el cual es una medida preventiva cubierta por su seguro médico. Por favor llamenos al 631-208-4460 para programar la cita, ¡estaremos encantados de recibirlo/a! Muchas gracias.",
+        "english": "Good morning, {{TOFIRSTNAME}}, this is SUFFOLK PRIMARY HEALTH. We're trying to schedule an appointment to do the Annual Physical Exam as we are your preference clinic in your insurance and the appointment is covered by your insurance. Please call us at 631-208-4460 to schedule the appointment, ¡we'll be happy to have you here! Thank you."
+    },
+    {
+        "name": "QCM PAP TEMPLATE",
+        "description": "Pap smear screening template",
+        "spanish": "Buen día, {{TOFIRSTNAME}}, somos SUFFOLK PRIMARY HEALTH. Nos comunicamos para programarle una cita para realizar el papanicolaou, el cual es una medida preventiva cubierta por su seguro médico. Por favor llamenos al 631-208-4460 para programar la cita. Muchas gracias.",
+        "english": "Good morning, {{TOFIRSTNAME}}, this is SUFFOLK PRIMARY HEALTH. We're trying to schedule an appointment to do a pap smear, which is a preventative measure covered by your insurance. Please call us at 631-208-4460 to schedule the appointment. Thank you."
+    },
+    {
+        "name": "QCM BP TEMPLATE",
+        "description": "Blood pressure check template",
+        "spanish": "Buen día, {{TOFIRSTNAME}}, somos SUFFOLK PRIMARY HEALTH. Nos comunicamos para programarle una cita para chequear su presión arterial, la cual es una medida preventiva cubierta por su seguro médico. Por favor llamenos al 631-208-4460 para programar la cita. Muchas gracias.",
+        "english": "Good morning, {{TOFIRSTNAME}}, this is SUFFOLK PRIMARY HEALTH. We're trying to schedule an appointment to check your blood pressure, which is a preventative measure covered by your insurance. Please call us at 631-208-4460 to schedule the appointment. Thank you."
+    },
+    {
+        "name": "QCM EED TEMPLATE",
+        "description": "Diabetic eye exam template",
+        "spanish": "Buen día, {{TOFIRSTNAME}}, somos SUFFOLK PRIMARY HEALTH. Nos comunicamos para programarle una cita para realizarle un Examen de Ojo por la Diabetes, el cual es una medida preventiva cubierta por su seguro médico. Por favor llamenos al 631-208-4460 para programar la cita. Muchas gracias.",
+        "english": "Good morning, {{TOFIRSTNAME}}, this is SUFFOLK PRIMARY HEALTH. We're trying to schedule an appointment to do a Diabetic Eye Exam, which is a preventative measure covered by your insurance. Please call us at 631-208-4460 to schedule the appointment. Thank you."
+    },
+    {
+        "name": "QCM A1C/KED/BW TEMPLATE",
+        "description": "Diabetes bloodwork template",
+        "spanish": "Buen día, {{TOFIRSTNAME}}, somos SUFFOLK PRIMARY HEALTH. Nos comunicamos para programarle una cita para hacerle un análisis de laboratorio, el cual es una medida preventiva cubierta por su seguro médico para chequear su diabetes. Por favor llamenos al 631-208-4460 para programar la cita. Muchas gracias.",
+        "english": "Good morning, {{TOFIRSTNAME}}, this is SUFFOLK PRIMARY HEALTH. We're trying to schedule an appointment to do bloodwork, which is a preventative measure covered by your insurance to check your diabetes. Please call us at 631-208-4460 to schedule the appointment. Thank you."
+    },
+    {
+        "name": "QCM FLU VAX TEMPLATE",
+        "description": "Flu vaccine template",
+        "spanish": "Buen día, {{TOFIRSTNAME}}, somos SUFFOLK PRIMARY HEALTH. Nos comunicamos para programarle una cita para colocarle la vacuna contra la gripe (flu shot), la cual es una medida preventiva cubierta por su seguro médico. Por favor llamenos al 631-208-4460 para programar la cita. Muchas gracias.",
+        "english": "Good morning, {{TOFIRSTNAME}}, this is SUFFOLK PRIMARY HEALTH. We're trying to schedule an appointment to give you the flu vaccine, which is a preventative measure covered by your insurance. Please call us at 631-208-4460 to schedule the appointment. Thank you."
+    },
+    {
+        "name": "QCM MAMMO TEMPLATE",
+        "description": "Mammogram screening template",
+        "spanish": "Buen día, {{TOFIRSTNAME}}, somos SUFFOLK PRIMARY HEALTH. Nos comunicamos para consultarle si se realizó la mamografía en los últimos 2 años, dado que no tenemos resultados recientes registrados en nuestro sistema. La mamografía es una medida preventiva cubierta por su seguro médico, en caso de que no se la haya realizado aún, podemos darle un referido para que se la realice. Por favor llamenos al 631-208-4460 para programar una cita. Muchas gracias.",
+        "english": "Good morning, {{TOFIRSTNAME}}, this is SUFFOLK PRIMARY HEALTH. We want to know if you have had a mammogram done in the last 2 years, as we don't have any recent results in our system. The Mammogram is a preventative measure covered by your insurance, in case you haven't had it done, we can give you a referral to do it this year. Please call us at 631-208-4460 to schedule an appointment. Thank you."
+    },
+    {
+        "name": "QCM COLORECTAL TEMPLATE",
+        "description": "Colonoscopy screening template",
+        "spanish": "Buen día, {{TOFIRSTNAME}}, somos SUFFOLK PRIMARY HEALTH. Nos comunicamos para consultarle si se realizó una colonoscopía en los últimos 3 años, dado que no tenemos resultados recientes registrados en nuestro sistema. La colonoscopía es una medida preventiva cubierta por su seguro médico, en caso de que no se la haya realizado aún, podemos darle un referido para que se la realice. Por favor llamenos al 631-208-4460 para programar una cita. Muchas gracias.",
+        "english": "Good morning, {{TOFIRSTNAME}}, this is SUFFOLK PRIMARY HEALTH. We want to know if you have had a colonoscopy done in the last 3 years, as we don't have any recent results in our system. The colonoscopy is a preventative measure covered by your insurance, in case you haven't had it done, we can give you a referral to do it this year. Please call us at 631-208-4460 to schedule an appointment. Thank you."
+    }
+] 
