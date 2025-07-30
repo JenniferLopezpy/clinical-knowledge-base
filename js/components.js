@@ -94,20 +94,31 @@ function normalizeText(text) {
 }
 
 // Enhanced search functionality
-window.debouncedSearch = debounce(function(searchTerm) {
+window.debouncedSearch = debounce(async function(searchTerm) {
     if (searchTerm.length < 1) return;
     const searchNorm = normalizeText(searchTerm);
-    // Search through all measures with highlighting
+    
+    // Search through all measures from JSON files
     let foundMeasures = [];
-    Object.keys(measuresData).forEach(insurer => {
-        measuresData[insurer].forEach(measure => {
-            // Revisar todos los campos de la medida
-            const allFields = Object.values(measure).join(' ');
-            if (normalizeText(allFields).includes(searchNorm)) {
-                foundMeasures.push({ ...measure, insurer });
-            }
-        });
-    });
+    
+    // Get all available insurers
+    const insurers = ['healthfirst', 'fidelis', 'uhc', 'molina'];
+    
+    for (const insurer of insurers) {
+        try {
+            const measures = await loadInsurerData(insurer);
+            measures.forEach(measure => {
+                // Check all fields of the measure
+                const allFields = Object.values(measure).join(' ');
+                if (normalizeText(allFields).includes(searchNorm)) {
+                    foundMeasures.push({ ...measure, insurer });
+                }
+            });
+        } catch (error) {
+            console.error(`Error searching measures for ${insurer}:`, error);
+        }
+    }
+    
     displaySearchResults(foundMeasures, searchTerm);
 }, 300);
 
@@ -186,31 +197,35 @@ window.toggleSearchMeasure = function(index) {
     }
 }
 
-window.showFullMeasure = function(insurer, measureName) {
+window.showFullMeasure = async function(insurer, measureName) {
     // First show the insurer content
     showInsurer(insurer);
     
     // Wait for content to load and then find and expand the specific measure
-    setTimeout(() => {
-        const measures = measuresData[insurer];
-        const measureIndex = measures.findIndex(m => m.name === measureName);
-        if (measureIndex !== -1) {
-            // Find the measure card and expand it
-            const measureCards = document.querySelectorAll('.measure-card');
-            if (measureCards[measureIndex]) {
-                const content = measureCards[measureIndex].querySelector('.measure-content');
-                const arrow = measureCards[measureIndex].querySelector('.measure-arrow');
-                
-                if (content && !content.classList.contains('show')) {
-                    content.classList.add('show');
-                    if (arrow) {
-                        arrow.style.transform = 'rotate(180deg)';
+    setTimeout(async () => {
+        try {
+            const measures = await loadInsurerData(insurer);
+            const measureIndex = measures.findIndex(m => m.name === measureName);
+            if (measureIndex !== -1) {
+                // Find the measure card and expand it
+                const measureCards = document.querySelectorAll('.measure-card');
+                if (measureCards[measureIndex]) {
+                    const content = measureCards[measureIndex].querySelector('.measure-content');
+                    const arrow = measureCards[measureIndex].querySelector('.measure-arrow');
+                    
+                    if (content && !content.classList.contains('show')) {
+                        content.classList.add('show');
+                        if (arrow) {
+                            arrow.style.transform = 'rotate(180deg)';
+                        }
                     }
+                    
+                    // Scroll to the measure
+                    measureCards[measureIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
                 }
-                
-                // Scroll to the measure
-                measureCards[measureIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
+        } catch (error) {
+            console.error('Error finding measure:', error);
         }
     }, 500); // Increased timeout to ensure content is loaded
 }
