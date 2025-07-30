@@ -268,7 +268,7 @@ function showAddMeasureForm(insurer) {
     });
 }
 
-function toggleMeasure(index) {
+window.toggleMeasure = function(index) {
     const content = document.getElementById(`measure-content-${index}`);
     const arrow = document.getElementById(`measure-arrow-${index}`);
     
