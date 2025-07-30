@@ -27,14 +27,16 @@ window.hideAllContent = function() {
         'scriptsContent',
         'smsTemplatesContent',
         'todoContent',
-        'callTrackerContent',
         'measureImagesContent',
         'updatesContent',
         'callFlowContent'
     ];
     
     contentSections.forEach(section => {
-        document.getElementById(section).classList.add('hidden');
+        const element = document.getElementById(section);
+        if (element) {
+            element.classList.add('hidden');
+        }
     });
     // Restablecer scroll al inicio
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
