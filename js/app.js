@@ -1,7 +1,7 @@
 // Main Application JavaScript
 
 // Utility functions
-function toggleSection(section) {
+window.toggleSection = function(section) {
     const content = document.getElementById(`${section}-content`);
     const arrow = document.getElementById(`${section}-arrow`);
     
@@ -14,12 +14,12 @@ function toggleSection(section) {
     }
 }
 
-function showWelcome() {
+window.showWelcome = function() {
     hideAllContent();
     document.getElementById('welcomeScreen').classList.remove('hidden');
 }
 
-function hideAllContent() {
+window.hideAllContent = function() {
     const contentSections = [
         'welcomeScreen',
         'measuresContent',
@@ -39,7 +39,7 @@ function hideAllContent() {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 }
 
-async function showInsurer(insurer) {
+window.showInsurer = async function(insurer) {
     hideAllContent();
     const content = document.getElementById('measuresContent');
     content.classList.remove('hidden');
@@ -292,7 +292,7 @@ function eliminarMedida(insurer, index) {
     }
 }
 
-async function showScripts() {
+window.showScripts = async function() {
     hideAllContent();
     const content = document.getElementById('scriptsContent');
     content.classList.remove('hidden');
@@ -382,7 +382,7 @@ async function showScripts() {
 
 
 
-function showTodo() {
+window.showTodo = function() {
     hideAllContent();
     const content = document.getElementById('todoContent');
     content.classList.remove('hidden');
@@ -413,7 +413,7 @@ function showTodo() {
 
 
 
-function showMeasureImages() {
+window.showMeasureImages = function() {
     hideAllContent();
     const content = document.getElementById('measureImagesContent');
     content.classList.remove('hidden');
@@ -734,7 +734,7 @@ function openImageModal(imagePath, title) {
 }
 
 // Function to show updates/reminders
-async function showUpdates() {
+window.showUpdates = async function() {
     hideAllContent();
     const content = document.getElementById('updatesContent');
     content.classList.remove('hidden');
@@ -855,7 +855,7 @@ async function showUpdates() {
 }
 
 // Función para mostrar los SMS Templates
-async function showSMSTemplates() {
+window.showSMSTemplates = async function() {
     hideAllContent();
     const content = document.getElementById('smsTemplatesContent');
     content.classList.remove('hidden');
@@ -914,7 +914,7 @@ async function showSMSTemplates() {
 }
 
 // Función para mostrar los SMS Templates de una clínica específica
-async function showSMSTemplatesClinic(clinic) {
+window.showSMSTemplatesClinic = async function(clinic) {
     hideAllContent();
     const content = document.getElementById('smsTemplatesContent');
     content.classList.remove('hidden');
