@@ -945,7 +945,7 @@ window.showSMSTemplatesClinic = async function(clinic) {
         const html = templates.map(t => `
             <div class="card mb-4">
                 <div class="card-body">
-                    <h3 class="text-xl font-semibold text-blue-800 mb-2">${t.name}</h3>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">${t.title}</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <h4 class="font-bold text-gray-700 mb-1">Español</h4>
