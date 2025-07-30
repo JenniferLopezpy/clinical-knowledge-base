@@ -121,13 +121,7 @@ window.measuresData = {
 // Scripts data is now loaded from Common/Docs/Scripts/scripts.json
 let scriptsData = []; // Initialize as empty array, will be loaded from JSON
 
-// Call tracker data
-let callTrackerData = [
-    { insurer: 'Healthfirst', schedule: 15, tryAgain: 8, dontCall: 3 },
-    { insurer: 'FidelisCare', schedule: 12, tryAgain: 5, dontCall: 2 },
-    { insurer: 'UnitedHealthcare', schedule: 18, tryAgain: 10, dontCall: 4 },
-    { insurer: 'Molina', schedule: 9, tryAgain: 6, dontCall: 1 }
-];
+
 
 // Insurer configuration
 window.insurerConfig = {
