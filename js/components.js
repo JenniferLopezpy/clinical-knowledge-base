@@ -43,7 +43,7 @@ function enhanceMeasureCards() {
 }
 
 // Notification system
-function showNotification(message, type = 'info') {
+window.showNotification = function(message, type = 'info') {
     const notification = document.createElement('div');
     notification.className = `alert alert-${type} fixed top-4 right-4 z-50 max-w-sm`;
     notification.innerHTML = `
@@ -94,7 +94,7 @@ function normalizeText(text) {
 }
 
 // Enhanced search functionality
-const debouncedSearch = debounce(function(searchTerm) {
+window.debouncedSearch = debounce(function(searchTerm) {
     if (searchTerm.length < 1) return;
     const searchNorm = normalizeText(searchTerm);
     // Search through all measures with highlighting
@@ -111,7 +111,7 @@ const debouncedSearch = debounce(function(searchTerm) {
     displaySearchResults(foundMeasures, searchTerm);
 }, 300);
 
-function displaySearchResults(measures, searchTerm) {
+window.displaySearchResults = function(measures, searchTerm) {
     if (measures.length === 0) {
         showNotification('No measures found matching your search.', 'warning');
         return;
@@ -167,13 +167,13 @@ function displaySearchResults(measures, searchTerm) {
     `;
 }
 
-function highlightText(text, searchTerm) {
+window.highlightText = function(text, searchTerm) {
     if (!searchTerm) return text;
     const regex = new RegExp(`(${searchTerm})`, 'gi');
     return text.replace(regex, '<mark class="bg-yellow-200 px-1 rounded">$1</mark>');
 }
 
-function toggleSearchMeasure(index) {
+window.toggleSearchMeasure = function(index) {
     const content = document.getElementById(`search-measure-content-${index}`);
     const arrow = document.getElementById(`search-measure-arrow-${index}`);
     
@@ -186,16 +186,33 @@ function toggleSearchMeasure(index) {
     }
 }
 
-function showFullMeasure(insurer, measureName) {
+window.showFullMeasure = function(insurer, measureName) {
+    // First show the insurer content
     showInsurer(insurer);
-    // Find and expand the specific measure
-    const measures = measuresData[insurer];
-    const measureIndex = measures.findIndex(m => m.name === measureName);
-    if (measureIndex !== -1) {
-        setTimeout(() => {
-            toggleMeasure(measureIndex);
-        }, 100);
-    }
+    
+    // Wait for content to load and then find and expand the specific measure
+    setTimeout(() => {
+        const measures = measuresData[insurer];
+        const measureIndex = measures.findIndex(m => m.name === measureName);
+        if (measureIndex !== -1) {
+            // Find the measure card and expand it
+            const measureCards = document.querySelectorAll('.measure-card');
+            if (measureCards[measureIndex]) {
+                const content = measureCards[measureIndex].querySelector('.measure-content');
+                const arrow = measureCards[measureIndex].querySelector('.measure-arrow');
+                
+                if (content && !content.classList.contains('show')) {
+                    content.classList.add('show');
+                    if (arrow) {
+                        arrow.style.transform = 'rotate(180deg)';
+                    }
+                }
+                
+                // Scroll to the measure
+                measureCards[measureIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+    }, 500); // Increased timeout to ensure content is loaded
 }
 
 // Export functionality

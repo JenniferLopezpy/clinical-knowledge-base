@@ -1064,63 +1064,14 @@ async function showSMSTemplatesClinic(clinic) {
 // Search functionality
 function initializeSearch() {
     document.getElementById('searchInput').addEventListener('input', function(e) {
-        const searchTerm = e.target.value.toLowerCase();
+        const searchTerm = e.target.value;
         
         if (searchTerm === '') {
             return;
         }
         
-        // Search through all measures
-        let foundMeasures = [];
-        Object.keys(measuresData).forEach(insurer => {
-            measuresData[insurer].forEach(measure => {
-                if (measure.name.toLowerCase().includes(searchTerm) || 
-                    measure.description.toLowerCase().includes(searchTerm)) {
-                    foundMeasures.push({ ...measure, insurer });
-                }
-            });
-        });
-        
-        if (foundMeasures.length > 0) {
-            hideAllContent();
-            const content = document.getElementById('measuresContent');
-            content.classList.remove('hidden');
-            
-            content.innerHTML = `
-                <div class="mb-6">
-                    <h2 class="text-3xl font-montserrat font-bold text-gray-800 mb-2">Search Results</h2>
-                    <p class="text-gray-600">Found ${foundMeasures.length} measure(s) matching "${searchTerm}"</p>
-                </div>
-                <div class="space-y-6">
-                    ${foundMeasures.map((measure, index) => {
-                        const config = insurerConfig[measure.insurer];
-                        
-                        return `
-                            <div class="measure-card">
-                                <div class="measure-header ${config.bgClass}">
-                                    <div class="flex items-center justify-between">
-                                        <div class="flex items-center">
-                                            <i class="fas fa-clipboard-check text-gray-600 mr-4 text-xl"></i>
-                                            <div>
-                                                <h3 class="text-lg font-montserrat font-semibold text-gray-800">${measure.name}</h3>
-                                                <p class="text-sm text-gray-600 mt-1">${config.name}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="measure-content show">
-                                    <p class="text-gray-700 mb-4">${measure.description}</p>
-                                    <div class="flex items-center text-sm text-gray-600">
-                                        <i class="fas fa-map-marker-alt mr-2"></i>
-                                        <span>${measure.location}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                    }).join('')}
-                </div>
-            `;
-        }
+        // Use the improved search from components.js
+        debouncedSearch(searchTerm);
     });
 }
 

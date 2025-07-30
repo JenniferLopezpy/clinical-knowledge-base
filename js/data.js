@@ -1,5 +1,5 @@
 // Sample data for QCM measures
-const measuresData = {
+window.measuresData = {
     healthfirst: [
         {
             name: "Diabetes HbA1c Control",
@@ -130,7 +130,7 @@ let callTrackerData = [
 ];
 
 // Insurer configuration
-const insurerConfig = {
+window.insurerConfig = {
     healthfirst: {
         name: 'Healthfirst',
         color: 'var(--healthfirst)',
